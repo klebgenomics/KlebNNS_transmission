@@ -2017,7 +2017,7 @@ res_score_df <- epi_snp_clusters_wt_upd_STS %>%
     mutate(m_Site = factor(m_Site, levels = unique(m_Site))) %>%
     arrange(Study, desc(resistance_score)) %>% 
     mutate(clone_type = if_else(ST %in% top_clones_summary$ST, "Most common", "Others")) %>%
-    select(id, Cluster, Study, Country, m_Site, Country_Study_Site, coded_site, 
+    select(id, Cluster, Study, Study_lab, Country, m_Site, Country_Study_Site, coded_site, 
            ST, resistance_score, resistance_score_ori, case_type, clone_type)
 
 # De-replicate clusters before comparison of res scores
@@ -2029,7 +2029,10 @@ res_score_df_dereplicated <- res_score_df %>%
     add_count(resistance_score) %>% 
     slice_max(order_by = n, with_ties = F) %>% ungroup() %>% 
     # add in non-cluster isolates
-    bind_rows(res_score_df %>% filter(is.na(Cluster)))
+    bind_rows(res_score_df %>% filter(is.na(Cluster))) %>% 
+    add_count(coded_site, name="n_isolates_per_site") %>% 
+    mutate(m_Site = paste0(Study_lab, "\n", coded_site, " (N=", n_isolates_per_site,")")) %>%
+    mutate(m_Site = factor(m_Site, levels = unique(m_Site)))
 
 ```
 
