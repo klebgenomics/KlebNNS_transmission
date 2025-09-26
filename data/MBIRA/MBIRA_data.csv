@@ -1,0 +1,174 @@
+id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_size,resistance_score,K_locus,K_type,K_locus_confidence,O_locus,O_type,O_locus_confidence
+FF31_01-0057-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST29,178375,112,5450411,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF31_01-0062-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST29,203974,86,5270554,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0035-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST307,77721,157,5806885,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF33_06-0039-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST307,161931,78,5476809,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF33_06-0046-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST307,89744,120,5711419,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF33_06-0047-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST307,96236,123,5710860,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF33_06-0056-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST307,86564,126,5666859,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF33_06-0071-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST101,53901,201,5536288,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+FF33_06-0078-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST101,108869,106,5548767,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+FF33_06-0083-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST101,112467,105,5549206,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+FF33_06-0084-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST101,95559,114,5542266,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+FF33_06-0096-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST101,77800,128,5540566,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+FF34_10-0015-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST5856,108328,123,5463168,2,KL15,K15,Typeable,O4,O4,Typeable
+FF34_10-0029-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST5856,72812,155,5443763,2,KL15,K15,Typeable,O4,O4,Typeable
+FF34_10-0034-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST5856,118356,128,5464338,2,KL15,K15,Typeable,O4,O4,Typeable
+FF34_10-0037-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST5856,107919,134,5462776,2,KL15,K15,Typeable,O4,O4,Typeable
+FF34_10-0060-00-B,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST45-1LV,15890,655,5630717,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+FF34_10-0061-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST45,23609,461,5610636,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+FF34_10-0065-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST45,86909,166,5670516,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+FF34_10-0105-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST17,99869,142,5623936,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+FF34_10-0110-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST17,36670,306,5569524,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0024-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,78117,127,5232984,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0156-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,210512,54,5239415,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0159-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,172559,63,5236405,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0165-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,258771,52,5240099,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0166-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,277140,48,5241768,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-005-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,13386,842,5582448,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0074-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,95416,143,5641567,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0091-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,23559,461,5456110,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0101-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,84966,155,5530794,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0124-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,27722,365,5412854,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0142-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,144161,89,5443264,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0137-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,147497,95,5446259,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0141-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,46541,254,5625547,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0078-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,281614,53,5241002,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0169-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,70225,150,5229269,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0170-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,70183,151,5227929,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0171-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,127813,85,5237356,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0172-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,263145,52,5237453,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0174-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,54130,163,5225064,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0178-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,162912,58,5238239,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF36_11-0008-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2020,Klebsiella pneumoniae,ST45,68084,171,5590909,1,KL10,K10,Typeable,O1/O2v1,O2a,Typeable
+FF36_11-0007-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2020,Klebsiella pneumoniae,ST45,30356,297,5545499,1,KL10,K10,Typeable,O1/O2v1,O2a,Typeable
+FF36_11-0018-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST39,78819,131,5518796,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0019-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST39,91317,128,5521219,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0092-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST39,99295,141,5470238,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0099-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST39,86239,162,5470321,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0119-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST25,49932,230,5518200,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0120-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST25,78963,183,5612865,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+FFKC_017KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741-1LV,36935,277,5296716,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_018KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,58392,183,5306720,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_022KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,106924,103,5327443,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_037KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,53180,212,5317338,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_041KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,17767,679,5197094,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_042KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,14098,840,5135312,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_19KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,92388,116,5320600,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_28KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,91260,120,5322814,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_30KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,87641,115,5327149,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_31KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,17608,696,5185851,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_32KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,66868,175,5309104,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_33KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,72900,145,5322244,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_34KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,100987,123,5311686,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_43KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,66853,157,5319980,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_046KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,15043,741,5191733,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_44KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,59596,181,5315090,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_47KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,38052,329,5282042,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_48KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,32569,358,5262236,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_53KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,118996,105,5327132,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_54KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,70280,157,5322368,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_55KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,30547,408,5269300,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_56KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,47180,246,5302344,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_57KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,67503,139,5321869,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_101KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,32542,314,5286580,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_102KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,28205,417,5255977,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_103KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,22298,533,5232111,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_105KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,16798,720,5196951,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_106KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,23137,489,5244670,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_107KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,11725,952,5135596,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_108KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,22170,546,5237077,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_97KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,80062,127,5317640,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_98KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,55156,208,5308880,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_99KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,18455,594,5229530,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_60KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,19060,562,5205038,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_61KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,29666,431,5268918,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_64KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,92274,125,5320157,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_65KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,86643,130,5322820,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_66KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,105733,105,5328451,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_67KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,114515,102,5324349,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_68KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,105733,109,5324573,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_73KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,98351,106,5317864,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_74KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,85925,118,5311577,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_82KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,39302,288,5296382,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_83KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,38843,344,5287635,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_84KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,33011,361,5280452,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_87KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,17647,653,5194392,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_90KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,13653,793,5083213,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_89KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,22061,588,5241887,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_93KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,32843,386,5276484,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_95KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,19373,665,5224354,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_96KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,29275,452,5268840,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FF31_01-0024-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST29,192620,91,5264326,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF31_01-0032-00-B.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST39,161341,103,5611931,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+FF31_01-0043-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST711,173441,87,5549098,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
+FF31_01-0046-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST101-1LV,174293,136,5607488,0,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+FF31_01-0070-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST225,300093,61,5483071,0,KL3,K3,Typeable,O1/O2v2,O2afg,Typeable
+FF31_01-0075-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST29-1LV,12981,763,5381926,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF31_01-0076-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST29,160160,112,5443173,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF31_01-0108-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST15,146974,95,5279327,0,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+FF31_01-0124-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST48,224044,75,5280212,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+FF31_01-0125-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST433,250826,74,5433843,0,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF31_01-0126-00.1,MBIRA,South Africa,Southern Africa,Site 24,neonate,2021,Klebsiella pneumoniae,ST1927,171735,161,5702816,0,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0002-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2020,Klebsiella pneumoniae,ST307,104470,109,5665654,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF33_06-0003-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2020,Klebsiella pneumoniae,ST4860,123542,79,5218210,0,KL35,K35,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0013-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST39,113020,113,5644984,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+FF33_06-0029-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST13,96711,121,5609491,1,KL3,K3,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0045-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST161,124615,79,5230351,0,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+FF33_06-0063-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST15,45850,244,5495571,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0077-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST967,41963,256,5468016,1,KL18,K18,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0097-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST323,218508,66,5279019,0,KL21,K21,Typeable,O3b,O3b,Typeable
+FF33_06-0103-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST394,142405,95,5591157,1,KL3,K3,Typeable,O1/O2v2,O2afg,Typeable
+FF33_06-0122-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST17,146178,98,5318857,0,KL169,unknown (KL169),Typeable,OL104,unknown,Typeable
+FF33_06-0126-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST985,114640,85,5687599,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0130-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST13,73144,152,5566668,2,KL122,unknown (KL122),Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0131-00-A,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST530,105742,116,5422387,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0132-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST25,86594,136,5534324,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+FF33_06-0133-00,MBIRA,Ghana,Western Africa,Site 12,neonate,2021,Klebsiella pneumoniae,ST147,103734,167,5584815,1,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
+FF35_08-0016-00-B,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST37,58629,206,5531109,0,KL25,K25,Typeable,O3/O3a,O3/O3a,Typeable
+FF35_08-0030-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST664,232344,79,5672374,0,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+FF35_08-0031-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST45,48798,201,5541922,0,KL52,K52,Typeable,OL13,O13,Typeable
+FF35_08-0046-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST1530,60520,173,5369949,0,KL117,unknown (KL117),Typeable,O1/O2v1,O1ab,Typeable
+FF35_08-0047-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST15,41151,255,5572321,1,KL24,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+FF35_08-0096-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST29,151957,101,5537703,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0098-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST152,45750,244,5474906,1,KL149,unknown (KL149),Typeable,O4,O4,Typeable
+FF35_08-0103-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST5731,25348,423,5412156,0,KL124,unknown (KL124),Typeable,OL13,O13,Typeable
+FF35_08-0125-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST20,26792,388,5204773,1,KL28,K28,Typeable,O1/O2v2,O2afg,Typeable
+FF35_08-0140-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST985-1LV,67316,143,5437483,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+FF35_08-0180-00,MBIRA,Ethiopia,Eastern Africa,Site 2,neonate,2021,Klebsiella pneumoniae,ST45,35231,310,5507262,1,KL52,K52,Typeable,OL13,O13,Typeable
+FFKC_002KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST6516,30701,401,5395283,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
+FFKC_004KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,108628,99,5326942,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_005KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST101,119032,98,5509032,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+FFKC_007KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST1741,90616,112,5324718,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+FFKC_38KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST348,39610,332,5408110,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+FFKC_112KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST307,15033,784,5299867,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF34_10-0012-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST1119,149081,112,5404513,1,KL110,unknown (KL110),Typeable,O3b,O3b,Typeable
+FF34_10-0014-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST340,99476,134,5480449,2,KL15,K15,Typeable,O4,O4,Typeable
+FF34_10-0018-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST11-1LV,10233,868,5398259,1,KL15,K15,Typeable,O4,O4,Typeable
+FF34_10-0033-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST268,135855,97,5365499,1,KL20,K20,Typeable,O1/O2v1,O2a,Typeable
+FF34_10-0036-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST20,73485,201,5687377,1,KL24,K24,Typeable,O1/O2v1,O1ab,Typeable
+FF34_10-0060-00-A,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST3719,104623,147,5611885,1,KL179,unknown (KL179),Typeable,OL104,unknown,Untypeable
+FF34_10-0063-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST1121,22729,440,5489022,1,KL55,K55,Typeable,O1/O2v2,O1ab,Typeable
+FF34_10-0072-00-A,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST3661-3LV,94071,117,5384813,0,KL38,K38,Typeable,O3b,O3b,Typeable
+FF34_10-0072-00-B,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST4083,191163,76,5347318,1,KL35,K35,Typeable,O1/O2v2,O1ab,Typeable
+FF34_10-0115-00,MBIRA,Zambia,Eastern Africa,Site 10,neonate,2021,Klebsiella pneumoniae,ST607,112656,116,5565507,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+FF36_11-0009-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2020,Klebsiella pneumoniae,ST307,78387,117,5484932,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+FF36_11-0021-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST45,87490,146,5598504,1,KL10,K10,Typeable,O1/O2v1,O2a,Typeable
+FF36_11-0030-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST39,78813,154,5464469,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0056-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST73,89417,145,5458262,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+FF36_11-0088-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST323,64484,158,5394483,1,KL21,K21,Typeable,O3b,O3b,Typeable
+FF36_11-0089-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST391,26244,464,5762967,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0103-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST39,53083,192,5405177,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0109-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST17,73878,171,5534300,1,KL25,K25,Typeable,O5,O5,Typeable
+FF36_11-0113-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST292,70443,602,6177673,0,KL51,K51,Typeable,O3b,O3b,Typeable
+FF36_11-0114-00-A,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST985,122217,92,5514662,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0117-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST39,74862,147,5492013,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0121-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST261,101100,123,5491728,1,KL38,K38,Typeable,O1/O2v2,O2afg,Typeable
+FF36_11-0136-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST73,47621,186,5434889,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+FF36_11-0137-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST29,77587,146,5521283,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0140-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST13,44069,256,5632065,2,KL122,unknown (KL122),Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0154-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST25,88341,147,5542213,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+FF36_11-0157-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST268,89535,137,5481896,1,KL20,K20,Typeable,O1/O2v1,O2a,Typeable
+FF36_11-0166-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST17,104311,89,5293834,0,KL122,unknown (KL122),Typeable,O1/O2v2,O2afg,Typeable
+FF36_11-0171-00,MBIRA,Malawi,Eastern Africa,Site 6,neonate,2021,Klebsiella pneumoniae,ST25,75864,145,5575617,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+FFKC_009KP.1,MBIRA,Tanzania,Eastern Africa,Site 9,neonate,2021,Klebsiella pneumoniae,ST111,74279,162,5346708,0,KL113,unknown (KL113),Typeable,O1/O2v2,O1ab,Typeable

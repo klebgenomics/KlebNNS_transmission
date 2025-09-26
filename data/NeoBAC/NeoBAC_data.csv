@@ -1,0 +1,67 @@
+id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_size,resistance_score,K_locus,K_type,K_locus_confidence,O_locus,O_type,O_locus_confidence
+111011,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST2632,251451,168,5641571,1,KL122,unknown (KL122),Typeable,O1/O2v2,O1ab,Typeable
+111313,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST2632,219906,182,5645769,1,KL122,unknown (KL122),Typeable,O1/O2v2,O1ab,Typeable
+111825,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,350189,100,5668683,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111827,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,350189,94,5668520,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111837,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,365065,97,5668841,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111838,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,350189,99,5668370,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111839,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,350189,91,5667871,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111841,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,371394,86,5667979,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111850,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,364779,95,5668233,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111865,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,370284,93,5668469,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+112035,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,369847,98,5665429,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+112070,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,350189,97,5668371,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+112271,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,350189,97,5668543,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+112289,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,350189,91,5668664,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+112502,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2021,Klebsiella pneumoniae,ST39,213412,107,5470301,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+112529,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2021,Klebsiella pneumoniae,ST39,207676,130,5708816,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+113415,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST6775,260997,206,5829175,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113447,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,266905,140,5668796,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113452,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260853,222,5823281,0,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113456,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,103206,487,5787564,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113458,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,231623,162,5670604,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113459,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,266781,151,5670118,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113474,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,266781,149,5636523,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113528,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,342253,110,5404309,0,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113529,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260997,217,5831215,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113530,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260997,209,5830340,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113533,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,266905,156,5670707,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113534,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260637,219,5824143,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113535,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260997,154,5671061,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113538,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260997,167,5670817,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113557,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,246746,210,5831869,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113558,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,302508,145,5669081,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113559,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,302531,158,5670564,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113573,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,275737,151,5669881,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113574,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,322873,160,5670958,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113579,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260997,158,5671244,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113617,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260853,207,5826352,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113680,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,260853,154,5669907,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113682,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,328026,224,5831387,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113691,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,275739,166,5816516,1,KL157,Capsule null,Typeable,O1/O2v1,O2a,Typeable
+113697,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,155773,375,5713613,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113698,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,152188,338,5681416,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113751,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,146279,317,5677574,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113752,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,183855,285,5582873,0,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+113753,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2022,Klebsiella pneumoniae,ST6775,152289,309,5680426,1,KL157,unknown (KL157),Typeable,O1/O2v1,O2a,Typeable
+117566,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,170475,195,5596811,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117570,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,45437,316,5604647,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117578,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,166037,198,5592756,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117581,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,277468,230,5619216,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117590,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,158542,186,5594401,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117662,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,20182,605,5592099,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117664,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,69268,278,5609874,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117666,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,198417,186,5591821,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117768,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,191536,302,5647167,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117942,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,211240,126,5600374,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117971,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,141273,201,5590701,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+111857,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST14,41637,477,5668112,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+112216,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST48,382900,94,5393084,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+112309,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2021,Klebsiella pneumoniae,ST39,207778,137,5708672,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+113225,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2021,Klebsiella pneumoniae,ST39,207778,120,5572914,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+113295,NeoBAC,Kenya,Eastern Africa,Site 4,neonate,2021,Klebsiella pneumoniae,ST48,382900,105,5393775,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+114426,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,280172,116,5601674,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+114427,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST48,265823,212,5589903,2,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+117119,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,174193,117,5599031,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117577,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,16107,726,5587041,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+117779,NeoBAC,Kenya,Eastern Africa,Site 5,neonate,2022,Klebsiella pneumoniae,ST14,280168,100,5597810,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable

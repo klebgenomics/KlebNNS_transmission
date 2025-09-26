@@ -1,0 +1,363 @@
+id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_size,resistance_score,K_locus,K_type,K_locus_confidence,O_locus,O_type,O_locus_confidence
+22072_1#101,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST372,335838,47,5546062,1,KL43,K43,Typeable,O1/O2v1,O2a,Typeable
+22072_1#102,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST372,341694,51,5546896,1,KL43,K43,Typeable,O1/O2v1,O2a,Typeable
+22072_1#167,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST372,453552,47,5548176,1,KL43,K43,Typeable,O1/O2v1,O2a,Typeable
+22072_1#99,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST372,368947,46,5546406,1,KL43,K43,Typeable,O1/O2v1,O2a,Typeable
+42139_1#41,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST372,369942,46,5551395,1,KL43,K43,Typeable,O1/O2v1,O2a,Typeable
+22072_1#103,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,209486,70,5588876,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#105,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,209643,70,5593787,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#107,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,270618,70,5595058,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#110,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,244288,112,5626094,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#111,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,244140,69,5588916,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#112,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,270003,70,5587477,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#114,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,269550,67,5589426,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#119,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,241052,70,5587834,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#120,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,209502,78,5590023,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#121,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,241169,70,5587888,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#122,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,270124,68,5592177,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#123,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,270426,70,5629033,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#125,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST340,241126,69,5635160,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#126,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST391,876430,85,5837533,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+22072_1#127,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST391,741120,103,5821731,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+22072_1#130,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,301732,76,5810899,1,KL2,K2,Untypeable,O1/O2v1,O1ab,Typeable
+22072_1#131,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,61574,259,5776951,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+22072_1#132,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,351333,78,5828585,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+22072_1#134,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,345719,73,5814635,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+22072_1#147,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,103312,163,5793907,1,KL2,Capsule null,Typeable,O1/O2v1,O2a,Typeable
+22072_1#139,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,368456,89,5830674,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#103,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST14,381889,68,5800841,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#226,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,363379,87,5803997,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#228,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,272334,98,5804603,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#230,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,241337,107,5801838,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#236,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,367361,79,5797909,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#92,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST14,345753,77,5805162,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#108,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,339422,44,5681627,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#110,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,339882,40,5680286,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#112,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,339623,42,5680578,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#120,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,254033,45,5677650,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#122,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,262829,48,5678388,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#126,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,44,5680393,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#130,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,376900,47,5679472,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#40,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,345536,38,5678460,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#44,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,38,5678896,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#68,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,371916,43,5677650,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#72,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,343414,40,5677485,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#74,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372006,42,5679604,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#76,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372174,42,5680060,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#80,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372273,40,5682372,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#98,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,41,5677723,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#109,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,193148,71,5619355,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#133,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,202602,77,5616656,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#141,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,193173,73,5620876,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_2#278,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,217011,69,5618129,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#148,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375230,40,5679395,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#115,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,324570,58,5677063,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#121,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,324669,39,5678546,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#123,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,345497,45,5679733,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#125,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,338091,40,5680530,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#127,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372155,40,5681824,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#147,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,339882,42,5680678,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#152,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,358284,43,5678363,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#154,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,338091,43,5678149,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#156,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,441847,38,5678995,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#158,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372271,41,5679468,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#178,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,336706,44,5679439,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#91,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372070,40,5679986,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#310,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372055,41,5679709,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#113,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST14,301289,81,5696188,1,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#119,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST14,312078,76,5757446,1,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#150,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST14,243607,92,5694954,1,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#160,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375359,42,5680709,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#129,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,285769,69,5696734,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#14,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,304780,80,5696958,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#233,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,292070,61,5695551,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#237,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,350652,67,5697758,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#257,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,290816,65,5700512,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#265,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,350650,88,5699101,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#298,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,308351,70,5700551,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#319,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,350652,68,5700325,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#330,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,350820,70,5701129,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#332,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,290696,68,5702129,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#34,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,380848,73,5702089,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#347,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,350820,59,5695638,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#351,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,289260,72,5700231,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#14,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,328512,43,5679369,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#177,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372055,45,5677865,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#179,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,345490,46,5678406,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#181,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,334915,49,5676622,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#183,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,338091,47,5679671,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#155,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,280583,42,5679696,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#157,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,41,5679715,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#245,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,358284,46,5679680,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#251,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,345691,41,5678828,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#253,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375302,39,5678085,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#277,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,38,5679867,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#279,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375429,34,5679285,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#281,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,47,5678556,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#283,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,44,5679775,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#287,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375356,44,5680763,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#305,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,286131,45,5679169,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#309,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,254033,45,5679441,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#311,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,327707,41,5679798,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#313,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375357,41,5678907,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#59,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,343414,48,5679366,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#223,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,429537,42,5678110,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#241,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,393675,39,5678775,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#173,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,441296,48,5588366,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#144,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,440256,46,5589153,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#162,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,353501,73,5584329,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#194,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,438714,49,5587657,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#202,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,333402,61,5590366,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#204,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,441119,47,5586747,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#208,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,412458,43,5577715,0,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#320,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,353778,57,5586047,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#187,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST584,549281,33,5321987,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#189,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST584,424594,36,5323244,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#219,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,424594,31,5322256,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#221,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,460030,32,5323147,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#243,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,424594,36,5320647,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#247,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,465097,31,5321403,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#31,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,424592,34,5321524,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#57,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,465092,38,5320564,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#61,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,424594,36,5321587,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#83,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST584,562267,29,5320566,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42139_1#286,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST584,480220,64,5442367,1,KL9,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#201,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST307,378152,49,5677299,0,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#203,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST307,360206,53,5680350,0,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#211,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,344532,50,5585036,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#325,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,420482,53,5586306,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#345,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,300614,73,5583751,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#353,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,353778,53,5586324,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#22,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,285472,92,5690745,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#28,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,330084,141,5722240,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#339,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,402402,67,5700624,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#363,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,290824,68,5702253,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#52,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,313148,105,5697879,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#227,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST39,241866,56,5676618,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#231,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST39,334915,53,5727485,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#281,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST307,531974,41,5456193,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#283,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST307,307728,46,5456960,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#3,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,177673,92,5750347,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#45,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,184764,99,5751627,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#47,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,184539,82,5751854,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#7,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,181585,73,5769634,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#302,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST391,741095,73,5795607,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#317,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST391,443462,105,5791140,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#315,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,351750,54,5493412,1,KL180,unknown (KL180),Untypeable,O1/O2v3,O1ab,Typeable
+42070_1#333,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,351902,67,5506533,1,KL180,unknown (KL180),Untypeable,O1/O2v3,O1ab,Typeable
+42070_1#356,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,351725,72,5510953,1,KL180,unknown (KL180),Untypeable,O1/O2v3,O1ab,Typeable
+42070_1#357,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,350918,75,5512613,1,KL180,unknown (KL180),Untypeable,O1/O2v3,O1ab,Typeable
+42070_1#318,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST280,483376,30,5394477,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#4,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST280,814995,27,5393226,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#324,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST391,472505,44,5658791,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#352,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST391,488895,54,5714745,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42070_2#294,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,382781,53,5588257,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#36,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,365935,55,5587132,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#38,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,365935,44,5587149,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#42,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,353501,58,5587209,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#68,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,446410,46,5587454,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#72,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,365935,46,5588897,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#76,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,439196,48,5588308,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#88,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST14,441386,48,5591601,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#205,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST14,438762,50,5592519,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#104,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,413431,54,5586265,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#106,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,412453,50,5587097,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#140,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,353806,51,5587545,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#166,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,412481,50,5586705,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#110,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST607,288069,57,5587603,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#142,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST607,287432,65,5539022,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#114,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372223,47,5678611,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#116,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375230,39,5679882,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#120,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,327707,40,5672232,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#124,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,254186,49,5679073,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#126,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,371887,39,5677729,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#128,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,361460,45,5679471,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#148,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,334915,40,5676230,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#152,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375359,41,5679466,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#248,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,334915,46,5678134,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#252,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,261099,49,5679562,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#256,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,338091,46,5679802,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#28,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,324672,44,5679380,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#32,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375360,43,5680278,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#338,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,371899,39,5678582,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#339,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,334922,41,5679347,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#340,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372174,43,5679161,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#357,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,375355,38,5679377,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#358,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326562,44,5679059,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#360,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,341414,42,5678797,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#50,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,339876,45,5678369,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#60,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,327488,46,5677084,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#12,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,356018,58,5646710,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#263,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,746100,51,5648089,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#267,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,389327,56,5649251,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#291,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,411078,48,5648958,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#295,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,481689,50,5649401,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#299,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,482017,49,5649770,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#342,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,427477,49,5649129,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#343,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,428772,48,5648126,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#345,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,356684,49,5648397,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#4,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,358562,65,5648599,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#6,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,356813,52,5649760,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#52,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372175,41,5677254,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#54,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,337631,40,5678239,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#56,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,289086,43,5676873,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#149,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,261146,45,5677595,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#155,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,334915,49,5678111,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#185,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,286131,39,5677117,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#187,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,327481,41,5678570,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#189,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,327481,42,5677677,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#191,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,326635,44,5679719,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#213,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372006,41,5678712,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#215,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,339876,55,5782725,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#217,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372174,41,5679179,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#219,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,372068,44,5679513,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#221,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST39,265865,44,5680613,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#154,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST101,315651,67,5509057,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#179,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST101,314284,73,5510014,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#180,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST101,224323,73,5510599,1,KL17,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#182,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST101,314279,70,5505473,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#184,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST101,314279,75,5510018,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#255,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST101,349734,70,5508819,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#316,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST101,315651,64,5512060,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#158,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST101,324564,69,5509025,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#216,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST101,374765,63,5510536,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#220,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST45,461825,38,5768917,0,KL52,K52,Typeable,OL13,O13,Typeable
+42070_2#275,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST45,408782,62,5980105,1,KL52,K52,Typeable,OL13,O13,Untypeable
+42070_2#227,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST17,257419,122,5857850,1,KL122,unknown (KL122),Typeable,O1/O2v2,O2afg,Typeable
+42070_2#229,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST17,302688,108,5854943,1,KL122,unknown (KL122),Typeable,O1/O2v2,O2afg,Typeable
+42070_2#230,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST607,340144,53,5587683,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#238,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST607,375680,58,5585684,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#240,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST307,298820,52,5441953,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42139_1#237,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST307,377096,35,5444113,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42139_1#259,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST307,706845,34,5440926,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_2#273,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST45,361746,84,5974713,1,KL52,K52,Typeable,OL13,O13,Typeable
+42070_2#5,MLW,Malawi,Eastern Africa,Site 7,neonate,2013,Klebsiella pneumoniae,ST340,270620,62,5560104,1,KL15,K15,Typeable,O4,O4,Typeable
+42070_2#9,MLW,Malawi,Eastern Africa,Site 7,neonate,2013,Klebsiella pneumoniae,ST340,196582,64,5556008,1,KL15,K15,Typeable,O4,O4,Typeable
+42092_1#146,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST15,269168,59,5693075,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#84,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST15,329273,58,5545877,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#20,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,294265,61,5547174,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#22,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,321390,66,5543744,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#28,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,326092,61,5716187,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#30,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,270730,68,5548194,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42092_2#41,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,333352,71,5546109,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#202,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,268980,60,5546435,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#206,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,262699,59,5547804,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#208,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,329756,59,5546613,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#234,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST15,271203,57,5548700,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#224,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,350651,67,5612635,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#248,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,350068,62,5614807,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#280,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,335523,72,5613752,1,KL19,Capsule null,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#284,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,350552,69,5612927,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#288,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,350552,74,5613436,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42092_2#1,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,350102,70,5612015,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#24,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST45,362971,35,5440081,0,KL15,K15,Typeable,O4,O4,Typeable
+42139_1#162,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST45,376988,35,5437889,0,KL15,K15,Typeable,O4,O4,Typeable
+42139_1#174,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST45,437099,35,5438916,0,KL15,K15,Typeable,O4,O4,Typeable
+42139_1#176,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST45,437099,35,5440048,0,KL15,K15,Typeable,O4,O4,Typeable
+42092_2#7,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,368390,75,5612885,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#242,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST463-1LV,428661,70,5354052,0,KL49,Capsule null,Typeable,OL13,O13,Typeable
+42092_1#286,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST463-1LV,255755,71,5353106,0,KL49,Capsule null,Typeable,OL13,O13,Typeable
+42092_1#312,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST463-1LV,315199,78,5354902,0,KL49,K49,Typeable,OL13,O13,Typeable
+42139_1#100,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST45,437097,37,5439418,0,KL15,K15,Typeable,O4,O4,Typeable
+42139_1#112,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST45,488450,43,5434352,0,KL15,K15,Typeable,O4,O4,Typeable
+42139_1#132,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST45,358293,33,5435809,0,KL15,K15,Typeable,O4,O4,Typeable
+42139_1#12,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST48,469730,39,5419165,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#354,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST48,578535,42,5417832,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#4,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST48,469730,36,5417233,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#2,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST17,428464,41,5590936,1,KL25,K25,Typeable,O5,O5,Typeable
+42139_1#328,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST17,428464,46,5596732,1,KL25,K25,Typeable,O5,O5,Typeable
+42139_1#263,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST307,378138,36,5442476,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+22072_1#106,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST702-1LV,118063,114,5733325,1,KL109,unknown (KL109),Typeable,O1/O2v2,O2afg,Typeable
+22072_1#113,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST14,179565,117,5764061,1,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+22072_1#117,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST985-1LV,161556,112,5763940,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+22072_1#128,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST2439,399378,25,5170742,0,KL3,K3,Typeable,O1/O2v1,O1ab,Typeable
+22072_1#129,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST340,209507,67,5639583,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#137,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST17,370920,46,5565996,1,KL25,K25,Typeable,O5,O5,Typeable
+22072_1#138,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST36,353435,92,5598634,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+22072_1#155,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST54,216941,75,5608748,1,KL14,K14,Typeable,O3b,O3b,Typeable
+22072_1#165,MLW,Malawi,Eastern Africa,Site 7,neonate,2015,Klebsiella pneumoniae,ST14,309756,45,5557032,0,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+22072_1#237,MLW,Malawi,Eastern Africa,Site 7,neonate,2013,Klebsiella pneumoniae,ST17,786218,49,5563362,0,KL134,unknown (KL134),Typeable,O3b,O3b,Typeable
+22072_1#239,MLW,Malawi,Eastern Africa,Site 7,neonate,2013,Klebsiella pneumoniae,ST340,270616,66,5488209,1,KL15,K15,Typeable,O4,O4,Typeable
+22072_1#98,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST6931,758393,34,5149042,0,KL43,K43,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#145,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST14,509815,57,5762598,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#162,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST39,238105,58,5581685,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#168,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST14,350154,89,5868333,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#175,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,381706,44,5636567,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#18,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST14,371595,36,5536366,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#191,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST540,152530,137,5916159,1,KL9,K9,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#196,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST76,982169,36,5522615,1,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
+42070_1#197,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST307,328411,60,5556902,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#235,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST307,384847,37,5527137,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#237,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST2665,372034,74,5621404,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#241,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST607,293256,63,5592850,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#253,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST101,380111,55,5528562,1,KL106,unknown (KL106),Typeable,O1/O2v2,O1ab,Typeable
+42070_1#259,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST256,511138,30,5461486,0,KL47,K47,Untypeable,OL13,O13,Typeable
+42070_1#263,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST15,367621,64,5655378,1,KL112,unknown (KL112),Typeable,O1/O2v2,O1ab,Typeable
+42070_1#271,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST25,313142,64,5619183,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#287,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST20,263372,70,5564338,1,KL28,Capsule null,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#30,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST14,365923,56,5591262,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#303,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST391,463150,48,5653743,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#307,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST607,248410,59,5598875,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#320,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST307,298820,57,5687251,0,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_1#326,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST7081,506065,35,5505177,1,KL111,unknown (KL111),Typeable,O3b,O3b,Typeable
+42070_1#332,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST4,370274,72,5785109,1,KL13,K13,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#348,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST37,371862,51,5328208,1,KL15,K15,Typeable,O4,O4,Typeable
+42070_1#36,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST280,477381,30,5393336,1,KL23,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+42070_1#361,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST39,375356,49,5727139,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#39,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST540,178224,104,5825261,1,KL9,K9,Typeable,O1/O2v2,O1ab,Typeable
+42070_1#43,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST86,383802,41,5596006,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#48,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST551,264385,57,5449798,1,KL10,K10,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#73,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST245-2LV,200762,89,5402643,0,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+42070_1#87,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST4,320228,71,5782483,1,KL13,K13,Typeable,O1/O2v1,O1ab,Typeable
+42070_1#9,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST20,585327,56,5579994,1,KL28,K28,Typeable,O1/O2v2,O1ab,Typeable
+42070_2#135,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST35,407951,64,5697735,1,KL30,K30,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#165,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST48,469448,37,5414624,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#170,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST1427,356509,79,5524230,1,KL67,K67,Typeable,OL13,O13,Typeable
+42070_2#183,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST29,447233,34,5460520,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42070_2#2,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST17,335804,63,5420015,1,KL25,K25,Typeable,O5,O5,Typeable
+42070_2#222,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST6126,215043,94,5475557,1,KL49,Capsule null,Typeable,OL13,O13,Typeable
+42070_2#232,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST1799,350809,89,5319647,0,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#236,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST607,338227,60,5603462,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#244,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST231,355751,96,5515309,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42070_2#260,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST37,712145,38,5418628,1,KL15,K15,Typeable,O4,O4,Typeable
+42070_2#264,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST1263,344375,54,5366929,0,KL10,K10,Untypeable,O3/O3a,O3/O3a,Typeable
+42070_2#286,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST25,177673,83,5752487,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+42070_2#3,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST2632,376022,35,5247539,0,KL45,K45,Untypeable,O1/O2v2,O1ab,Typeable
+42070_2#306,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST307,374429,36,5445070,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42070_2#307,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST25,217016,76,5654304,1,KL2,K2,Typeable,O1/O2v2,O2afg,Typeable
+42070_2#317,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST34,356424,47,5302293,0,KL117,unknown (KL117),Typeable,O1/O2v2,O2afg,Typeable
+42070_2#325,MLW,Malawi,Eastern Africa,Site 7,neonate,2018,Klebsiella pneumoniae,ST1552,388932,50,5649115,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#326,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST372,369762,75,5631456,1,KL43,K43,Typeable,O1/O2v1,O2a,Typeable
+42070_2#336,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST43,264039,52,5472395,1,KL61,K61,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#35,MLW,Malawi,Eastern Africa,Site 7,neonate,2013,Klebsiella pneumoniae,ST45,363963,64,5764815,1,KL52,K52,Typeable,OL13,O13,Untypeable
+42070_2#359,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST101,374764,62,5509436,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#362,MLW,Malawi,Eastern Africa,Site 7,neonate,2016,Klebsiella pneumoniae,ST292,443590,21,5209762,0,KL51,K51,Typeable,O3b,O3b,Typeable
+42070_2#44,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,463888,40,5486025,1,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+42070_2#62,MLW,Malawi,Eastern Africa,Site 7,neonate,2017,Klebsiella pneumoniae,ST3430,294067,51,5757967,0,KL52,K52,Untypeable,OL13,O13,Typeable
+42092_1#186,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST391,498077,32,5501054,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#148,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST607,374110,52,5613150,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#214,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST45,973654,47,5720000,1,KL52,K52,Typeable,OL13,O13,Typeable
+42092_1#220,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST3132,165606,108,5709048,1,KL142,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+42092_1#274,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST584,623955,34,5373163,1,KL9,K9,Typeable,O1/O2v2,O2afg,Typeable
+42092_1#308,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST307,302589,66,5654209,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42092_1#58,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST29,352060,78,5611133,1,KL19,K19,Typeable,O1/O2v2,O1ab,Typeable
+42092_1#88,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST307,326097,76,5805619,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42092_2#18,MLW,Malawi,Eastern Africa,Site 7,neonate,2014,Klebsiella pneumoniae,ST391,463781,109,5788887,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42092_2#3,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST29,435184,33,5331215,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+42092_2#5,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST45,358616,55,5574143,1,KL15,K15,Typeable,O4,O4,Typeable
+42092_2#9,MLW,Malawi,Eastern Africa,Site 7,neonate,2020,Klebsiella pneumoniae,ST39,334924,44,5561105,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#110,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,383919,75,5809425,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#170,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST3132,120296,105,5697276,1,KL142,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#197,MLW,Malawi,Eastern Africa,Site 7,neonate,2013,Klebsiella pneumoniae,ST340,219859,66,5600911,1,KL15,K15,Typeable,O4,O4,Typeable
+42139_1#269,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST48,372851,45,5415964,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#293,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST3132,135421,112,5626472,1,KL142,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#295,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST4083,385751,40,5486808,1,KL35,K35,Typeable,O1/O2v2,O1ab,Typeable
+42139_1#320,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST110,243899,65,5580193,0,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+42139_1#318,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST307,378138,36,5541929,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+42139_1#330,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,391069,30,5537330,1,KL2,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#350,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST1015-2LV,390103,32,5257182,0,KL10,K10,Typeable,O3b,O3b,Typeable
+42139_1#352,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST54,204676,80,5494364,1,KL14,K14,Typeable,O3b,O3b,Typeable
+42139_1#38,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST39,338091,63,5858848,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#66,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST39,318886,72,5620401,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+42139_1#74,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST14,339868,72,5941527,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+42139_1#8,MLW,Malawi,Eastern Africa,Site 7,neonate,2019,Klebsiella pneumoniae,ST1799,238304,94,5638205,1,KL16,Capsule null,Typeable,O1/O2v1,O1ab,Typeable

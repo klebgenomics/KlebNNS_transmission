@@ -1,0 +1,11 @@
+.DS_Store
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+*.html
+
+NOT_SHARED_*
+*all_data
+*test

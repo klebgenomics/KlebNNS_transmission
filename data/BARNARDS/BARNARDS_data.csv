@@ -1,0 +1,219 @@
+id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_size,resistance_score,K_locus,K_type,K_locus_confidence,O_locus,O_type,O_locus_confidence
+ERR4920382,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST14,219288,105,5540795,2,KL64,K64,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920383,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST14,189860,119,5637661,2,KL64,K64,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920386,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST14,189860,115,5535589,2,KL64,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920387,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST14,200080,115,5630795,2,KL64,K64,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920393,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST39,255807,173,5615973,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920440,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST39,202772,252,5632515,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920394,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,198342,117,5298514,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920396,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,206169,150,5454106,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920444,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,212937,109,5206286,0,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920395,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,215690,88,5306756,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920420,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,215687,98,5421755,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920443,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,215687,149,5509782,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920445,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,215688,131,5544239,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920447,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,360234,80,5367366,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920397,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,436720,74,5548676,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920398,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,705402,99,5560190,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920449,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,890549,94,5559504,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920399,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,436720,94,5556873,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920401,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,383508,88,5548128,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920452,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,369153,95,5560037,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920454,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,349357,107,5541447,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920400,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,259765,77,5275334,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920402,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,310630,91,5456860,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920403,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,225317,77,5375257,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920405,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,259764,76,5368922,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920410,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,259765,70,5284880,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920455,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,259764,75,5320495,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920456,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,78,5428117,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920457,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350052,61,5299655,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920458,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350052,71,5391321,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920459,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,76106,152,5328516,1,KL108,unknown (KL108),Untypeable,O1/O2v2,O1ab,Typeable
+ERR4920460,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,215846,97,5388574,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920462,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350220,64,5294797,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920467,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,259765,78,5400367,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920404,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,212937,166,5465215,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920406,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,232755,117,5336800,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920407,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,141382,187,5422154,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920408,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,212624,148,5455019,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920409,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,169368,168,5448037,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920411,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,198342,151,5427873,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920412,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,206169,133,5406515,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920421,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,205578,117,5305544,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920422,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,176376,158,5436891,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920453,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,102476,158,5176921,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920461,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,225662,95,5217945,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920463,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,206169,110,5237169,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920464,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,206169,133,5417626,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920465,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,199308,133,5333264,0,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920466,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,198342,154,5451717,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920468,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,232755,136,5437052,1,KL15,K15,Typeable,O12,O12,Untypeable
+ERR4920469,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,205578,145,5431497,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920470,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,205578,135,5420124,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920471,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,198772,147,5434195,0,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920413,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,198342,165,5458467,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920414,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,159927,162,5424208,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920415,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,195553,142,5399873,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920423,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,205578,138,5411036,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920424,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,195516,161,5417675,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920473,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,212937,125,5397148,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920475,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST37,205578,136,5409558,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920425,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,252062,93,5432005,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920472,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,259762,100,5444673,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920474,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,161354,84,5348709,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920416,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,259765,76,5377010,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920417,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,78,5374011,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920418,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,69,5282171,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920426,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285071,80,5405621,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920427,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350220,77,5411303,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920428,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,68,5379238,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920429,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,265654,81,5431046,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920430,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350052,72,5395696,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920476,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,266813,78,5376410,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920477,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,73,5374400,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920478,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,71,5335162,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920480,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350052,71,5408487,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920482,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,80,5348305,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920483,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,79,5371592,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920484,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350220,67,5387931,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920485,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,73,5318654,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920432,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST45,319097,182,5735107,1,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+ERR4920433,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST45,315496,186,5730685,1,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+ERR4920435,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,218255,109,5517553,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920436,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,281841,109,5501897,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920437,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,83,5388294,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920438,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350220,91,5456036,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920439,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,350220,85,5423193,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920448,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,204102,87,5335067,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920451,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST218,199600,191,5495917,1,KL57,K57,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920492,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST45,306355,95,5638334,1,KL52,K52,Typeable,OL13,O13,Typeable
+ERR4920496,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST45,331359,93,5646664,1,KL52,K52,Typeable,OL13,O13,Typeable
+ERR4920494,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST76,222328,85,5137249,0,KL31,K31,Typeable,O3/O3a,O3/O3a,Typeable
+ERR4920495,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST76,181998,95,5182651,0,KL31,K31,Typeable,O3/O3a,O3/O3a,Typeable
+ERR4920503,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST592,235315,74,5170658,0,KL57,K57,Typeable,O3b,O3b,Typeable
+ERR4920504,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST592,304552,72,5183512,0,KL57,K57,Typeable,O3b,O3b,Typeable
+ERR4920507,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464,332963,114,5637641,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920508,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464,184545,106,5548511,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920510,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464,316732,111,5608914,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920521,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464,220842,111,5551695,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920531,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464,181681,109,5517377,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920512,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST20,290397,162,5641680,2,KL28,K28,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920513,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST20,267048,161,5639742,2,KL28,K28,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920523,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST4410,235384,135,5767206,2,KL116,unknown (KL116),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920524,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST4410,208581,116,5727675,2,KL116,unknown (KL116),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920533,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST442,166845,123,5362392,2,KL28,K28,Typeable,O1/O2v1,O2a,Typeable
+ERR4920534,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST442,208684,124,5368278,2,KL28,K28,Typeable,O1/O2v1,O2a,Typeable
+ERR4920540,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST442,192228,126,5344023,2,KL28,K28,Typeable,O1/O2v1,O2a,Typeable
+ERR4920541,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST442,236395,123,5352751,2,KL28,K28,Typeable,O1/O2v1,O2a,Typeable
+ERR4920542,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST442,208684,114,5356378,2,KL28,K28,Typeable,O1/O2v1,O2a,Typeable
+ERR4920554,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,120399,151,5635603,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920553,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,166666,127,5755631,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920556,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,116377,159,5813019,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920557,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,69442,220,5774120,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920558,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,104227,157,5745723,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920560,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,190182,124,5723307,2,KL112,unknown (KL112),Typeable,O12,O12,Untypeable
+ERR4920561,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,195451,87,5646610,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920564,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,133373,148,5820925,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920566,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST70,36042,342,5674148,2,KL136,unknown (KL136),Typeable,O1/O2v2,O1a,Typeable
+ERR4920567,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST70,325567,108,5854550,2,KL136,unknown (KL136),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920568,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST995,69014,283,5846578,2,KL117,unknown (KL117),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920570,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST995,40828,354,5686145,2,KL117,unknown (KL117),Typeable,O1/O2v1,O1a,Typeable
+ERR4920572,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST995,90866,227,5875945,2,KL117,unknown (KL117),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920595,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST307,286212,119,5868540,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920596,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST307,203842,155,5879640,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920599,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST17,391789,105,5501326,1,KL122,Capsule null,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920600,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST17,369212,84,5428738,0,KL122,unknown (KL122),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920602,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST48,317871,94,5388155,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920601,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST48,312406,98,5388757,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920604,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2017,Klebsiella pneumoniae,ST2986,375688,135,5685587,1,KL64,K64,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920605,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2017,Klebsiella pneumoniae,ST2986,252046,138,5672592,1,KL64,K64,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920372,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2017,Klebsiella pneumoniae,ST147,231985,240,5668714,2,KL128,unknown (KL128),Typeable,O3b,O3b,Typeable
+ERR4920373,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2017,Klebsiella pneumoniae,ST17,309650,155,5746818,1,KL122,unknown (KL122),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920374,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2017,Klebsiella pneumoniae,ST39,169271,123,5600710,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920375,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2017,Klebsiella pneumoniae,ST292,409677,74,5440344,0,KL38,K38,Typeable,O3b,O3b,Typeable
+ERR4920376,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2017,Klebsiella pneumoniae,ST340,209236,91,5375281,0,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920377,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2017,Klebsiella pneumoniae,ST15,203705,108,5545847,1,KL38,K38,Typeable,O3b,O3b,Typeable
+ERR4920378,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST105,367168,43,5200443,0,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920379,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST17,309799,52,5118548,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920380,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST17,222520,99,5397715,1,KL25,K25,Typeable,O5,O5,Typeable
+ERR4920381,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST1855,193561,165,5529629,1,KL55,K55,Typeable,O3/O3a,O3/O3a,Typeable
+ERR4920384,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST147,164970,254,5643272,2,KL128,unknown (KL128),Typeable,O3b,O3b,Typeable
+ERR4920385,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2016,Klebsiella pneumoniae,ST101,257509,119,5627667,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920388,BARNARDS,Bangladesh,Southern Asia,Site 25,neonate,2017,Klebsiella pneumoniae,ST147,46111,250,5367881,0,KL169,unknown (KL169),Typeable,OL104,unknown,Typeable
+ERR4920391,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST711,410145,63,5325449,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920392,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST45,196190,134,5415441,1,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+ERR4920419,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,90,5458638,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920431,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,83,5422631,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920434,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST101-1LV,228466,144,5576806,1,KL106,unknown (KL106),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920441,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST985,436720,70,5550220,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920442,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST35,285199,96,5457153,1,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920446,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST391,370641,79,5501667,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920479,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST25,187208,159,5659107,1,KL2,K2,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920481,BARNARDS,Ethiopia,Eastern Africa,Site 1,neonate,2017,Klebsiella pneumoniae,ST17,326178,166,5463307,1,KL112,unknown (KL112),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920491,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST340,167728,118,5302323,1,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920493,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST4410,185846,144,5756667,2,KL116,unknown (KL116),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920497,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST4408,74551,155,5035511,0,KL46,K46,Untypeable,O3b,O3b,Typeable
+ERR4920498,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST307,119353,104,5233149,0,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920499,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST1035,178761,103,5201188,0,KL57,K57,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920500,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST815,348288,56,5063464,0,KL13,Capsule null,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920501,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST11,203259,112,5506391,2,KL15,K15,Typeable,O4,O4,Typeable
+ERR4920502,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST133,355214,103,5411459,1,KL116,unknown (KL116),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920505,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST39,318766,140,5436578,1,KL116,unknown (KL116),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920506,BARNARDS,Nigeria,Western Africa,Site 13,neonate,2017,Klebsiella pneumoniae,ST4074,309063,214,5418609,0,KL137,unknown (KL137),Untypeable,OL13,O13,Typeable
+ERR4920511,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST39,243977,93,5459818,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920514,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST39,230286,173,5706166,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920515,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST133,254076,101,5517684,1,KL116,unknown (KL116),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920517,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST377,233272,127,5604383,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920516,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST15,227594,132,5513868,1,KL48,K48,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920518,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464,19405,508,5389279,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920519,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST39,211766,116,5540276,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920520,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST73,203666,103,5342630,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920525,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST17,146798,96,5352599,1,KL122,unknown (KL122),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920526,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464-1LV,33168,385,5437103,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920527,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST40,309078,76,5499876,0,KL155,unknown (KL155),Typeable,OL13,O13,Typeable
+ERR4920529,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST307,327734,83,5491815,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920528,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2017,Klebsiella pneumoniae,ST985,306511,75,5415755,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920530,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST48,158735,155,5626924,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920532,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST39,199874,143,5579774,1,KL23,K23,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920535,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST395,161718,193,5835409,2,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920537,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST20,363120,152,5609514,2,KL28,K28,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920538,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST3248,240514,92,5504993,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920539,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST464,316732,118,5639882,2,KL53,K53,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920543,BARNARDS,Nigeria,Western Africa,Site 14,neonate,2016,Klebsiella pneumoniae,ST442,168360,126,5345981,2,KL28,K28,Typeable,O1/O2v1,O2a,Typeable
+ERR4920550,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,99950,181,5855803,1,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920551,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,48613,306,5869852,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920552,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST4411,243476,71,5473573,1,KL18,K18,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920555,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,74456,247,5711336,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920559,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST15,80972,230,5582281,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920562,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST611,176852,174,5556565,1,KL34,K34,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920563,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST611,257838,246,5612621,1,KL34,K34,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920571,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST11,14670,637,5473267,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+ERR4920576,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2016,Klebsiella pneumoniae,ST76,182450,118,5200462,1,KL31,K31,Typeable,O3/O3a,O3/O3a,Typeable
+ERR4920578,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST15,151525,127,5785567,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920579,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST15,129850,188,5917630,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920580,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST15,137048,138,5797753,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920582,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST995,240089,207,5955548,1,KL117,unknown (KL117),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920584,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST70,46464,276,5723007,2,KL136,unknown (KL136),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920585,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST20,390624,114,5873317,2,KL64,K64,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920588,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST1877,307819,206,5595838,1,KL14,K14,Typeable,O3b,O3b,Typeable
+ERR4920591,BARNARDS,Pakistan,Southern Asia,Site 27,neonate,2017,Klebsiella pneumoniae,ST15,179314,109,5453583,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+ERR4920592,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2017,Klebsiella pneumoniae,ST14,12921,626,5159967,1,KL2,K2,Typeable,O3b,O3b,Untypeable
+ERR4920593,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2017,Klebsiella pneumoniae,ST14,19327,468,5220378,1,KL2,K2,Typeable,O3b,O3b,Untypeable
+ERR4920594,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2017,Klebsiella pneumoniae,ST39,197255,177,5605904,1,KL62,K62,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920597,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST607,248160,108,5426133,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920598,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST2986,327727,104,5520043,1,KL64,K64,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920603,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST307,162075,144,5882758,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920606,BARNARDS,Rwanda,Eastern Africa,Site 8,neonate,2016,Klebsiella pneumoniae,ST307,161023,161,5872686,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR4920617,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2017,Klebsiella pneumoniae,ST22,394983,99,5468230,0,KL9,K9,Typeable,O1/O2v2,O2afg,Typeable
+ERR4920618,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST348,167943,120,5576153,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920619,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST348,50108,280,5451001,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920620,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST348,150179,160,5638801,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920621,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2017,Klebsiella pneumoniae,ST163,312018,114,5312972,0,KL12,K12,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920623,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST17,310408,89,5495482,0,KL122,unknown (KL122),Typeable,O1/O2v2,O1ab,Typeable
+ERR4920624,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST348,149196,142,5611754,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920625,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2017,Klebsiella pneumoniae,ST29,283793,130,5678224,1,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+ERR4920627,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST1414,153312,151,5374561,0,KL8,K8,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920626,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2017,Klebsiella pneumoniae,ST37,229070,119,5518621,0,KL14,K14,Typeable,O3b,O3b,Typeable
+ERR4920628,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST39,201706,126,5616706,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+ERR4920629,BARNARDS,South Africa,Southern Africa,Site 16,neonate,2016,Klebsiella pneumoniae,ST39,204081,113,5575284,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable

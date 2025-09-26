@@ -1,0 +1,51 @@
+id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_size,resistance_score,K_locus,K_type,K_locus_confidence,O_locus,O_type,O_locus_confidence
+HG06869375,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST14,68728,268,5600265,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+HG06872466,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST14,264636,68,5508888,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+HG07158982,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST17,370400,52,5589687,1,KL25,K25,Typeable,O5,O5,Typeable
+HG07220184,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST17,309821,58,5591347,1,KL25,K25,Typeable,O5,O5,Typeable
+HG07232940,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST17,359356,56,5587470,1,KL25,K25,Typeable,O5,O5,Typeable
+HG07246814,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST13,261470,85,5604830,1,KL3,Capsule null,Typeable,O1/O2v2,O1ab,Typeable
+HG07250997,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST13,349362,71,5608899,1,KL3,K3,Typeable,O1/O2v2,O1ab,Typeable
+HG07263699,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST307,463433,78,5810494,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG07276892,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST307,289861,137,5816693,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG07341101,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST307,148547,245,5862784,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG07330139,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST14,266134,71,5506856,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+HG07332549,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST14,304233,83,5735444,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+HG07415837,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST39,150288,126,5898841,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07502428,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST39,186326,110,5851442,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07515032,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST39,202649,114,5899925,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07418777,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST17,246655,76,5404110,1,KL62,K62,Typeable,O1/O2v2,O2afg,Typeable
+HG07447392,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST17,256354,104,5389773,1,KL62,K62,Typeable,O1/O2v2,O2afg,Typeable
+HG07523412,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST39,182308,116,5905044,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07536697,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST39,196882,113,5909287,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07594328,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST39,126954,360,5940104,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07573284,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST307,253325,93,5601683,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG07589966,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST307,302520,71,5553839,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG07613809,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST39,128489,132,5901505,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07622927,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST39,103547,230,5889860,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07623632,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST39,181578,123,5900392,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07635323,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST39,78406,359,5936614,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG08135560,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST39,103101,267,5959069,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG08135581,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST39,85127,248,5948344,1,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG06700900,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST307,217195,71,5506917,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG06924805,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST17,370407,70,5482191,1,KL25,K25,Typeable,O5,O5,Typeable
+HG07179260,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST17,235762,96,5480458,1,KL25,K25,Typeable,O5,O5,Typeable
+HG07306460,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST152,188273,108,5453674,1,KL149,unknown (KL149),Typeable,O4,O4,Typeable
+HG07330188,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST39,180148,92,5879767,2,KL149,unknown (KL149),Typeable,O1/O2v2,O1ab,Typeable
+HG07335713,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST307,148669,348,5735677,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG07490109,GBS,South Africa,Southern Africa,Site 23,neonate,2019,Klebsiella pneumoniae,ST307,215548,113,5798640,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG07623670,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST1873,348907,42,5502295,0,KL28,K28,Typeable,O1/O2v1,O2a,Typeable
+HG07640120,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST17,112209,307,5700642,2,KL25,K25,Typeable,O5,O5,Typeable
+HG07644129,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST17,197939,266,5645674,1,KL25,K25,Typeable,O5,O5,Typeable
+HG07682652,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST17,239598,118,5637620,2,KL25,K25,Typeable,O5,O5,Typeable
+HG07711602,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST17,154114,295,5707873,2,KL25,K25,Typeable,O5,O5,Typeable
+HG07721141,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST14,117554,177,5459133,1,KL16,K16,Typeable,O1/O2v1,O1ab,Typeable
+HG07814008,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST15,194929,84,5539595,1,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+HG07817841,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST35,187614,79,5455152,0,KL108,unknown (KL108),Typeable,O1/O2v2,O1ab,Typeable
+HG07822648,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST152,168039,69,5114546,0,KL149,unknown (KL149),Typeable,O4,O4,Typeable
+HG0792698,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST2039,69885,216,5505052,0,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+HG08045544,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST307,108975,181,5547451,2,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+HG08025702,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST5785,192280,212,5525042,2,KL30,K30,Typeable,O1/O2v2,O1ab,Typeable
+HG08036938,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST2441,321716,53,5262150,0,KL7,K7,Typeable,O1/O2v2,O2afg,Typeable
+HG08040993,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST13,312380,77,5570174,1,KL3,K3,Typeable,O1/O2v2,O1ab,Typeable
+HG08423951,GBS,South Africa,Southern Africa,Site 23,neonate,2020,Klebsiella pneumoniae,ST607,88747,281,5861939,1,KL25,K25,Typeable,O1/O2v1,O1ab,Typeable

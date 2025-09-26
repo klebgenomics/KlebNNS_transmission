@@ -1,0 +1,2301 @@
+---
+title: "Kleb neonatal sepsis transmission estimates"
+author: Erkison Odih
+date: "`r Sys.Date()`"
+output: 
+    html_document:
+        toc: true
+        code_folding: hide
+        df_print: paged
+        code_download: true
+---
+
+```{r setup, include=FALSE, message=F, warning=F}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE)
+```
+
+<br>  
+
+#### Packages and functions
+
+<details>
+<summary>Click to expand</summary> 
+```{r load_packages, echo=F, message=F, warning=F}
+library(tidyverse)
+library(magrittr)
+library(glue)
+library(ggplot2)
+library(plotly)
+library(ggpubr)
+library(patchwork)
+library(ggnetwork)
+library(igraph)
+library(future)
+library(meta)
+library(metafor)
+library(grid)
+library(gtable)
+library(sf)
+```
+
+```{r pkg_versions, class.source = 'fold-show'}
+packageVersion("tidyverse")
+packageVersion("magrittr")
+packageVersion("glue")
+packageVersion("ggplot2")
+packageVersion("plotly")
+packageVersion("ggpubr")
+packageVersion("patchwork")
+packageVersion("ggnetwork")
+packageVersion("igraph")
+packageVersion("future")
+packageVersion("meta")
+packageVersion("metafor")
+packageVersion("grid")
+packageVersion("gtable")
+packageVersion("sf")
+```
+
+```{css, echo=FALSE}
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 200px;
+}
+
+```
+
+```{r functions, message=F, warning=F}
+# load functions
+source('https://raw.githubusercontent.com/klebgenomics/transmission_estimator/main/src/functions/cluster_functions.R')
+source('https://raw.githubusercontent.com/klebgenomics/transmission_estimator/main/src/functions/sensitivity_functions.R')
+source('https://raw.githubusercontent.com/klebgenomics/transmission_estimator/main/src/functions/comparison_functions.R')
+source('https://raw.githubusercontent.com/klebgenomics/transmission_estimator/main/src/functions/plotting_functions.R')
+source('https://raw.githubusercontent.com/klebgenomics/transmission_estimator/main/src/functions/load_data_functions.R')
+source("misc_functions.R")
+
+
+custom_plots_theme <- ggplot2::theme(
+    axis.text = ggplot2::element_text(size = 12),
+    axis.title = ggplot2::element_text(size = 14),
+    legend.text = ggplot2::element_text(size = 12),
+    legend.title = ggplot2::element_text(size = 14),
+    plot.title = element_text(size = 14)
+)
+```
+</details>
+
+<br>
+
+#### Set up
+
+```{r data_and_vars, class.source = 'fold-show'}
+seed <- 24
+
+# Clustering options / thresholds
+snp_distance_threshold <- 10 # SNPs
+temporal_distance_threshold <- 4 # weeks
+geo_column <- 'Site'
+
+# Sensitivity options
+sens_snp_range <- seq(0, 25, by = 1)
+sens_temp_range <- c(1:52)
+
+# Sensitivity plot options
+sens_temp_dist_vals <- c(1,2,4,8,52)
+
+# figures and tables dir
+figs_dir <- file.path("./figures/")
+fs::dir_create(figs_dir)
+tables_dir <- file.path("./tables/")
+fs::dir_create(tables_dir)
+
+index_cols <- c("Transmission proportion"="navyblue", "Cluster proportion"="#8b0000")
+res_colors <- c(`0: ESBL-, Carb-`="lightblue", `1: ESBL+, Carb-`="orange", 
+                `2: Carb+`="red", `3: Carb+, Col+`="black")
+region_order <- c("Eastern Africa", "Western Africa", "Southern Africa", "Southern Asia")
+
+```
+
+<br>
+
+## Studies  
+
+#### BARNARDS
+<details>
+<summary>Click to expand</summary> 
+```{r BARNARDS, fig.width=9, fig.height=9}
+# load data
+BARNARDS_snp_and_epi_data <- read_csv("data/BARNARDS/BARNARDS_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+BARNARDS_data <- read_csv("data/BARNARDS/BARNARDS_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+BARNARDS_epi_snp_clusters <- 
+    get_clusters(BARNARDS_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=BARNARDS_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+BARNARDS_sens_df <- get_cluster_sensitivity(BARNARDS_snp_and_epi_data, BARNARDS_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+
+<br>
+
+
+#### GBS
+<details>
+<summary>Click to expand</summary> 
+```{r GBS, fig.width=9, fig.height=9}
+# load data
+GBS_snp_and_epi_data <- read_csv("data/GBS/GBS_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+GBS_data <- read_csv("data/GBS/GBS_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+GBS_epi_snp_clusters <- 
+    get_clusters(GBS_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=GBS_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+GBS_sens_df <- get_cluster_sensitivity(GBS_snp_and_epi_data, GBS_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+<br>
+
+
+#### KWTRP
+<details>
+<summary>Click to expand</summary> 
+```{r KWTRP, fig.width=9, fig.height=9}
+# load data
+KWTRP_snp_and_epi_data <- read_csv("data/KWTRP/KWTRP_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+KWTRP_data <- read_csv("data/KWTRP/KWTRP_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+KWTRP_epi_snp_clusters <- 
+    get_clusters(KWTRP_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=KWTRP_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+KWTRP_sens_df <- get_cluster_sensitivity(KWTRP_snp_and_epi_data, KWTRP_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+<br>
+
+
+#### NeoBAC
+<details>
+<summary>Click to expand</summary> 
+```{r NeoBAC, fig.width=9, fig.height=9}
+# load data
+NeoBAC_snp_and_epi_data <- read_csv("data/NeoBAC/NeoBAC_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+NeoBAC_data <- read_csv("data/NeoBAC/NeoBAC_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+NeoBAC_epi_snp_clusters <- 
+    get_clusters(NeoBAC_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=NeoBAC_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+NeoBAC_sens_df <- get_cluster_sensitivity(NeoBAC_snp_and_epi_data, NeoBAC_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+<br>
+
+#### SPINZ
+<details>
+<summary>Click to expand</summary> 
+```{r SPINZ, fig.width=9, fig.height=9}
+# load data
+SPINZ_snp_and_epi_data <- read_csv("data/SPINZ/SPINZ_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+SPINZ_data <- read_csv("data/SPINZ/SPINZ_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+SPINZ_epi_snp_clusters <- 
+    get_clusters(SPINZ_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=SPINZ_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+SPINZ_sens_df <- get_cluster_sensitivity(SPINZ_snp_and_epi_data, SPINZ_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+<br>
+
+
+#### BabyGERMS
+<details>
+<summary>Click to expand</summary> 
+```{r BabyGERMS, fig.width=9, fig.height=9}
+# load data
+BabyGERMS_snp_and_epi_data <- read_csv("data/BabyGERMS/BabyGERMS_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+BabyGERMS_data <- read_csv("data/BabyGERMS/BabyGERMS_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+BabyGERMS_epi_snp_clusters <- 
+    get_clusters(BabyGERMS_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=BabyGERMS_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+BabyGERMS_sens_df <- get_cluster_sensitivity(BabyGERMS_snp_and_epi_data, BabyGERMS_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+<br>
+
+
+#### MLW
+<details>
+<summary>Click to expand</summary> 
+```{r MLW, fig.width=9, fig.height=9}
+# load data
+MLW_snp_and_epi_data <- read_csv("data/MLW/MLW_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+MLW_data <- read_csv("data/MLW/MLW_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+MLW_epi_snp_clusters <- 
+    get_clusters(MLW_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=MLW_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+MLW_sens_df <- get_cluster_sensitivity(MLW_snp_and_epi_data, MLW_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+<br>
+
+
+#### NIMBI
+<details>
+<summary>Click to expand</summary> 
+```{r NIMBI, fig.width=9, fig.height=9}
+# load data
+NIMBI_snp_and_epi_data <- read_csv("data/NIMBI/NIMBI_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+NIMBI_data <- read_csv("data/NIMBI/NIMBI_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+NIMBI_epi_snp_clusters <- 
+    get_clusters(NIMBI_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=NIMBI_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+NIMBI_sens_df <- get_cluster_sensitivity(NIMBI_snp_and_epi_data, NIMBI_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+<br>
+
+
+#### DH
+<details>
+<summary>Click to expand</summary> 
+```{r DH, fig.width=9, fig.height=9}
+# load data
+DH_snp_and_epi_data <- read_csv("data/DH/DH_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+DH_data <- read_csv("data/DH/DH_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+DH_epi_snp_clusters <- 
+    get_clusters(DH_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=DH_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+DH_sens_df <- get_cluster_sensitivity(DH_snp_and_epi_data, DH_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+<br>
+
+#### MBIRA
+<details>
+<summary>Click to expand</summary> 
+```{r MBIRA, fig.width=9, fig.height=9}
+# load data
+MBIRA_snp_and_epi_data <- read_csv("data/MBIRA/MBIRA_pairwise_snpepi_data.csv", show_col_types=F) %>% 
+    mutate(across(c(iso1, iso2), \(x) as.character(x)))
+MBIRA_data <- read_csv("data/MBIRA/MBIRA_data.csv", show_col_types=F) %>% mutate(id = as.character(id))
+
+# get cluster graph based on snp dist, temporal dist, and shared location
+MBIRA_epi_snp_clusters <- 
+    get_clusters(MBIRA_snp_and_epi_data, genet_dist=snp_distance_threshold,
+                 temp_dist=temporal_distance_threshold, metadata=MBIRA_data) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster)))
+
+# Sensitivity
+MBIRA_sens_df <- get_cluster_sensitivity(MBIRA_snp_and_epi_data, MBIRA_data,
+                                            sens_snp_range, sens_temp_range)
+```
+</details>
+
+
+<br><br>
+
+## All data
+```{r merge_studies, message=FALSE, warning=FALSE}
+# merge clusters data
+epi_snp_clusters <- bind_rows(
+    BabyGERMS_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)),
+    BARNARDS_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)), 
+    DH_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)),
+    GBS_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)), 
+    KWTRP_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)),
+    MBIRA_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)),
+    MLW_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)),
+    NeoBAC_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)), 
+    NIMBI_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character)),
+    SPINZ_epi_snp_clusters %>% mutate(across(everything(), .fns = as.character))
+)
+
+epi_snp_clusters <- readr::type_convert(epi_snp_clusters) %>% 
+    mutate(Region = countrycode::countrycode(Country, "country.name", "region23")) %>%
+    mutate(Region = factor(Region, levels=region_order)) %>% 
+    mutate(Study_lab = case_when(
+        Study == "BabyGERMS" ~ "Baby GERMS-SA",
+        Study == "GBS" ~ "GBS-COP",
+        Study == "NIMBI" ~ "NIMBI-plus",
+        TRUE ~ Study
+    )) %>% 
+    mutate(coded_site = Site) %>% # ori Sites already coded so redundant; leave in or change use of coded_site throughout
+    mutate(Country_Study = paste0(Country, ": ", Study_lab)) %>% 
+    mutate(Country_Study_Site=paste0(Country_Study, ": ", coded_site)) %>%
+    mutate(Study_Site=paste0(Study_lab, ": ", coded_site)) %>% 
+    mutate(O_group = case_when(
+        grepl("^O1a", O_type) ~ "O1",
+        grepl("^O2a", O_type) ~ "O2",
+        grepl("^O3", O_type) ~ "O3",
+        TRUE ~ O_type
+    ))
+
+demog_table_1 <- epi_snp_clusters %>% 
+    group_by(Region, Country, Study_lab, Site) %>% 
+    reframe(n = n(),
+            Period = ifelse(min(Year) == max(Year), 
+                       as.character(min(Year)), 
+                       paste0(min(Year), " - ", max(Year)))) %>% 
+    arrange(Region, Country, Study_lab, desc(n)) %>% 
+    rename("# genomes" = "n") %>% 
+    mutate("Num years" = if_else(grepl(" - ", Period), ">=2", "1"))
+demog_table_1 %>% DT::datatable(., caption="Genome distribution")
+
+studies <- sort(unique(epi_snp_clusters$Study))
+
+# overall raw proportions
+overall_cluster_prop <- get_cluster_estimates(epi_snp_clusters)$cluster_prop
+overall_cluster_prop
+overall_transmission_prop <- get_cluster_estimates(epi_snp_clusters)$transmission_prop
+overall_transmission_prop
+
+```
+
+
+### Summary stats
+```{r summary}
+epi_snp_clusters %>% count(Study) %>% arrange(desc(n)) %>% 
+    DT::datatable(., caption="Studies")
+
+epi_snp_clusters %>% count(Country) %>% arrange(desc(n)) %>% 
+    DT::datatable(., caption="Countries")
+
+epi_snp_clusters %>% count(Region) %>% arrange(desc(n)) %>% 
+    DT::datatable(., caption="Regions")
+
+all_clusters_info <-  get_cluster_info_nodates(epi_snp_clusters)
+
+# Exclude clusters of size 2 (possible transient transmission) and get estimates
+epi_snp_clusters_of_gt2 <- epi_snp_clusters %>% 
+    add_count(Cluster, name = "Cluster_size") %>% 
+    mutate(Cluster = if_else(Cluster_size < 3, NA, Cluster)) %>% 
+    select(-Cluster_size)
+
+summarise_cluster_nodates(epi_snp_clusters_of_gt2) %>% 
+    DT::datatable(., caption="Clusters summary (only clusters with ≥3 cases)")
+```
+
+<br> 
+
+#### Regional distribution
+
+```{r regional_distribution, warning=F, message=F, fig.width=12, fig.height=7}
+region_colors <- setNames(c('#F5793A', '#A95AA1', '#85C0F9', '#0F2080'),
+                          unique(epi_snp_clusters$Region))
+
+country_sample_count <- epi_snp_clusters %>% 
+    group_by(Country) %>% 
+    reframe(n_samples = n(), n_sites_per_country = n_distinct(Study_Site)) %>% 
+    rename("country" = "Country")
+
+get_breaks_and_mean <- function(vec, break_interval) {
+  min_val <- min(vec)
+  max_val <- max(vec)
+  vals_mean <- mean(c(min_val, max_val))
+  breaks <- seq(ceiling(min_val / break_interval) * break_interval, 
+                floor(max_val / break_interval) * break_interval, 
+                by = break_interval)
+  return(list("vals_mean"=vals_mean, "breaks"=breaks))
+}
+ctry_smpl_brks_mean <- get_breaks_and_mean(country_sample_count$n_samples, 100)
+
+
+# Sample distribution (Only Africa and Asia) --------------------------------
+africa_and_asia <- rnaturalearth::ne_countries(scale="large", type="countries",
+                                               continent=c("africa", "asia")) %>% 
+    mutate(country = countrycode::countryname(name))
+# sanity check non-matching countries
+setdiff(country_sample_count$country, africa_and_asia$country)
+
+# Sample distribution with sites shown (Only Africa and Asia) --------------------------------
+site_coords <- readr::read_csv("./data/site_coordinates.csv") %>% 
+    left_join(demog_table_1 %>% select(Site, `# genomes`, Period), by = "Site") 
+
+site_sample_count_sf <- epi_snp_clusters %>% 
+    group_by(Country, Site, coded_site, Study) %>% reframe(n_samples_per_site = n()) %>% 
+    group_by(Country) %>% add_count(name="n_sites_per_country") %>% 
+    rename("country" = "Country") %>%
+    group_by(Study) %>% add_count(name="n_sites_per_study") %>%
+    ungroup() %>%
+    mutate(study_lab = if_else(n_sites_per_study==1, "Other (single site)", Study)) %>%
+    left_join(africa_and_asia, by = c("country")) %>% 
+    left_join(site_coords %>% select(Site, Long_city, Lat_city), by = "Site") %>% 
+    mutate_at(vars(Long_city, Lat_city), as.numeric) %>% 
+    # Jitter overlapping sites
+    mutate(Lat_city = case_when(
+        Study == "BARNARDS" & Site == "BABC" ~ Lat_city + 0.5,
+        Study == "BARNARDS" & Site == "BAZAT" ~ Lat_city + 0.5,
+        Study == "NeoBAC" & Site == "Mbagathi" ~ Lat_city - 0.25,
+        TRUE ~ Lat_city
+    )) %>% 
+    arrange(desc(n_samples_per_site)) %>% 
+    st_as_sf()
+
+
+region_dist_wt_sites <- africa_and_asia %>% 
+    left_join(country_sample_count, by = c("country")) %>% 
+    ggplot() +
+    geom_sf(aes(fill = n_samples)) +
+    scale_fill_gradient2(low="#ffe599", mid="green", high="blue",
+                         #low="yellow", mid="#ec7900", high="red",
+                         midpoint=ctry_smpl_brks_mean[[1]],
+                         na.value="white", breaks=ctry_smpl_brks_mean[[2]],
+                         name="N isolates \nper country",
+                         guide = guide_colorbar(order=1)) +
+    geom_point(data=site_sample_count_sf,
+               aes(x=Long_city, y=Lat_city, size=n_samples_per_site),
+               fill="black", color="grey90", shape=21, stroke=0.15) +
+    scale_size_continuous(range=c(1.5, 6), name = "N isolates \nper site",
+                          guide = guide_legend(order=2, override.aes=list(stroke=0))) +
+    ggthemes::theme_few() + custom_plots_theme +
+    theme(axis.ticks = element_blank(), axis.text = element_blank(),
+          axis.title = element_blank(), panel.border = element_blank())
+```
+
+<br> 
+
+#### Year of isolation
+```{r year_distribution, fig.width=7, fig.height=9}
+year_plot2 <- epi_snp_clusters %>% 
+    mutate(coded_site_num = as.numeric(sub("Site ", "", coded_site))) %>% 
+    mutate(Region = factor(Region, levels=region_order)) %>% 
+    arrange(factor(Region, levels=region_order), coded_site_num) %>%
+    mutate(coded_site = factor(coded_site, levels = unique(coded_site))) %>% 
+    add_count(coded_site, name="N_isolates") %>% 
+    ggplot(aes(x=Year, y=coded_site)) +
+    geom_jitter(aes(colour=Region), height=0.3, width=0.3) +
+    geom_label(aes(y=coded_site, label=N_isolates, x=min(epi_snp_clusters$Year)-2), 
+               fill="white", size=2.8, col="black") +
+    scale_color_manual(values = region_colors, guide=guide_legend(override.aes=list(size=5))) +
+    scale_x_continuous(breaks = scales::breaks_pretty()) +
+    geom_hline(yintercept = seq(0.5, length(unique(epi_snp_clusters$coded_site))+0.5, 1), 
+               linewidth=0.25, color="gray") +
+    geom_vline(xintercept =seq(min(epi_snp_clusters$Year)-1.5, max(epi_snp_clusters$Year), 1), 
+               linewidth=0.25, color="gray") +
+    labs(x="Year", y=NULL) +
+    theme_minimal() + custom_plots_theme +
+    theme(axis.text.x = element_text(),
+          panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          legend.position = "top", legend.title = element_blank(),
+          legend.key.width = unit(5, "pt")) 
+
+year_region_plot <- ggarrange(region_dist_wt_sites, year_plot2, ncol=1, 
+                              heights = c(1,1.7), labels = "AUTO")
+ggsave(file=file.path(figs_dir, "FigureS2_GeotemporalDistrib.png"), 
+       plot=year_region_plot, width=9, height=12, bg="white")
+ggsave(file=file.path(figs_dir, "FigureS2_GeotemporalDistrib.pdf"), 
+       plot=year_region_plot, width=9, height=12, bg="white")
+
+```
+
+
+<br><br>
+
+### Sensitivity
+
+```{r combined_sensitivity_plots, fig.width=15, fig.height=9}
+all_sens_df <- lapply(studies, function(x) {
+    study_lab <- epi_snp_clusters$Study_lab[epi_snp_clusters$Study == x][1]
+    get(paste0(x, "_sens_df")) %>% mutate(Study = study_lab)
+}) %>% bind_rows()
+
+# legend
+sens_clust_legend <- ggarrange(manual_sensitivity_legend2(mid_temp_val=sens_temp_dist_vals[3],
+                           temp_range_1 = sens_temp_dist_vals[c(2,4)],
+                           temp_range_2 = sens_temp_dist_vals[c(1,5)],
+                           selected_dist_thresh=snp_distance_threshold,
+                           selected_temp_thresh=temporal_distance_threshold)) 
+sens_trans_legend <- ggarrange(manual_sensitivity_legend2(mid_temp_val=sens_temp_dist_vals[3],
+                           temp_range_1 = sens_temp_dist_vals[c(2,4)],
+                           temp_range_2 = sens_temp_dist_vals[c(1,5)],
+                           selected_dist_thresh=snp_distance_threshold,
+                           selected_temp_thresh=temporal_distance_threshold,
+                           range_cols=c("white", "navyblue", "lightblue"))) 
+
+# Cluster prop sensitivity
+combined_sens_clust_plot <- (
+    plot_sensitivity_SNP_vs_temp_range_2(
+        all_sens_df, temp_dist_vals = sens_temp_dist_vals, 
+        prop_var = "cluster_prop", y_title = "Proportion in clusters",
+        plot_title = NULL, selected_dist_thresh=snp_distance_threshold,
+        selected_temp_thresh=temporal_distance_threshold,
+        facet_col = "Study", facet_rows = 3) |
+    sens_clust_legend ) +
+    plot_layout(widths=c(6.5,1), nrow=1)
+combined_sens_clust_plot
+
+
+# Transmission prop sensitivity
+combined_sens_trans_plot <- (
+    plot_sensitivity_SNP_vs_temp_range_2(
+        all_sens_df, temp_dist_vals = sens_temp_dist_vals,
+        prop_var = "transmission_prop", y_title = "Proportion due to transmission",
+        plot_title = NULL, selected_dist_thresh=snp_distance_threshold,
+        selected_temp_thresh=temporal_distance_threshold,
+        range_cols=c("white", "navyblue", "lightblue"),
+        facet_col = "Study", facet_rows = 3) |
+    sens_trans_legend ) +
+    plot_layout(widths=c(6.5,1), nrow=1)
+combined_sens_trans_plot
+```
+
+<br><br>
+
+```{r sensitivity_figure_manuscript, echo=F}
+# manuscript fig
+sens_fig_manuscript <- ggarrange(
+    combined_sens_clust_plot + 
+        plot_annotation(title = "Cluster proportion estimates",
+                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
+    combined_sens_trans_plot + 
+        plot_annotation(title = "Transmission proportion estimates",
+                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))), 
+    ncol=1, labels=c("(A)", "(B)"), font.label=list(size=16, face="bold", color="black"))
+
+ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivity.png"), 
+       plot=sens_fig_manuscript, width=9, height=10)
+ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivity.pdf"), 
+       plot=sens_fig_manuscript, width=9, height=10)
+```
+
+```{r sensitivity_diff_in_estimates, echo=F}
+
+SNP_thresh_pair <- c(5, 25)
+temp_thresh_pair <- c(2, 8)
+
+# fnx to compute diff in estimates between two threshold_A points across all threshold_B points
+get_sensitivity_estimates_diff <- function(sensitivity_df, threshold_A_points = c(5, 25),
+         threshold_A="distance_threshold", threshold_B="temporal_threshold"){
+    stopifnot(threshold_A_points %in% sensitivity_df[[threshold_A]])
+    # useful col names for output
+    if(threshold_A=="distance_threshold"){
+        thresh_unit="SNPs"
+    } else if (threshold_A=="temporal_threshold") {thresh_unit="weeks"}
+    diff_clust_var <- paste("diff_clust_prop_at", threshold_A, 
+                            paste(threshold_A_points, collapse="-"), thresh_unit, sep="_")
+    diff_trans_var <- paste("diff_trans_prop_at", threshold_A,
+                            paste(threshold_A_points, collapse="-"), thresh_unit, sep="_")
+    # get difference between estimates at the two threshold A points 
+    # for all threshold B points
+    differences <- sensitivity_df %>% 
+        filter(!!rlang::sym(threshold_A) %in% threshold_A_points) %>% 
+        group_by(!!rlang::sym(threshold_B)) %>% 
+        summarise(diff_clust = abs(max(cluster_prop) - min(cluster_prop)),
+                  diff_trans = abs(max(transmission_prop) - min(transmission_prop))) %>% 
+        rename(!!diff_clust_var := "diff_clust",
+               !!diff_trans_var := "diff_trans") %>% 
+        ungroup()
+    return(differences)
+}
+
+
+# Differences in estimates within SNP range (5 - 25 SNPs) at 4 weeks -------
+diff_within_SNP_range <- furrr::future_map_dfr(studies, ~{
+    # get sensitivity data
+    dataset_sens_df <- get(paste0(.x, "_sens_df")) %>% filter(temporal_threshold == 4)
+    # calculate differences in estimates between two SNP thresholds
+    get_sensitivity_estimates_diff(dataset_sens_df, threshold_A_points=SNP_thresh_pair,
+                               threshold_A="distance_threshold", 
+                               threshold_B="temporal_threshold") %>% 
+        mutate(Study = .x)
+})
+
+# overall mean diff summary (in %)
+diff_within_SNP_range %>% select(starts_with("diff_")) %>% 
+    mutate(across(everything(), \(x) x*100)) %>% summary()
+
+
+# Also calculate diff in clust prop within 0 - 5 SNPs ---------------------------
+diff_SNP_0_5 <- furrr::future_map_dfr(studies, ~{
+        dataset_sens_df <- get(paste0(.x, "_sens_df")) %>% filter(temporal_threshold == 4)
+        get_sensitivity_estimates_diff(dataset_sens_df, c(0,5)) %>% mutate(Study = .x)
+    }) %>% 
+    select(starts_with("diff_clust_prop_at_distance_threshold")) %>% 
+    mutate(across(everything(), \(x) x*100)) 
+summary(diff_SNP_0_5)
+# calculate diff in clust prop within 0 - 1 SNPs ---------------------------
+diff_SNP_0_1 <- furrr::future_map_dfr(studies, ~{
+        dataset_sens_df <- get(paste0(.x, "_sens_df")) %>% filter(temporal_threshold == 4)
+        get_sensitivity_estimates_diff(dataset_sens_df, c(0,1)) %>% mutate(Study = .x)
+    }) %>% 
+    select(starts_with("diff_clust_prop_at_distance_threshold")) %>% 
+    mutate(across(everything(), \(x) x*100)) 
+summary(diff_SNP_0_1)
+# calculate diff in clust prop within 4 - 5 SNPs ---------------------------
+diff_SNP_4_5 <- furrr::future_map_dfr(studies, ~{
+        dataset_sens_df <- get(paste0(.x, "_sens_df")) %>% filter(temporal_threshold == 4)
+        get_sensitivity_estimates_diff(dataset_sens_df, c(4,5)) %>% 
+            mutate(Study = .x)
+    }) %>% 
+    select(starts_with("diff_clust_prop_at_distance_threshold")) %>% 
+    mutate(across(everything(), \(x) x*100)) 
+summary(diff_SNP_4_5)
+
+
+
+# Differences in estimates within temp dist range (2-8 weeks) at 10 SNPs ------
+diff_within_temp_range <- furrr::future_map_dfr(studies, ~{
+    # get sensitivity data
+    dataset_sens_df <- get(paste0(.x, "_sens_df")) %>% filter(distance_threshold == 10)
+    # calculate differences in estimates between two temp dist thresholds
+    get_sensitivity_estimates_diff(dataset_sens_df, threshold_A_points=temp_thresh_pair,
+                               threshold_A="temporal_threshold", 
+                               threshold_B="distance_threshold") %>% 
+        mutate(Study = .x)
+})
+mean_diff_within_temp_range_per_study <- diff_within_temp_range %>% 
+    group_by(Study) %>% summarise_at(2:3, .funs = mean) %>% 
+    ungroup()
+# overall mean diff summary
+diff_within_temp_range %>% select(starts_with("diff_")) %>% 
+    mutate(across(everything(), \(x) x*100)) %>% summary()
+
+# also calculate diff in clust prop within 0 - 1 weeks ---------------------------
+diff_temp_1_2 <- furrr::future_map_dfr(studies, ~{
+        dataset_sens_df <- get(paste0(.x, "_sens_df")) %>% filter(distance_threshold == 10)
+        get_sensitivity_estimates_diff(
+            dataset_sens_df, c(1,2), "temporal_threshold", "distance_threshold"
+        ) %>% mutate(Study = .x)
+    }) %>% 
+    select(starts_with("diff_clust_prop_at_temp")) %>% 
+    mutate(across(everything(), \(x) x*100)) 
+summary(diff_temp_1_2)
+
+```
+
+
+
+<br><br>
+
+```{r sensitivity_up_to_1000SNPs}
+all_sens_df_1000SNPs <- lapply(studies, function(x) {
+    study_lab <- epi_snp_clusters$Study_lab[epi_snp_clusters$Study == x][1]
+    get_cluster_sensitivity(snp_and_epi_data = get(paste0(x, "_snp_and_epi_data")),
+                            metadata = get(paste0(x, "_data")),
+                            snp_range=c(seq(0,25, by=1), seq(30,1000,by=5)),
+                            date_range=c(1,2,4,8,52)) %>%
+        mutate(Study = study_lab)
+}) %>% bind_rows()
+
+
+# Cluster prop sensitivity 1000 SNPs
+sens_clust_plot_1000SNPs <- (
+    plot_sensitivity_SNP_vs_temp_range_2(
+        all_sens_df_1000SNPs, temp_dist_vals = sens_temp_dist_vals,
+        prop_var = "cluster_prop", y_title = "Proportion in clusters",
+        plot_title = NULL, selected_dist_thresh=snp_distance_threshold,
+        selected_temp_thresh=temporal_distance_threshold,
+        facet_col = "Study", facet_rows = 3) +
+        scale_x_continuous(trans = scales::pseudo_log_trans(base=10),
+                           breaks = c(0,10,100,1000)) +
+        labs(x = "Genetic distance threshold (log10 scale)") + 
+        theme(axis.text = element_text(size=12), axis.title = element_text(size=12),
+              strip.text = element_text(size=12)) |
+    sens_clust_legend ) +
+    plot_layout(widths=c(6.5,1), nrow=1)
+
+# Transmission prop sensitivity 1000 SNPs
+sens_trans_plot_1000SNPs <- (
+    plot_sensitivity_SNP_vs_temp_range_2(
+        all_sens_df_1000SNPs, temp_dist_vals = sens_temp_dist_vals,
+        prop_var = "transmission_prop", y_title = "Proportion due to transmission",
+        plot_title = NULL, selected_dist_thresh=snp_distance_threshold,
+        selected_temp_thresh=temporal_distance_threshold,
+        range_cols=c("white", "navyblue", "lightblue"),
+        facet_col = "Study", facet_rows = 3) +
+        scale_x_continuous(trans = scales::pseudo_log_trans(base=10),
+                           breaks = c(0,10,100,1000)) +
+        labs(x = "Genetic distance threshold (log10 scale)") + 
+        theme(axis.text = element_text(size=12), axis.title = element_text(size=12),
+              strip.text = element_text(size=12)) |
+    sens_trans_legend ) +
+    plot_layout(widths=c(6.5,1), nrow=1)
+
+# Combine both figs
+sens_fig_1000SNPs <- ggarrange(
+    sens_clust_plot_1000SNPs +
+        plot_annotation(title = "Cluster proportion estimates",
+                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
+    sens_trans_plot_1000SNPs +
+        plot_annotation(title = "Transmission proportion estimates",
+                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
+    ncol=1, labels=c("(A)", "(B)"), font.label=list(size=16, face="bold", color="black"))
+
+ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivity1000SNPs.png"),
+       plot=sens_fig_1000SNPs, width=10, height=10)
+ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivity1000SNPs.pdf"),
+       plot=sens_fig_1000SNPs, width=10, height=10)
+```
+
+<br><br>
+
+
+### Pooled estimates meta-analysis (sites)
+
+```{r meta_analysis_by_site, warning=F}
+# sites
+all_sites_df <- epi_snp_clusters %>% 
+    group_by(Study_Site, coded_site, Region, Country, Study) %>% 
+    reframe(n_isolates = n())
+
+# combine cluster details all sites
+all_sites_clusters_lst <- split(epi_snp_clusters, f = epi_snp_clusters$coded_site)
+all_sites_clusters_summary <- all_sites_clusters_lst %>% 
+    purrr::map_dfr(\(clusters_data) summarise_cluster_nodates(clusters_data) %>% 
+                       pivot_wider(names_from=name, values_from=value),
+                   .id = "Study")
+colnames(all_sites_clusters_summary) <- c("site","n_isolates","clusters","n_isolates_clusters",
+                                          "n_transmission_isolates", "median_cluster_size", "cluster_STs")
+all_sites_clusters_summary %<>% 
+    mutate(across(c(n_isolates, n_isolates_clusters, n_transmission_isolates), \(x) as.numeric(x))) %>%
+    mutate(cluster_prop = n_isolates_clusters / n_isolates,
+           transmission_prop = n_transmission_isolates / n_isolates) %>% 
+    arrange(desc(cluster_prop)) %>% 
+    left_join(all_sites_df %>% select(-c(n_isolates)), by = c("site" = "coded_site"))
+
+# functions
+get_metaprop_estimates <- function(meta_obj,
+                                   prop_type=c("prop", "percent"), dec=2) {
+    prop_type = match.arg(prop_type)
+    trns = meta_obj$sm
+    if (trns == "PFT") {n <- meta_obj$k.all.w} else {n <- NULL}
+    if (prop_type == "prop") {mult <- 1} else {mult <- 100}
+    # get estimates
+    estimates <- data.frame(
+        S = meta_obj$studlab,
+        Proportion = round(meta::backtransf(meta_obj$TE, sm=trns, n=n)*mult, dec),  
+        lower_CI = round(meta::backtransf(meta_obj$lower, sm=trns, n=n)*mult, dec), 
+        upper_CI = round(meta::backtransf(meta_obj$upper, sm=trns, n=n)*mult, dec),
+        pooled_Est = round(meta::backtransf(meta_obj$TE.random, sm=trns, n=n)*mult, dec),
+        pooled_lower = round(meta::backtransf(meta_obj$lower.random, sm=trns, n=n)*mult, dec),
+        pooled_upper = round(meta::backtransf(meta_obj$upper.random, sm=trns, n=n)*mult, dec)
+    ) %>% as_tibble() %>% arrange(desc(Proportion))
+    return(estimates)
+}
+
+plot_meta <- function(meta_obj, meta_df, events_lab, x_lab="Proportion") {
+    meta_df %<>% 
+        left_join(meta_obj$data %>% 
+                      select(site, Region, Country, `Total isolates`=n_isolates,Events = .event), 
+                  by = c("S" = "site")) %>% 
+        mutate(Site_ctry = paste0(S, " (", Country, ")")) %>% 
+        arrange(desc(Proportion)) %>% 
+        mutate(Site_ctry = factor(Site_ctry, levels = unique(Site_ctry)))
+    # Plot
+    heterogeneity_lab <- paste0(
+        "Heterogeneity: *I*<sup>2</sup> = ", sprintf('%.1f', meta_obj$I2*100),
+        "% [", sprintf('%.1f', meta_obj$lower.I2*100), "%, ", 
+        sprintf('%.1f', meta_obj$upper.I2*100), "%], tau<sup>2</sup> = ",
+        sprintf('%.4f', meta_obj$tau2),
+        ifelse(meta_obj$pval.Q[1] < 0.0001, ", *p* < 0.0001", glue(", *p* = {meta_obj$pval.Q[1]}"))
+    )
+    p.left <- meta_df %>% 
+        ggplot(aes(y = Site_ctry)) +
+        # Sites
+        geom_text(aes(x=0, label = Site_ctry), hjust=0, size=4.5) +
+        annotate("text", x=0, y=nrow(meta_df)+1, label="Site", hjust=0, fontface="bold", size=4.5) + 
+        annotate("text", x=0, y=0, label="Random effects model", hjust=0, fontface="bold", size=4.5) +
+        # N isolates
+        geom_text(aes(x=2, label=`Total isolates`), hjust=0, size=4.5) +
+        annotate("text", x=2, y=nrow(meta_df)+1, label="Total", hjust=0, fontface="bold", size=4.5) +
+        annotate("text", x=2, y=0, label=sum(meta_obj$n), hjust=0, fontface="bold", size=4.5) +
+        # N events
+        geom_text(aes(x=2.5, label=Events), hjust=0, size=4.5) +
+        annotate("text", x=2.5, y=nrow(meta_df)+1, label=events_lab, hjust=0, 
+                 vjust=0.2, fontface="bold", size=4.5, lineheight = 0.75) +
+        annotate("text", x=2.5, y=0, label=sum(meta_obj$event), hjust=0, fontface="bold", size=4.5) +
+        # Prop
+        geom_text(aes(x=3.3, label=sprintf("%.2f [%.2f, %.2f]", Proportion, lower_CI, upper_CI)), 
+                  hjust=0, size=4.5) +
+        annotate("text", x=3.3, y=nrow(meta_df)+1, label="Proportion\n[95% CI]", 
+                 lineheight=0.75, vjust=0.2, hjust=0, fontface="bold", size=4.5) +
+        annotate("text", x=3.3, y=0, 
+                 label=sprintf("%.2f [%.2f, %.2f]", meta_df$pooled_Est[1], 
+                               meta_df$pooled_lower[1], meta_df$pooled_upper[1]), 
+                 hjust=0, fontface="bold", size=4.5) +
+        # Heterogeneity
+        ggtext::geom_richtext(aes(x=0, y = -1.3, label = heterogeneity_lab, family="sans"), 
+                              data=meta_df[1,],
+                              hjust=0, vjust = 0, size = 3.8, fill = NA, label.color = NA,
+                              label.padding = grid::unit(rep(0, 4), "pt")) +
+        coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 4)) +
+        theme_void() +
+        theme(text = element_text(family = "Arial"))
+    p.right <- meta_df %>%
+        ggplot(aes(y = Site_ctry, x = Proportion, xmin = lower_CI, xmax = upper_CI)) +
+        geom_vline(xintercept = meta_df$pooled_Est[1], linetype = "dashed") +
+        # Individual site estimates (squares) and interv
+        geom_pointrange(aes(fill = Region), shape = 22, size = 1.3) +
+        scale_fill_manual(values = region_colors) +
+        # Pooled estimate (diamond) and interval
+        geom_pointrange(aes(y=0, x=pooled_Est, xmin=pooled_lower, xmax=pooled_upper),
+                        data=meta_df[1,], shape = 22, size = 1.5) +
+        # clean
+        scale_x_continuous(name = x_lab, breaks = seq(0, 1, 0.2)) +
+        coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 1)) +
+        theme_classic() +
+        theme(axis.line.y = element_blank(), axis.ticks.y= element_blank(),
+              axis.text.y= element_blank(), axis.title.y= element_blank(),
+              axis.text = element_text(size=14), axis.title = element_text(size=16),
+              legend.text = element_text(size=14), legend.title = element_text(size=14))
+    # p <- ggarrange(p.left, p.right, ncol = 2, widths=c(1.8,2), 
+    #                align="h", legend="bottom", common.legend=T)
+    
+    return(list(p.left = p.left, p.right = p.right))
+}
+```
+
+#### Cluster proportion meta-analysis
+
+```{r cluster_prop_meta, fig.width=10, fig.height=8}
+# Pooled estimates ---------------------------------------------------------------
+# cluster proportion
+set.seed(seed)
+cluster_prop_meta <- meta::metaprop(
+    n_isolates_clusters, n_isolates, studlab=site, data=all_sites_clusters_summary, 
+    method="GLMM", method.ci="CP", # method.tau="DL",
+    sm="PLOGIT")
+
+summary(cluster_prop_meta)
+cluster_prop_meta_df <- get_metaprop_estimates(cluster_prop_meta) 
+cluster_prop_meta_plots <- plot_meta(cluster_prop_meta, cluster_prop_meta_df, 
+                                      "Cluster\nisolates", "Cluster proportion")
+cluster_prop_forest_plot <- ggarrange(plotlist = cluster_prop_meta_plots, 
+                                      ncol = 2, widths=c(1.8,2),
+                                      align="h", legend="bottom", common.legend=T)
+cluster_prop_forest_plot
+# ggsave(file=file.path(figs_dir, "meta_cluster_prop.png"),
+#        plot=cluster_prop_forest_plot, width=14, height=8, bg='white')
+
+```
+
+<br>
+
+#### Transmission proportion meta-analysis
+```{r transm_prop_meta, fig.width=10, fig.height=8}
+# Proportion due to transmission
+set.seed(seed)
+transmi_prop_meta <- meta::metaprop(
+    n_transmission_isolates, n_isolates, studlab=site, data=all_sites_clusters_summary, 
+    method="GLMM", method.ci="CP", # method.tau="DL",
+    sm="PLOGIT")
+summary(transmi_prop_meta)
+transmi_prop_meta_df <- get_metaprop_estimates(transmi_prop_meta)
+transmi_prop_meta_plots <- plot_meta(transmi_prop_meta, transmi_prop_meta_df, 
+                                     "Transmitted\nisolates", "Transmission proportion")
+transmi_prop_forest_plot <- ggarrange(plotlist = transmi_prop_meta_plots, 
+                                      ncol = 2, widths=c(1.8,2),
+                                      align="h", legend="bottom", common.legend=T)
+transmi_prop_forest_plot
+# ggsave(file=file.path(figs_dir, "meta_transmission_prop.png"), 
+#        plot=transmi_prop_forest_plot, width=14, height=8, bg='white')
+
+
+transmi_meta_report <- 
+    get_metaprop_estimates(transmi_prop_meta, prop_type = "percent", dec=1) %>% 
+    left_join(all_sites_clusters_summary %>% select(site, n_transmission_isolates, n_isolates),
+              by = c("S" = "site")) %>% 
+    mutate(report=paste(
+        glue("{S} (n = {n_transmission_isolates}/{n_isolates};"),
+        glue("{round(Proportion,0)}% [{round(lower_CI,0)}-{round(upper_CI,0)}%])")
+    )) 
+print(paste(
+    glue("In {transmi_meta_report %>% filter(Proportion >= 50) %>% nrow()}"),
+    glue("of the {length(unique(epi_snp_clusters$Site))} sites, at least half"),
+    glue("of all cases were attributable to transmission. These included"),
+    paste0(
+        sub("(.*),", "\\1, and", 
+            paste0(transmi_meta_report %>% filter(Proportion>=50) %>% pull(report), 
+                   collapse = ", ")),
+        "."),
+    "Overall, at least a third of cases were attributable to transmission in",
+    transmi_meta_report %>% filter(Proportion >= 33.3) %>% nrow(), "sites."
+    ))
+```
+
+
+```{r meta_figures_manuscript}
+combined_forest_plots_sites_v <- cluster_prop_forest_plot +
+  ggtitle("(A) Cluster proportion") + 
+  theme(plot.title.position = "plot", 
+        plot.title = element_text(hjust = 0, size = 16, face = "bold",
+                                  margin = margin(b = 5))) + 
+  transmi_prop_forest_plot +
+  ggtitle("(B) Transmission proportion") +
+  theme(plot.title.position = "plot",
+        plot.title = element_text(hjust = 0, size = 16, face = "bold",
+                                  margin = margin(b=5, t=5))) +
+  plot_layout(ncol = 1, heights = c(1,1))
+ggsave(file=file.path(figs_dir, "Figure2_PooledEstimates.png"), 
+       plot=combined_forest_plots_sites_v, width=15, height=16, bg='white')
+ggsave(file=file.path(figs_dir, "Figure2_PooledEstimates.pdf"), 
+       plot=combined_forest_plots_sites_v, width=15, height=16, bg='white')
+```
+
+<br><br>
+
+```{r multi_site_meta}
+# Test heterogeneity in multisite studies using same protocols across sites
+
+# BARNARDS
+BARNARDS_cluster_prop_meta <- meta::metaprop(
+    n_isolates_clusters, n_isolates, studlab=site, 
+    data=all_sites_clusters_summary %>% filter(Study == "BARNARDS"), 
+    method="GLMM", method.ci="CP", # method.tau="DL",
+    sm="PLOGIT")
+BARNARDS_cluster_prop_meta_df <- get_metaprop_estimates(BARNARDS_cluster_prop_meta)
+
+BARNARDS_transmi_prop_meta <- meta::metaprop(
+    n_transmission_isolates, n_isolates, studlab=site, 
+    data=all_sites_clusters_summary %>% filter(Study == "BARNARDS"), 
+    method="GLMM", method.ci="CP", # method.tau="DL",
+    sm="PLOGIT")
+BARNARDS_transmi_prop_meta_df <- get_metaprop_estimates(BARNARDS_transmi_prop_meta)
+
+# MBIRA
+MBIRA_cluster_prop_meta <- meta::metaprop(
+    n_isolates_clusters, n_isolates, studlab=site, 
+    data=all_sites_clusters_summary %>% filter(Study == "MBIRA"), 
+    method="GLMM", method.ci="CP", # method.tau="DL",
+    sm="PLOGIT")
+MBIRA_cluster_prop_meta_df <- get_metaprop_estimates(MBIRA_cluster_prop_meta)
+
+MBIRA_transmi_prop_meta <- meta::metaprop(
+    n_transmission_isolates, n_isolates, studlab=site, 
+    data=all_sites_clusters_summary %>% filter(Study == "MBIRA"), 
+    method="GLMM", method.ci="CP", # method.tau="DL",
+    sm="PLOGIT")
+MBIRA_transmi_prop_meta_df <- get_metaprop_estimates(MBIRA_transmi_prop_meta)
+```
+
+<br>
+
+### Pooled estimates meta-analysis (subgroup analysis)
+
+#### Pooled estimates by region
+```{r region_meta, fig.height=5, fig.width=10}
+get_metaprop_subgroup_estimates <- function(meta_obj, trns=c("PLOGIT", "PFT"), 
+                                            prop_type=c("prop", "percent"), dec=2) {
+    trns = match.arg(trns)
+    prop_type = match.arg(prop_type)
+    if (trns == "PFT") {n <- meta_obj$k.all.w} else {n <- NULL}
+    if (prop_type == "prop") {mult <- 1} else {mult <- 100}
+    # get estimates
+    subgroup_estimates <- data.frame(
+        Subgroups = meta_obj$subgroup.levels,                     
+        Proportion = round(meta::backtransf(meta_obj$TE.random.w, sm=trns, n=n)*mult, dec),  
+        lower_CI = round(meta::backtransf(meta_obj$lower.random.w, sm=trns, n=n)*mult, dec), 
+        upper_CI = round(meta::backtransf(meta_obj$upper.random.w, sm=trns, n=n)*mult, dec), 
+        tau2 = meta_obj$tau2.w,                      
+        I2 = meta_obj$I2.w,
+        Q = meta_obj$Q.w
+    ) %>% as_tibble()
+    return(subgroup_estimates)
+}
+
+# factor - order regions by raw clust props
+all_sites_clusters_summary %<>% arrange(desc(cluster_prop)) %>% 
+    mutate(Region = factor(Region, levels=unique(Region)))
+
+# Cluster prop estimates ----------------------------------------------
+set.seed(seed)
+cluster_prop_meta_by_region <- meta::metaprop(
+    n_isolates_clusters, n_isolates, studlab=site,
+    data=all_sites_clusters_summary, 
+    subgroup=Region, method = "GLMM", method.ci = "CP", # method.tau="DL",
+    sm="PLOGIT")
+# forest plot
+cluster_prop_meta_by_region_forest <- {
+    meta::forest(cluster_prop_meta_by_region, xlab="Cluster proportion", common=F, 
+                 sortvar=TE, print.I2.ci=T,
+                 leftcols = c("studlab","event","n","effect.ci"), rightcols=F,
+                 leftlabs = c("Site","Cluster\nisolates","Total\nisolates","Proportion\n[95% CI]"),
+                 colgap.left=unit(0.7, "cm"), plotwidth="10cm",
+                 col.square="#8b0000", col.square.lines="#8b0000", 
+                 col.diamond.random="#ffc1c1", 
+                 xlim=c(0,1), fontsize=15, digits=2);
+    grid.grab()
+}
+
+# Transmission prop estimates ----------------------------------------------
+set.seed(seed)
+transmi_prop_meta_by_region <- meta::metaprop(
+    n_transmission_isolates, n_isolates, studlab=site,
+    data=all_sites_clusters_summary, 
+    subgroup=Region, method = "GLMM", method.ci = "CP", # method.tau="DL",
+    sm="PLOGIT")
+# forest plot
+transmi_prop_meta_by_region_forest <- {
+    meta::forest(transmi_prop_meta_by_region, xlab="Transmission proportion", common=F, 
+                 sortvar=TE, print.I2.ci=T,
+                 leftcols = c("studlab","event","n","effect.ci"), rightcols=F,
+                 leftlabs = c("Site","Transmitted\nisolates","Total\nisolates","Proportion\n[95% CI]"),
+                 colgap.left=unit(0.7, "cm"), plotwidth="10cm",
+                 col.square="navyblue", col.square.lines="navyblue",
+                 col.diamond.random="lightblue", 
+                 xlim=c(0,1), fontsize=15, digits=2);
+    grid.grab()
+}
+
+get_metaprop_subgroup_estimates(transmi_prop_meta_by_region)
+
+ggsave(file=file.path(figs_dir, "FigureS6a_PooledEstimatesRegion.png"), 
+       plot=ggarrange(cluster_prop_meta_by_region_forest, labels=c("(A) Cluster proportion"),
+                      font.label = list(size = 18)), 
+       width=11, height=11, bg='white')
+ggsave(file=file.path(figs_dir, "FigureS6a_PooledEstimatesRegion.pdf"), 
+       plot=ggarrange(cluster_prop_meta_by_region_forest, labels=c("(A) Cluster proportion"),
+                      font.label = list(size = 18)), 
+       width=11, height=11, bg='white')
+ggsave(file=file.path(figs_dir, "FigureS6b_PooledEstimatesRegion.png"), 
+       plot=ggarrange(transmi_prop_meta_by_region_forest, labels=c("(B) Transmission proportion"),
+                      font.label = list(size = 18)), 
+       width=11, height=11, bg='white')
+ggsave(file=file.path(figs_dir, "FigureS6b_PooledEstimatesRegion.pdf"), 
+       plot=ggarrange(transmi_prop_meta_by_region_forest, labels=c("(B) Transmission proportion"),
+                      font.label = list(size = 18)), 
+       width=11, height=11, bg='white')
+
+```
+
+<br><br>
+
+```{r facilities_characteristics, warning=F}
+# data
+facilities_df <- read_tsv("./data/facilityInfo.tsv", show_col_types=F) %>% 
+    mutate(Site = factor(Site, levels = unique(Site))) %>% 
+    select(Site, Region, Country, Location, 
+           Facility_type = `Facility type`, 
+           Facility_size = `Facility size`,
+           Piped_water = `Piped water available`,
+           Neonatal_beds = `No. neonatal beds`,
+           Onsite_surgery = `Onsite neonatal surgical facilities`) %>% 
+    separate_wider_regex(Facility_size, patterns = c(Facility_size = ".+", ":.+")) %>% 
+    mutate(Facility_type = gsub(" Hospital$", "", Facility_type)) %>% 
+    mutate(Piped_water = case_when(
+        Piped_water == "Occassionally" ~ "Sometimes",
+        Piped_water == "Most of the time" ~ "Most times",
+        TRUE ~ Piped_water)) %>%
+    arrange(Neonatal_beds) %>% 
+    mutate(Neonatal_beds_grouped = case_when(
+        Neonatal_beds > 100 ~ ">100",
+        Neonatal_beds >= 50 ~ "50-100",
+        Neonatal_beds < 50 ~ "<50",
+        TRUE ~ NA_character_
+    )) %>% 
+    mutate(Neonatal_beds_grouped = factor(Neonatal_beds_grouped, levels=unique(Neonatal_beds_grouped))) %>% 
+    mutate(
+        Location = factor(Location, levels = c("Rural", "Urban")),
+        Facility_type = factor(Facility_type, levels = c("District", "Regional", "Tertiary")),
+        Facility_size = factor(Facility_size, levels = c("Small", "Medium", "Large", "Very Large")),
+        Piped_water = factor(Piped_water, levels = c("Sometimes", "Most times", "Always")),
+        Onsite_surgery = factor(Onsite_surgery, levels = c("No", "Yes"))) %>% 
+    arrange(Site)
+write_tsv(facilities_df %>% select(
+        Region, Country, Location, Facility_type, Facility_size, 
+        Neonatal_beds, Piped_water, Onsite_surgery, Site
+    ), 
+    file.path(tables_dir, "Table2_FacilityInfo.tsv"))
+
+facilities_df_and_transmission_data <- all_sites_clusters_summary %>% 
+    arrange(desc(cluster_prop)) %>% 
+    left_join(facilities_df %>% select(-c(Region, Country)), 
+              by = c("site"="Site")) %>% 
+    filter(!is.na(Facility_type)) 
+
+
+# Boxplots of site characteristics vs cluster proportion
+facs_clust_prop_boxplots_lst <- plot_clust_prop_by_facility_data(
+    facilities_df_and_transmission_data %>% rename("No. neonatal beds" = "Neonatal_beds_grouped"),
+    c("Facility_type", "Onsite_surgery", "Facility_size", "Piped_water", "No. neonatal beds"))
+facs_clust_prop_boxplots <- (
+    facs_clust_prop_boxplots_lst[[1]] | 
+    facs_clust_prop_boxplots_lst[[2]] + theme(axis.title.y=element_blank(), axis.text.y=element_blank()) |  
+    facs_clust_prop_boxplots_lst[[3]] + theme(axis.title.y=element_blank(), axis.text.y=element_blank()) |
+    facs_clust_prop_boxplots_lst[[4]] | 
+    facs_clust_prop_boxplots_lst[[5]] + theme(axis.title.y=element_blank(), axis.text.y=element_blank()) 
+    ) + 
+    plot_layout(nrow=2) +
+    plot_annotation(tag_levels="A", tag_prefix="(", tag_suffix=")") &
+    theme(plot.tag = element_text(size=16, face='bold'))
+
+ggsave(file=file.path(figs_dir, "Figure3_ClusterPropByFacilityCharacteristics.png"),
+       plot=facs_clust_prop_boxplots, width=12, height=10, bg='white')
+ggsave(file=file.path(figs_dir, "Figure3_ClusterPropByFacilityCharacteristics.pdf"),
+       plot=facs_clust_prop_boxplots, width=12, height=10, bg='white')
+
+
+# Heatmap of site characteristics 
+facs_heatmap_c <- plot_facility_data_heatmap(facilities_df, cluster_prop_meta_df)
+facs_heatmap_t <- plot_facility_data_heatmap(facilities_df, transmi_prop_meta_df)
+
+
+# Combine forest plots with site characteristics heatmap
+clust_meta_with_facility_heatmap <- (
+        cluster_prop_meta_plots$p.left |  
+        cluster_prop_meta_plots$p.right + theme(legend.key.height = unit(2, "mm")) | 
+        facs_heatmap_c$p1 | facs_heatmap_c$p2 | 
+        facs_heatmap_c$p3 | facs_heatmap_c$p4 | 
+        facs_heatmap_c$p5 + theme(legend.key.height = unit(6, "mm")) | 
+        facs_heatmap_c$p6
+    ) + 
+    plot_annotation(
+        title = "(A) Cluster proportion",
+        theme = theme(plot.title = element_text(size=16, face="bold"), plot.title.position = "panel")) +
+    plot_layout(widths=c(1,0.9,0.05,0.05,0.05,0.05,0.05,0.05), guides="collect") &
+    theme(plot.tag = element_text(face="bold", vjust=-3.3),
+          legend.position = "bottom",
+          legend.direction = "vertical", legend.box = "horizontal")
+
+ggsave(file=file.path(figs_dir, "FigureS7_PooledEstimatesWithFacilityDetails.png"),
+       plot=clust_meta_with_facility_heatmap & theme(plot.title = element_blank()), 
+       width=15, height=10, bg='white')
+ggsave(file=file.path(figs_dir, "FigureS7_PooledEstimatesWithFacilityDetails.pdf"),
+       plot=clust_meta_with_facility_heatmap & theme(plot.title = element_blank()), 
+       width=15, height=10, bg='white')
+
+
+transmi_meta_with_facility_heatmap <- (
+        transmi_prop_meta_plots$p.left |
+        transmi_prop_meta_plots$p.right + theme(legend.key.height = unit(2, "mm")) |
+        facs_heatmap_t$p1 | facs_heatmap_t$p2 |
+        facs_heatmap_t$p3 | facs_heatmap_t$p4 |
+        facs_heatmap_t$p5 + theme(legend.key.height = unit(6, "mm")) |
+        facs_heatmap_t$p6
+    ) +
+    plot_annotation(
+        title = "(B) Transmission proportion",
+        theme = theme(plot.title = element_text(size=16, face="bold"), plot.title.position = "panel")) +
+    plot_layout(widths=c(1,0.9,0.05,0.05,0.05,0.05,0.05,0.05), guides="collect") &
+    theme(plot.tag = element_text(face="bold", vjust=-3.3),
+          legend.position = "none")
+    
+meta_plots_with_facility_heatmap <- 
+    ggarrange(clust_meta_with_facility_heatmap, transmi_meta_with_facility_heatmap,
+              align="v", ncol=1, heights=c(1.2, 1))
+
+
+```
+
+#### Pooled estimates by site characteristics
+```{r facilities_metareg}
+# Meta regression
+covariates = c("Location", "Facility_type", "Onsite_surgery", 
+               "Facility_size", "Neonatal_beds", "Piped_water")
+init_mt <- meta::metaprop(
+        n_isolates_clusters, n_isolates, studlab=site, 
+        data=facilities_df_and_transmission_data, 
+        method="GLMM", method.ci="CP", sm="PLOGIT", common=F)
+meta_by_facs_xters <- metareg(init_mt, paste(covariates, collapse = " + "))
+meta_by_facs_xters_df <- parse_metareg_model(meta_by_facs_xters)
+summary(meta_by_facs_xters)
+
+
+# meta_by_facs_xters_df %>% 
+#     select(Predictor, OR, lower, upper, P) %>% 
+#     mutate(OR = sprintf("%.2f", OR), `95% CI` = sprintf("%.2f - %.2f", lower, upper)) %>% 
+#     select(Predictor, `Odds ratio` = OR, `95% CI`, P) %>% 
+#     write_tsv(., file.path(tables_dir, "TableSX_FacilitiesVsTransmissionReg.tsv"), na="-")
+
+facilities_df_and_transmission_data %>%
+    mutate(cluster_prop = round(cluster_prop*100, 1)) %>%
+    group_by(Piped_water) %>%
+    reframe(n = n(), 
+            Cluster_prop = paste0(
+                median(cluster_prop, na.rm=T), "% [",
+                paste0(range(cluster_prop), collapse = "-"), "%]"
+            )
+    )
+
+```
+
+
+<br><br>
+
+### Transmission clones  
+
+```{r clones_summary}
+# CHeck clusters with dissimilar STs (LVs)
+# These will have NA in some cluster summary columns as they dont have unique STs
+# So rename these LV STs (only those specifically forming clusters with the ST) to the predominant ST
+dissim_ST_clust <- epi_snp_clusters %>% filter(!is.na(Cluster)) %>% 
+    group_by(Cluster) %>% count(ST) %>% select(-n)
+dissim_ST_clust <- bind_rows(dissim_ST_clust[duplicated(dissim_ST_clust$Cluster),], 
+          dissim_ST_clust[duplicated(dissim_ST_clust$Cluster, fromLast = T),]) 
+dissim_ST_clust %<>% 
+    arrange(Cluster, ST) %>% 
+    group_by(Cluster) %>% 
+    summarise(STs = paste0(ST, collapse = "; ")) %>% 
+    rowwise() %>% 
+    # group under predominant ST. First following arrnage
+    mutate(ST_pred = case_when(
+        grepl(";", STs) ~ str_split(STs, "; ", simplify=T)[1], 
+        TRUE ~ STs)) %>% 
+    ungroup() %>% # select(Cluster, ST_pred) %>% 
+    right_join(dissim_ST_clust, by = "Cluster")
+
+epi_snp_clusters_wt_upd_STS <- epi_snp_clusters %>% 
+    left_join(dissim_ST_clust, by = c("Cluster", "ST")) %>% 
+    mutate(ST = if_else(is.na(ST_pred), ST, ST_pred)) %>% 
+    mutate(ST_annot = if_else(is.na(ST_pred), ST, paste0(ST_pred, "*"))) %>% 
+    select(-ST_pred)
+
+all_clusters_info_wt_upd_STs <- all_clusters_info %>% 
+    # rename dissim STs in clusters to their predom STs
+    left_join(distinct(dissim_ST_clust, Cluster, STs, ST_pred),
+              by = c("Cluster"="Cluster", "ST"="STs")) %>% 
+    mutate(ST = if_else(is.na(ST_pred), ST, ST_pred)) %>% select(-ST_pred)
+
+
+# Dereplicated clusters data (one row per cluster; one row per singleton)
+epi_snp_clusters_dereplicated <- epi_snp_clusters_wt_upd_STS %>% 
+    # Deduplicate clusters
+    filter(!is.na(Cluster)) %>% arrange(Cluster, Year) %>% 
+    group_by(Cluster) %>% 
+    # Consensus (mode) KO for the cluster
+    mutate(K_locus = modeest::mfv1(K_locus), 
+           O_group = modeest::mfv1(O_group)) %>% 
+    # Consensus res score for the cluster (higher with tie)
+    mutate(resistance_score = modeest::mfv1(resistance_score)) %>% 
+    slice_min(Year, with_ties = F) %>% ungroup() %>% 
+    # Add in non-cluster isolates
+    bind_rows(epi_snp_clusters_wt_upd_STS %>% filter(is.na(Cluster)))
+
+
+clones_summary <- epi_snp_clusters_wt_upd_STS %>% 
+    group_by(ST) %>% 
+    reframe(
+        n_clusters = n_distinct(Cluster, na.rm = T),
+        n_isolates = n(),
+        n_isolates_clusters = n_distinct(id[!is.na(Cluster)]),
+        n_isolates_singletons = n_distinct(id[is.na(Cluster)]),
+        n_countries = n_distinct(Country, na.rm=T),
+        n_countries_clusters = n_distinct(Country[!is.na(Cluster)], na.rm=T),
+        n_countries_singletons = n_distinct(Country[is.na(Cluster)], na.rm=T),
+        n_sites = n_distinct(Site, na.rm=T),
+        n_sites_clusters = n_distinct(Site[!is.na(Cluster)], na.rm=T),
+        n_sites_singletons = n_distinct(Site[is.na(Cluster)], na.rm=T),
+        n_clones = n_distinct(ST, na.rm=T),
+        n_clones_clusters = n_distinct(ST[!is.na(Cluster)], na.rm=T),
+        n_clones_singletons = n_distinct(ST[is.na(Cluster)], na.rm=T),
+        mean_res_score = round(mean(resistance_score, na.rm=T),1),
+        mean_res_score_clusters = round(mean(resistance_score[!is.na(Cluster)], na.rm=T),1),
+        mean_res_score_singletons = round(mean(resistance_score[is.na(Cluster)], na.rm=T),1),
+    ) %>% 
+    arrange(desc(n_clusters)) %>% 
+    left_join(
+         all_clusters_info_wt_upd_STs %>%
+            group_by(ST) %>% 
+            reframe(median_cluster_size = median(`N isolates`, na.rm=T)),
+        by='ST')
+
+caption_text <- glue("<p style='text-align:left; padding-top:16px'><b>Clones summary </b></p>")
+caption_html <- htmltools::HTML(caption_text)
+DT::datatable(clones_summary,
+              caption = knitr::asis_output(caption_html),
+              options = list(autoWidth = TRUE, pageLength = 15, 
+                             scrollX = TRUE, scrollY = TRUE, rownames = FALSE)
+              )
+
+# Common transmission clones (Occurring in ≥3 clusters and ≥2 sites)
+top_clones_summary <- clones_summary %>%
+    filter(n_clusters >= 3 & n_sites_clusters >= 2) %>%
+    arrange(desc(n_isolates_clusters))
+
+# All clusters summary
+all_clusters_summary <- summarise_cluster_nodates(epi_snp_clusters_wt_upd_STS)
+DT::datatable(all_clusters_summary, caption="Clusters summary (with raw overall estimates)")
+```
+
+<br><br>
+
+```{r combine_cluster_plots, fig.width=12, fig.height=15}
+###
+# REQUIRES DATES SO CODE BELOW WILL NOT WORK ON PUBLISHED DATA WITHOUT DATES
+###
+
+
+# all_cluster_plots_lst <- lapply(studies, function(x) {
+#     d <- epi_snp_clusters_wt_upd_STS %>% filter(Study == x) %>% 
+#         mutate(ST = ST_annot)
+#     study_lab <- unique(d$Study_lab)
+#     plot_clusters2(d, color_column="ST", dodge_height=0.2) + 
+#         guides(fill="none", color='none', size=guide_legend(nrow=1)) + 
+#         labs(title=study_lab, y="ST") +
+#         theme(plot.title=element_text(size=14), legend.position = "top", 
+#               legend.justification="left", legend.margin=margin(-5, 0, -7, 0), 
+#               legend.spacing.y = unit(0, "mm"), axis.title = element_blank(),
+#               axis.text = element_text(size=12), legend.text = element_text(size=12),
+#               legend.title = element_text(size=12)) +
+#         geom_line(aes(group = Cluster, alpha = 0.25), color = "black", linewidth=1,
+#                   position=ggstance::position_dodgev(height = 0.2))
+# })
+# all_cluster_plots <- ggarrange(plotlist=all_cluster_plots_lst, common.legend=F, nrow=4, ncol=3)
+# all_cluster_plots <- annotate_figure(
+#     all_cluster_plots, 
+#     left = text_grob("Sequence type", vjust = 1, size=16, rot=90),
+#     bottom = text_grob("Isolation date", size=16)
+# )
+# all_cluster_plots
+# ggsave(file=file.path(figs_dir, "FigureS5_ClustersPerSite.png"), 
+#        plot=all_cluster_plots, width=15, height=16, bg="white")
+# ggsave(file=file.path(figs_dir, "FigureS5_ClustersPerSite.pdf"), 
+#        plot=all_cluster_plots, width=15, height=16, bg="white")
+
+
+```
+
+<br>
+
+```{r ko_summary, warning=F}
+k_summary <- summarise_ko_by_case_type(epi_snp_clusters_dereplicated, "K_locus")
+
+o_summary <- summarise_ko_by_case_type(epi_snp_clusters_dereplicated, "O_group")
+
+
+DT::datatable(k_summary, caption="KL summary",
+              options=list(autoWidth=TRUE, pageLength=15, scrollX=TRUE, 
+                           scrollY=TRUE, rownames=FALSE))
+DT::datatable(o_summary, caption="O summary",
+              options=list(autoWidth=TRUE, pageLength=15, scrollX=TRUE, 
+                           scrollY=TRUE, rownames=FALSE))
+
+# write
+write_tsv(o_summary, file.path(tables_dir, "TableS9_OSummary.tsv"))
+write_tsv(k_summary, file.path(tables_dir, "TableS10_KLSummary.tsv"))
+
+
+print(paste(sum(!is.na(k_summary$Clusters)), "distinct K loci were found associated with transmission clusters.", sum(!is.na(k_summary$Clusters) & !is.na(k_summary$Singletons)), "of these were also detected in singletons"))
+k_summary %>% filter(!is.na(k_summary$Clusters) & is.na(k_summary$Singletons)) %>%
+    pull(K_locus) %>% paste0(collapse = ", ")
+
+# Cluster sizes for KLs associated with clusters
+epi_snp_clusters %>% 
+    filter(!is.na(Cluster)) %>% group_by(K_locus) %>% 
+    count(Cluster) %>% reframe(mdn = median(n), rng = paste0(range(n), collapse = " - ")) %>%
+    mutate(cluster_size = glue::glue("{mdn} [{rng}]")) %>% select(-c(mdn,rng))
+
+# Most common K loci associated with transmission
+# Defined as present in transmitted isolates in ≥3 clusters and ≥2 sites
+top_k_summary <- k_summary %>% 
+    separate(Clusters, into = "n_clusters", sep=" ", remove=F, extra="drop") %>% 
+    mutate(n_clusters = as.numeric(n_clusters)) %>% 
+    filter(n_clusters >= 3 & n_sites_clusters >= 2) %>%
+    arrange(desc(n_clusters))
+
+# top_k_summary %>% arrange(desc(n_clusters)) %>% 
+#     mutate(rep = glue("{K_locus} ({n_clusters} clusters in {n_sites_clusters} sites)")) %>%
+#     pull(rep) %>% paste0(collapse = ", ")
+
+
+paste0(top_k_summary %>% filter(n_sites_clusters/n_sites*100 >= 33.3) %>% nrow(),
+       " KL associated with transmission clusters in at least a 3rd of sites"
+)
+
+
+# Report clone association of the top K loci associated with transmission
+epi_snp_clusters_wt_upd_STS %>% filter(K_locus == "KL102") %>% 
+    mutate(case_type = if_else(is.na(Cluster), "Single", "Cluster")) %>% 
+    count(case_type, ST) %>% arrange(case_type) %>% 
+    reframe(sum(n), .by = c(case_type, ST)) %>% 
+    filter(case_type == "Cluster")
+epi_snp_clusters_wt_upd_STS %>% filter(K_locus == "KL102" & !is.na(Cluster)) %>% 
+    group_by(Cluster) %>% reframe(Clone = paste0(unique(ST), collapse = "; ")) %>% 
+    count(Clone, name = "# KL102 clusters")
+
+epi_snp_clusters_wt_upd_STS %>% filter(K_locus == "KL25") %>% 
+    mutate(case_type = if_else(is.na(Cluster), "Single", "Cluster")) %>% 
+    count(case_type, ST) %>% arrange(case_type) %>% 
+    reframe(sum(n), .by = c(case_type, ST)) %>% 
+    filter(case_type == "Cluster")
+```
+
+
+```{r transmission_predictors, warning=F}
+common_ST_df <- epi_snp_clusters_dereplicated %>% 
+    group_by(ST) %>% count() %>% ungroup() %>% 
+    mutate(ST_prev_grp = if_else(n>2, "Common_ST2", "Rare_ST")) 
+common_ST2 <- common_ST_df %>% 
+    filter(ST_prev_grp == "Common_ST2") %>% 
+    arrange(desc(n)) %>% pull(ST)
+common_ST_df %>% group_by(ST_prev_grp) %>% 
+    reframe(n = sum(n)) %>% 
+    mutate(pct = round(n/sum(n)*100,1))
+
+common_KL_df <- epi_snp_clusters_dereplicated %>% 
+    group_by(K_locus) %>% count() %>% ungroup() %>% 
+    mutate(KL_prev_grp = if_else(n > (nrow(epi_snp_clusters_dereplicated)*0.01), 
+                                 "Common_KL1", "Rare_KL"))
+common_KL1 <- common_KL_df %>% 
+    filter(KL_prev_grp == "Common_KL1") %>% 
+    arrange(desc(n)) %>% pull(K_locus)
+common_KL_df %>% group_by(KL_prev_grp) %>% 
+    reframe(n = sum(n)) %>% 
+    mutate(pct = round(n/sum(n)*100,1))
+
+common_STs_resistance <- epi_snp_clusters_dereplicated %>% 
+    mutate(common_ST = if_else(ST %in% common_ST2, ST, "Other STs")) %>% 
+    mutate(case_type = if_else(is.na(Cluster), "Single", "Cluster")) %>%
+    mutate(ESBL = if_else(resistance_score >= 1, "+", "-")) %>%
+    mutate(CP = if_else(resistance_score >= 2, "+", "-")) %>%
+    bind_rows(., mutate(., case_type = "All")) %>% 
+    group_by(common_ST, case_type) %>%
+    reframe(N = n(),
+            nESBL = n_distinct(id[ESBL == "+"]), pctESBL = round(nESBL/n()*100,1),
+            nCP = n_distinct(id[CP == "+"]), pctCP = round(nCP/n()*100,1)) %>% 
+    mutate(ESBL = sprintf("%.0f (%.1f%%)", nESBL, pctESBL),
+           CP = sprintf("%.0f (%.1f%%)", nCP, pctCP),
+           N = as.character(N)) %>% 
+    select(-c(nESBL, pctESBL, nCP, pctCP)) %>% 
+    pivot_longer(-c(common_ST, case_type), names_to = "names", values_to = "values") %>% 
+    mutate(grp = glue("{case_type}: {names}")) %>% 
+    pivot_wider(id_cols = c(common_ST), names_from = grp, values_from = values, values_fill = "-") %>% 
+    mutate(common_ST = factor(common_ST, levels = c(common_ST2, "Other STs"))) %>% 
+    arrange(common_ST)
+
+# Regression model to identify factors contributing to transmission risk
+trs_pred_data <- epi_snp_clusters_dereplicated %>% 
+    select(id, Site, Cluster, ST, K_locus, O_type, resistance_score) %>% 
+    mutate(Case = if_else(is.na(Cluster), 0, 1)) %>%
+    mutate(commonST2_ = if_else(ST %in% common_ST2, ST, "Other STs")) %>% 
+    mutate(commonST2_ = factor(commonST2_, levels = c("Other STs", common_ST2))) %>% 
+    mutate(ESBL = if_else(resistance_score >= 1, "+", "-"),
+           ESBL = factor(ESBL, levels = c("-", "+"))) %>%
+    mutate(CP = if_else(resistance_score >= 2, "+", "-"),
+           CP = factor(CP, levels = c("-", "+"))) %>%
+    mutate(O_type_grp = case_when(
+        O_type %in% c("O12", "O13", "unknown") ~ "Other",
+        grepl("^O1a", O_type) ~ "O1",
+        grepl("^O2a", O_type) ~ "O2",
+        grepl("^O3", O_type) ~ "O3",
+        grepl("^O4", O_type) ~ "O4",
+        grepl("^O5", O_type) ~ "O5",
+        TRUE ~ NA_character_
+    )) %>% 
+    mutate(O_type_grp = factor(O_type_grp, levels=c("O1","O2","O3","O4","O5","Other"))) %>% 
+    mutate(commonKL1_ = if_else(K_locus %in% common_KL1, K_locus, "Other KLs")) %>% 
+    mutate(commonKL1_ = factor(commonKL1_, levels = c("Other KLs", common_KL1))) %>% 
+    mutate(K_locus = factor(K_locus, levels=k_summary$K_locus))
+
+# Fit model
+trs_model <- logistf::logistf("Case ~ ESBL + CP + commonST2_", 
+                              data = trs_pred_data) # add `pl = FALSE` if no convergence
+trs_model_df <- parse_logistf_model(trs_model) %>% 
+    mutate(Predictor = if_else(
+        grepl("^commonST2_", Predictor), sub("commonST2_", "", Predictor), Predictor))
+trs_model_df
+
+
+# Alternative model with K loci
+trs_model_wt_K <- logistf::logistf("Case ~ ESBL + CP + commonST2_ + commonKL1_", 
+                                   data = trs_pred_data)
+trs_model_wt_K_df <- parse_logistf_model(trs_model_wt_K)
+anova(trs_model, trs_model_wt_K) # likelihood ratio test (smaller = better fit)
+
+
+# Alternative model with O types
+trs_model_wt_O <- logistf::logistf("Case ~ ESBL + CP + commonST2_ + O_type_grp", 
+                                   data = trs_pred_data)
+trs_model_wt_O_df <- parse_logistf_model(trs_model_wt_O)
+anova(trs_model, trs_model_wt_O)
+
+
+# Plot model
+trs_model_plot <-  trs_model_df %>%  
+    filter(!is.infinite(upper)) %>% 
+    mutate(cat = case_when(
+        Predictor %in% c("ESBL+", "CP+") ~ "AMR",
+        grepl("^ST", Predictor) ~ "Sequence type",
+        grepl("^KL", Predictor) ~ "KL",
+        Predictor %in% c("O2","O3","O4", "O5", "Other") ~ "O type",
+        TRUE ~ NA_character_
+    )) %>% 
+    mutate(cat = factor(cat, levels = c("AMR", "KL", "O type", "Sequence type"))) %>% 
+    mutate(signif = case_when(
+        P < 0.05 ~ "P < 0.05",
+        P >= 0.05 ~ "P ≥ 0.05",
+        TRUE ~ NA_character_
+    )) %>% 
+    arrange(OR) %>% mutate(Predictor = factor(Predictor, levels = unique(Predictor))) %>% 
+    ggplot(aes(y = Predictor)) +
+    geom_pointrange(aes(x=OR, xmin=lower, xmax=upper, color=signif),
+                    position = position_dodge(width=.6), shape=16, size=.85) + 
+    scale_color_manual(values = c("darkred", "#FF8A8A"), name=NULL) +
+    scale_x_continuous(trans = scales::pseudo_log_trans(base=10),
+                       breaks = c(0.1, 1, 2, 5, 10, 50)) +
+    geom_vline(xintercept = 1, lty = 2) +
+    labs(x = "Odds ratio with 95% CI (log10 scale)") +
+    facet_grid(rows = vars(cat), scales = "free_y", space = "free_y") +
+    theme_bw() +
+    theme(panel.grid.minor = element_blank(), axis.text = element_text(size=15),
+          axis.title = element_text(size=18), strip.text = element_text(size=14),
+          legend.text = element_text(size=15), panel.grid.major.y = element_blank(),
+          legend.justification = "top", legend.key.height = unit(24, "pt"))
+
+# ggsave(file=file.path(figs_dir, "TransmissionPredictorModel.png"), 
+#        plot=trs_model_plot, width=10, height=11) 
+
+# table
+trs_model_df %>% select(Predictor, OR, lower, upper, P) %>% 
+    mutate(cat = if_else(Predictor %in% c("ESBL+", "CP+"), "AMR", "Sequence type")) %>%
+    arrange(cat, Predictor) %>% 
+    mutate(OR = sprintf("%.2f", OR),
+           `95% CI` = sprintf("%.2f - %.2f", lower, upper)) %>% 
+    select(-c(lower, upper)) %>% 
+    select(Predictor, `Odds ratio` = OR, `95% CI`, P) %>% 
+    write_tsv(., file.path(tables_dir, "TableS8_TransmissionPredictors.tsv"), na="-")
+
+# Compare No. introductions to No. clusters for each ST
+intros_vs_clusters <- epi_snp_clusters_dereplicated %>% 
+    mutate(common_ST = if_else(ST %in% common_ST2, ST, "Other STs")) %>% 
+    group_by(common_ST) %>% 
+    reframe(intros = n(), clusters = n_distinct(Cluster, na.rm=T)) %>% 
+    left_join(trs_model_df %>% select(Predictor, P), by = c("common_ST" = "Predictor")) %>% 
+    mutate(signif = case_when(
+        P < 0.05 ~ "p < 0.05",
+        P >= 0.05 ~ "p ≥ 0.05",
+        TRUE ~ NA_character_
+    )) %>% 
+    arrange(P) %>% mutate(signif = factor(signif, levels = unique(signif))) %>% 
+    arrange(desc(intros)) %>% 
+    mutate(pct_clustered = round(clusters/intros*100,1)) %>% 
+    mutate(common_ST = factor(common_ST, levels = c(common_ST2, "Other STs"))) %>% 
+    arrange(common_ST) %>% 
+    left_join(common_STs_resistance, by = "common_ST")
+
+# intros_vs_clusters %>% select(-pct_clustered) %>% 
+#     write_tsv(file.path(tables_dir, "TableSX_ST_Introductions.tsv"))
+
+# crude transmission probability in each group
+intros_vs_clusters %>% group_by(signif) %>%
+    reframe(trs_prob = paste0(median(pct_clustered, na.rm = T), " [", 
+                              paste0(range(pct_clustered, na.rm=T), collapse = " - "), "]"))
+
+# Plot intros and clusters
+intros_vs_clusters_plot <- intros_vs_clusters %>% 
+    arrange(desc(P)) %>% 
+    filter(common_ST != "Other STs") %>%
+    mutate(common_ST = factor(common_ST, levels = unique(common_ST))) %>% 
+    ggplot(aes(x=intros, y=clusters)) +
+    geom_abline(color="grey30", linetype = 2, linewidth = 1) +
+    geom_jitter(aes(color = signif), width=0.02, height=0.07, size=4) +
+    scale_color_manual(values = c("#750000", "#FF8A8A"), 
+                       name="Predictor for\ntransmission", na.translate=F) +
+    geom_smooth(method=lm, se=FALSE, formula=y~x-1, color="grey30") +
+    ggtext::geom_richtext(x=43, y=12, size=5, label.colour=NA, fill = NA, hjust=0,
+                          label = get_lm_eqn(intros_vs_clusters %>% select(x=intros, y=clusters), 
+                                             format = T)) +
+    ggrepel::geom_text_repel(
+        data = intros_vs_clusters %>% 
+            filter(common_ST != "Other STs") %>%
+            filter(intros >= 15 | P < 0.05),
+        aes(label=common_ST, color = signif), max.overlaps=40, size=5, seed=5) +
+    labs(x = "No. of unique introductions", y = "No. of clusters") +
+    theme_bw() +
+    theme(axis.text=element_text(size=20), axis.title = element_text(size=20),
+          legend.text=element_text(size=20), legend.title = element_text(size=20),
+          legend.key.height = unit(10, "mm"), plot.margin = margin(0,0,0,0)) 
+# ggsave(file=file.path(figs_dir, "IntrosVsClusters.png"),
+#        plot=intros_vs_clusters_plot, width=14, height=8)
+
+trs_model_and_intros_plot <- 
+    (trs_model_plot + theme(legend.position = "bottom") | 
+     intros_vs_clusters_plot + theme(legend.position = "none")) +
+    plot_layout(design = c(area(1,1,5,2), area(6,1,8,2))) +
+    plot_annotation(tag_levels = "A", tag_prefix = "(", tag_suffix = ")") &
+    theme(plot.tag = element_text(size = 20, face = "bold"),
+          legend.text = element_text(size=18))
+ggsave(file=file.path(figs_dir, "Figure5_TransmissionPredictors.png"),
+       plot=trs_model_and_intros_plot, width=12, height=20)
+ggsave(file=file.path(figs_dir, "Figure5_TransmissionPredictors.pdf"),
+       plot=trs_model_and_intros_plot, width=12, height=20)
+
+
+
+```
+
+
+```{r sensitivity_ST307}
+mtdt_st307 <- epi_snp_clusters_wt_upd_STS %>% 
+    filter(ST == "ST307") %>% 
+    select(-Cluster)
+snpepi_st307 <- lapply(studies, function(x) {
+        get(paste0(x, "_snp_and_epi_data"))
+    }) %>% 
+    bind_rows() %>% 
+    filter(iso1 %in% mtdt_st307$id & iso2 %in% mtdt_st307$id)
+all_sens_df_ST307 <- get_cluster_sensitivity(snpepi_st307, mtdt_st307, 
+                                             snp_range=seq(0,25, by=1),
+                                             date_range=c(1,2,4,8,52))
+
+# Cluster prop sensitivity 1000 SNPs
+sens_clust_plot_ST307 <- (
+    plot_sensitivity_SNP_vs_temp_range_2(
+        all_sens_df_ST307, temp_dist_vals = sens_temp_dist_vals,
+        prop_var = "cluster_prop", y_title = "Proportion in clusters",
+        plot_title = NULL, selected_dist_thresh=snp_distance_threshold,
+        selected_temp_thresh=temporal_distance_threshold,
+        facet_col = NULL) + 
+        theme(axis.text = element_text(size=12), axis.title = element_text(size=12),
+              strip.text = element_text(size=12)) |
+    sens_clust_legend ) +
+    plot_layout(widths=c(6.5,1), nrow=1)
+
+# Transmission prop sensitivity 1000 SNPs
+sens_trans_plot_ST307 <- (
+    plot_sensitivity_SNP_vs_temp_range_2(
+        all_sens_df_ST307, temp_dist_vals = sens_temp_dist_vals,
+        prop_var = "transmission_prop", y_title = "Proportion due to transmission",
+        plot_title = NULL, selected_dist_thresh=snp_distance_threshold,
+        selected_temp_thresh=temporal_distance_threshold,
+        range_cols=c("white", "navyblue", "lightblue"),
+        facet_col = NULL) +
+        theme(axis.text = element_text(size=12), axis.title = element_text(size=12),
+              strip.text = element_text(size=12)) |
+    sens_trans_legend ) +
+    plot_layout(widths=c(6.5,1), nrow=1)
+
+# Combine both figs
+sens_fig_ST307 <- ggarrange(
+    sens_clust_plot_ST307 +
+        plot_annotation(title = "Cluster proportion estimates",
+                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
+    sens_trans_plot_ST307 +
+        plot_annotation(title = "Transmission proportion estimates",
+                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
+    ncol=1, labels=c("(A)", "(B)"), font.label=list(size=16, face="bold", color="black"))
+
+# ggsave(file=file.path(figs_dir, "FigureSX_ThresholdSensitivityST307.png"),
+#        plot=sens_fig_ST307, width=9, height=8)
+# ggsave(file=file.path(figs_dir, "FigureSX_ThresholdSensitivityST307.pdf"),
+#        plot=sens_fig_ST307, width=10, height=10)
+```
+
+<br><br>
+
+#### Most common transmission clones (occuring in ≥3 clusters and >1 site)
+
+```{r problem_clones_summary, warning=F, message=F, fig.width=14, fig.height=9}
+DT::datatable(top_clones_summary, caption="Clusters summary")
+
+# report top clones
+top_clones_summary %>% 
+    arrange(n_clusters) %>% 
+    mutate(rep=glue("{ST} ({n_clusters} clusters; n={n_isolates_clusters}/{n_isolates})")) %>%
+    pull(rep) %>%rev() %>% paste0(collapse = ", ") %>% sub("(.*),", "\\1, and", .)
+
+# Top clones make up what prop of all cases
+epi_snp_clusters_wt_upd_STS %>% 
+    mutate(ct = if_else(ST %in% top_clones_summary$ST, "Top clone", "Other")) %>% 
+    group_by(ct) %>% 
+    summarise("n_isolates" = n()) %>% 
+    mutate(pct_all_cases = n_isolates/sum(n_isolates) * 100) 
+# Top clones make up what prop of cluster cases
+epi_snp_clusters_wt_upd_STS %>% 
+    filter(!is.na(Cluster)) %>% 
+    mutate(ct = if_else(ST %in% top_clones_summary$ST, "Top clone", "Other")) %>% 
+    group_by(ct) %>% 
+    summarise("n_isolates" = n()) %>% 
+    mutate(pct_cluster_cases = n_isolates/sum(n_isolates) * 100) 
+# Top clones make up what prop of unclustered cases
+epi_snp_clusters_wt_upd_STS %>% 
+    filter(is.na(Cluster)) %>% 
+    mutate(ct = if_else(ST %in% top_clones_summary$ST, "Top clone", "Other")) %>% 
+    group_by(ct) %>% 
+    summarise("n_isolates" = n()) %>% 
+    mutate(pct_unclustered_cases = n_isolates/sum(n_isolates) * 100) 
+
+# Isolates in top clones
+top_clone_samples <- epi_snp_clusters_wt_upd_STS %>% 
+    filter(!is.na(Cluster)) %>% # only isolates in clusters # IMPORTANT
+    filter(ST %in% top_clones_summary$ST) %>% # subset top clones
+    mutate(ST = factor(ST, levels = top_clones_summary$ST)) %>% 
+    select(id, Cluster, ST, Study, Site, K_locus, O_locus, resistance_score,
+                  Region, Country, Country_Study, Country_Study_Site) 
+# Res score categories of top clone samples
+top_clone_samples %>%
+    rename_vars_for_plotting(column = "resistance_score") %>%
+    count(resistance_score) %>% 
+    DT::datatable(., caption="Res score categories of most common transmission clones")
+# Res score categories of all clones
+epi_snp_clusters %>%
+    rename_vars_for_plotting(column = "resistance_score") %>%
+    count(resistance_score) 
+
+# How many of the cluster isolates of these top clones carry at least an ESBL gene
+epi_snp_clusters_wt_upd_STS %>% 
+    filter(!is.na(Cluster)) %>% 
+    filter(ST %in% top_clones_summary$ST) %>% 
+    mutate(g = if_else(resistance_score > 0, "ESBL", "none")) %>% 
+    reframe(n_cluster_isolates = n(), .by = g) %>% 
+    mutate(p = n_cluster_isolates/sum(n_cluster_isolates)*100)
+
+
+# order plots
+top_clones_order <- top_clones_summary %>% 
+    arrange(desc(n_clusters)) %>% pull(ST)
+top_clones_order_y <- rev(top_clones_order)
+ctry_study_order <- top_clone_samples %>% arrange(Country) %>%
+    pull(Country_Study) %>% unique()
+ctry_study_site_order <- top_clone_samples %>% 
+    arrange(Region, Country) %>%
+    pull(Country_Study_Site) %>% unique()
+
+top_clones_colors <- setNames(
+    c(unname(Polychrome::glasbey.colors(n=15)[-1]), "grey98"),
+    c(top_clones_order, "Other STs"))
+top_clones_colors['ST35'] <- "#009E60"
+top_clones_colors['ST15'] <- "#6F8FBF"
+
+# Transmission profile table of top clones -------------
+top_clones_p1_table <- top_clones_summary %>%
+    left_join(trs_model_df, by=c("ST" = "Predictor")) %>% 
+    mutate(ST = factor(ST, levels = top_clones_order_y)) %>% 
+    ggplot(aes(y=ST)) +
+    geom_text(aes(x=0, label=n_clusters), hjust=0, size=4) +
+    annotate("text", x=0, y=nrow(top_clones_summary)+1, label="Clusters", 
+             hjust=0, fontface="bold", size=4) +
+    geom_vline(xintercept = 0.36, color = "grey80") +
+    geom_text(aes(x=0.38, label=n_isolates_singletons), hjust=0, size=4) +
+    annotate("text", x=0.38, y=nrow(top_clones_summary)+1, label="Single", 
+             hjust=0, fontface="bold", size=4) +
+    geom_vline(xintercept = 0.68, color = "grey80") +
+    geom_text(aes(x=0.7, label=n_sites_clusters), hjust=0, size=4) +
+    annotate("text", x=0.7, y=nrow(top_clones_summary)+1, label="Sites", 
+             hjust=0, fontface="bold", size=4) +
+    geom_vline(xintercept = 0.93, color = "grey80") +
+    geom_text(aes(x=0.95, label =sprintf('%.1f [%.1f-%.1f]', OR,lower,upper)), 
+              hjust=0, size=4) +
+    annotate("text", x=0.95, y=nrow(top_clones_summary)+1, label="OR [95% CI]",
+             hjust=0, fontface="bold", size=4) +
+    geom_vline(xintercept = 1.58, color = "grey80") +
+    geom_text(aes(x=1.6, fontface = ifelse(P < 0.05, "bold", "plain"),
+                  label = ifelse(P > 0.099, sprintf('%.2f', P), sprintf('%.3f', P))), 
+              hjust=0, size=4) +
+    annotate("text", x=1.6, y=nrow(top_clones_summary)+1, label="P", 
+             hjust=0, fontface="bold.italic", size=4) +
+    labs(title = "Transmission profile") +
+    geom_hline(yintercept = nrow(top_clones_summary)+0.5) +
+    geom_vline(xintercept = -0.05) +
+    scale_x_continuous(expand = expansion(mult = c(0.005, 0.5))) +
+    theme_void() + custom_plots_theme +
+    theme(axis.text.x = element_blank(), axis.title = element_blank(),
+          axis.ticks.x = element_blank(), panel.grid = element_blank()) +
+    coord_cartesian(ylim = c(1, nrow(top_clones_summary)+1), xlim=c(-0.1,1.2), clip="off")
+
+
+# top clones by n_clusters ------------------------
+top_clones_p1 <- top_clones_summary %>%
+    mutate(ST = factor(ST, levels = top_clones_order_y)) %>%
+    ggplot2::ggplot(aes(x=ST, y = n_clusters)) +
+    ggplot2::geom_col(fill = "#0571B0") +
+    ggplot2::labs(y = "Number of clusters", fill = "Median cluster size",
+                  title = "# clusters") +
+    ggplot2::theme_bw() +
+    ggplot2::scale_y_continuous(breaks = seq(0, max(top_clones_summary$n_clusters), 4)) +
+    custom_plots_theme + 
+    ggplot2::theme(axis.title = element_blank(),
+                   panel.grid.major.x = element_blank(), 
+                   panel.grid.minor.x = element_blank()) +
+    ggplot2::coord_flip()
+
+# n_sites_topclones -------------------------
+top_clones_p2 <- top_clones_summary %>%
+    mutate(ST = factor(ST, levels = top_clones_order_y)) %>% 
+    ggplot2::ggplot(aes(x=ST, y = n_sites_clusters)) +
+    ggplot2::geom_col(fill = "#0571B0") +
+    ggplot2::labs(y = "Number of sites", title = "# sites") +
+    ggplot2::theme_bw() +
+    ggplot2::scale_y_continuous(breaks = seq(0, max(top_clones_summary$n_isolates_clusters), 2)) +
+    custom_plots_theme + 
+    theme(axis.title = element_blank(),
+          panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank()) +
+    ggplot2::coord_flip() + 
+    ggplot2::guides(fill = "none")
+
+## site_distribution_top_clones; coded sites colored by region -------------
+top_clones_p3 <- top_clone_samples %>% group_by(ST) %>% 
+    add_count(ST, Site, name = "n_isolates") %>% 
+    mutate(ST = factor(ST, levels=top_clones_order_y)) %>% 
+    mutate(Country_Study_Site = 
+                      factor(Country_Study_Site, levels=ctry_study_site_order)) %>%
+    mutate(text = paste("Site: ", Country_Study_Site, 
+                        "\nST: ", ST, 
+                        "\nN cluster isolates: ", n_isolates)) %>% 
+    ggplot2::ggplot(aes(y = ST, x = Country_Study_Site, size = n_isolates, 
+                        colour = Region, text = text)) +
+    ggplot2::geom_point() +
+    ggplot2::scale_size(range = c(2, 10), name = "N cluster isolates") +
+    ggplot2::scale_color_manual(values = region_colors,
+                                guide=guide_legend(override.aes=list(size=3.5))) +
+    ggplot2::theme_classic() +
+    ggplot2::labs(title = "Site distribution", y = "Sites") +
+    custom_plots_theme + 
+    ggplot2::theme(axis.text.x = element_text(size=8, angle = 45, hjust = 1, vjust = 1),
+                   axis.title = element_blank(), panel.grid.major.x = element_line(color="grey95"),
+                   panel.grid.major.y = element_line(colour="grey70"), panel.grid.minor.x = element_blank()) 
+
+# AMR_distribution_top_clones ----------------------
+top_clones_p4 <- top_clone_samples %>% 
+    rename_vars_for_plotting(column = "resistance_score") %>% 
+    mutate(ST = factor(ST, levels = top_clones_order_y)) %>% 
+    mutate(resistance_score = factor(resistance_score, levels = rev(c(
+        '0: ESBL-, Carb-', '1: ESBL+, Carb-', '2: Carb+', '3: Carb+, Col+'
+    )))) %>% 
+    ggplot(aes(y = ST, fill = resistance_score)) +
+    geom_bar(position="fill") +
+    scale_fill_manual(values = res_colors) +
+    guides(fill = guide_legend(reverse = TRUE)) +
+    theme_classic() +
+    custom_plots_theme +
+    labs(title = "Resistance distribution", fill = "Resistance score") +
+    theme(axis.title = element_blank(),
+          panel.grid.major.y = element_line(colour="grey70"),
+          panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank())  
+
+# STs making up large clusters
+STs_by_cluster_size <- all_clusters_info_wt_upd_STs %>% 
+    mutate(Cluster_size = `N isolates`) %>% 
+    arrange(desc(Cluster_size)) %>% 
+    mutate(Cluster_size = factor(Cluster_size, levels = unique(Cluster_size))) %>% 
+    mutate(top_ST = if_else(ST %in% top_clones_order, ST, "Other STs")) %>% 
+    mutate(top_ST = factor(top_ST, levels = c(top_clones_order, "Other STs"))) %>% 
+    select(Cluster_size, `N isolates`, top_ST, ST, everything())
+# Plot
+STs_by_cluster_size_plot <- STs_by_cluster_size %>% 
+    ggplot(aes(x = Cluster_size, y = `N isolates`, fill=top_ST)) +
+    scale_fill_manual(values=top_clones_colors, name="ST") +
+    geom_col(color="black") +
+    labs(x = "Cluster size", y = "No. isolates",
+         title = "STs associated with large clusters") +
+    theme_classic() + custom_plots_theme +
+    labs() +
+    theme(panel.grid.major.y = element_line(colour="grey90"),
+          panel.grid.major.x = element_line(colour="grey90"),
+          axis.text.x = element_text(angle=45, hjust=1)) +
+    guides(fill = guide_legend(ncol=1))
+# Non-top STs making up large clusters
+STs_by_cluster_size %>% filter(top_ST == "Other STs")
+# What prop of large clusters (N >= ) are made up by most commonly transmitted STs
+STs_by_cluster_size %>% 
+    mutate(ST_grp = if_else(top_ST == "Other STs", "Others", "Top ST")) %>% 
+    filter(`N isolates` >= 15) %>% count(ST_grp) %>% 
+    mutate(pct=round(n/sum(n)*100,1))
+
+# Combine top clones plots ----------------------
+top_clones_combined_plot <-
+    (top_clones_p1 |
+        top_clones_p2 + theme(axis.text.y = element_blank()) |
+        top_clones_p3 + theme(axis.text.y = element_blank()) |
+        top_clones_p4 + theme(axis.text.y = element_blank())) +
+    plot_annotation(
+        title = 'Commonly transmitted STs',
+        subtitle = 'STs in ≥3 clusters & ≥2 sites',
+        theme = theme(plot.title = element_text(size = 16)),
+        tag_levels = "A", tag_prefix = "(", tag_suffix = ")") +
+    plot_layout(widths=c(0.8,0.8,1.9,1), guides="collect") &
+    theme(plot.tag = element_text(face="bold", vjust=-3.3))
+
+top_clones_combined_plot2 <- 
+    (top_clones_p1_table  + theme(plot.title = element_text(vjust = 3)) | 
+        top_clones_p3 + theme(axis.text.y = element_blank(), axis.text.x = element_text(size=10)) +
+            coord_cartesian(ylim = c(1, nrow(top_clones_summary)+1)) | 
+        top_clones_p4 + theme(axis.text.y = element_blank()) +
+            coord_cartesian(ylim = c(1, nrow(top_clones_summary)+1))
+     ) + 
+    plot_annotation(
+        title = 'Commonly transmitted STs',
+        subtitle = 'STs in ≥3 clusters & ≥2 sites',
+        theme = theme(plot.title = element_text(size = 16), plot.title.position = "panel"),
+        tag_levels = "A", tag_prefix = "(", tag_suffix = ")") +
+    plot_layout(widths=c(1.4,1.8,0.8), guides="collect") &
+    theme(plot.tag = element_text(face="bold", vjust=-3.3))
+
+top_clones_combined_plot3 <- 
+    ( top_clones_combined_plot2 + STs_by_cluster_size_plot ) + 
+    plot_layout(
+        design = c(area(1,1,1,2), area(1,3,1,5), area(1,6,1,7),
+                   area(2,1,2,7)), 
+        nrow = 2, guides = "collect") +
+    plot_annotation(theme = theme(plot.title = element_text(size = 20),
+                                  plot.subtitle = element_text(size = 14))) & 
+    theme(plot.tag = element_text(face="bold", vjust=-3.3),
+          legend.justification = "top")
+top_clones_combined_plot3
+
+ggsave(file=file.path(figs_dir, "Figure4_TransmissionClones.svg"), 
+       plot=top_clones_combined_plot3, width=15, height=12) 
+```
+
+
+<br><br>
+
+### Resistance distribution  
+
+```{r resistance_distro, fig.width=10, fig.height=7}
+# Resistance score categories all clones
+epi_snp_clusters_wt_upd_STS %>%
+    rename_vars_for_plotting(column = "resistance_score") %>%
+    count(resistance_score) %>%
+    DT::datatable(., caption="Res score categories of all clones")
+
+res_score_df <- epi_snp_clusters_wt_upd_STS %>% 
+    mutate(case_type = if_else(is.na(Cluster), "Single", "Cluster")) %>% 
+    add_count(Site, name="n_isolates_per_site") %>% 
+    mutate(m_Site = paste0(Study_lab, "\n", coded_site, " (N=", n_isolates_per_site,")")) %>% 
+    mutate(resistance_score_ori = as.numeric(resistance_score)) %>% 
+    rename_vars_for_plotting(column = "resistance_score") %>% 
+    arrange(Study, coded_site) %>% 
+    mutate(m_Site = factor(m_Site, levels = unique(m_Site))) %>%
+    arrange(Study, desc(resistance_score)) %>% 
+    mutate(clone_type = if_else(ST %in% top_clones_summary$ST, "Most common", "Others")) %>%
+    select(id, Cluster, Study, Country, m_Site, Country_Study_Site, coded_site, 
+           ST, resistance_score, resistance_score_ori, case_type, clone_type)
+
+# De-replicate clusters before comparison of res scores
+# i.e., 1 sample per cluster with consensus res score
+res_score_df_dereplicated <- res_score_df %>% 
+    # dereplicate clusters
+    filter(!is.na(Cluster)) %>% 
+    group_by(Cluster) %>% 
+    add_count(resistance_score) %>% 
+    slice_max(order_by = n, with_ties = F) %>% ungroup() %>% 
+    # add in non-cluster isolates
+    bind_rows(res_score_df %>% filter(is.na(Cluster)))
+
+```
+
+
+```{r ESBL_and_CP_by_case_type}
+res_case_type_plot <- res_score_df_dereplicated %>% 
+    rbind(res_score_df_dereplicated %>% 
+              mutate(m_Site=paste0("ALL SITES\n(N=", nrow(res_score_df_dereplicated), ")"))) %>% 
+    mutate(resistance_score = factor(resistance_score, levels = rev(names(res_colors)))) %>% 
+    ggplot2::ggplot(aes(x = case_type, fill = resistance_score)) +
+    ggplot2::geom_bar(position="fill") +
+    geom_text(aes(label=after_stat(count), color=resistance_score), stat="count", 
+              position=position_fill(vjust=0.5), size=3.5) +
+    ggplot2::scale_fill_manual(values = res_colors) +
+    ggplot2::scale_color_manual(values=c("orange", "black","black","black")) +
+    facet_wrap(~m_Site, ncol=6) + 
+    ggplot2::theme_bw() +
+    custom_plots_theme +
+    ggplot2::labs(fill="Resistance score", x="Case type", y="Proportion") +
+    ggplot2::theme(panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank(),
+                   legend.position = "bottom", axis.title = element_text(size=12),
+                   axis.text=element_text(size=10), legend.text=element_text(size=10),
+                   legend.title=element_text(size=10), strip.text=element_text(size=10)) +
+    ggplot2::guides(color = "none", fill = guide_legend(reverse = TRUE)) 
+ggsave(file=file.path(figs_dir, "FigureS8_Resistance_byCaseType.png"), 
+       plot=res_case_type_plot, width=10, height=11)
+ggsave(file=file.path(figs_dir, "FigureS8_Resistance_byCaseType.pdf"), 
+       plot=res_case_type_plot, width=16, height=13)
+ggsave(file=file.path(figs_dir, "FigureS8_Resistance_byCaseType.svg"), 
+       plot=res_case_type_plot, width=16, height=13)
+res_case_type_plot
+
+
+# Compare ESBL proportions by case type
+ESBL_by_case_type_contige_table <- res_score_df_dereplicated %>%
+    mutate(ESBL = if_else(resistance_score_ori >= 1, "ESBL", "non-ESBL")) %>%
+    select(case_type, ESBL) %>% table()
+ESBL_by_case_type_test <- prop.test(ESBL_by_case_type_contige_table)
+ESBL_by_case_type <- res_score_df_dereplicated %>% 
+    mutate(Category = if_else(resistance_score_ori >= 1, "Yes", "No")) %>% 
+    group_by(case_type, Category) %>% 
+    summarise(N = n()) %>% 
+    mutate(total_isolates = sum(N, na.rm = TRUE),  
+           pct = round((N / total_isolates) * 100, 1)) %>% 
+    select(-total_isolates) %>% ungroup() %>%  
+    mutate(Val = paste0(N, " (", pct, "%)")) %>% 
+    pivot_wider(id_cols = Category, names_from = case_type, values_from = Val) %>% 
+    mutate(Test="ESBL presence", pval=ESBL_by_case_type_test$p.value) %>% 
+    relocate(Test, .before = "Category")
+ESBL_by_case_type
+
+# Compare Carba proportions by case type
+CP_by_case_type_contige_table <- res_score_df_dereplicated %>%
+    mutate(CP = if_else(resistance_score_ori >= 2, "Carba", "non-carba")) %>%
+    select(case_type, CP) %>% table()
+CP_by_case_type_test <- prop.test(CP_by_case_type_contige_table)
+CP_by_case_type <- res_score_df_dereplicated %>% 
+    mutate(Category = if_else(resistance_score_ori >= 2, "Yes", "No")) %>% 
+    group_by(case_type, Category) %>% 
+    summarise(N = n()) %>% 
+    mutate(total_isolates = sum(N, na.rm = TRUE),  
+           pct = round((N / total_isolates) * 100, 1)) %>% 
+    select(-total_isolates) %>% ungroup() %>%  
+    mutate(Val = paste0(N, " (", pct, "%)")) %>% 
+    pivot_wider(id_cols = Category, names_from = case_type, values_from = Val) %>% 
+    mutate(Test="Carbapenem presence", pval=CP_by_case_type_test$p.value) %>% 
+    relocate(Test, .before = "Category")
+CP_by_case_type
+
+# Combine dfs
+bind_rows(ESBL_by_case_type, CP_by_case_type) %>% 
+    write_tsv(., file.path(tables_dir, "TableS6_ResByCaseType.tsv"))
+```
+
+
+```{r ESBL_and_CP_by_clone_type, fig.width=8, fig.height=6}
+# Compare resistance scores. Top clones vs Others
+res_score_df_dereplicated %>% group_by(clone_type) %>% reframe(n_distinct(ST))
+
+# ESBL proportions by clone type
+ESBL_by_clone_type_contige_table <- res_score_df_dereplicated %>%
+    mutate(ESBL = if_else(resistance_score_ori >= 1, "ESBL", "non-ESBL")) %>%
+    select(clone_type, ESBL) %>% table()
+ESBL_by_clone_type_test <- prop.test(ESBL_by_clone_type_contige_table)
+ESBL_by_clone_type <- res_score_df_dereplicated %>% 
+    mutate(Category = if_else(resistance_score_ori >= 1, "Yes", "No")) %>% 
+    group_by(clone_type, Category) %>% 
+    summarise(N = n()) %>% 
+    mutate(total_isolates = sum(N, na.rm = TRUE),  
+           pct = round((N / total_isolates) * 100, 1)) %>% 
+    select(-total_isolates) %>% ungroup() %>%  
+    mutate(Val = paste0(N, " (", pct, "%)")) %>% 
+    pivot_wider(id_cols = Category, names_from = clone_type, values_from = Val) %>% 
+    mutate(Test="ESBL presence", pval=ESBL_by_clone_type_test$p.value) %>% 
+    relocate(Test, .before = "Category")
+ESBL_by_clone_type
+
+
+# Carba proportions by clone type
+CP_by_clone_type_contige_table <- res_score_df_dereplicated %>%
+    mutate(CP = if_else(resistance_score_ori >= 2, "Carba", "non-carba")) %>%
+    select(clone_type, CP) %>% table()
+CP_by_clone_type_test <- prop.test(CP_by_clone_type_contige_table)
+CP_by_clone_type <- res_score_df_dereplicated %>% 
+    mutate(Category = if_else(resistance_score_ori >= 2, "Yes", "No")) %>% 
+    group_by(clone_type, Category) %>% 
+    summarise(N = n()) %>% 
+    mutate(total_isolates = sum(N, na.rm = TRUE),  
+           pct = round((N / total_isolates) * 100, 1)) %>% 
+    select(-total_isolates) %>% ungroup() %>%  
+    mutate(Val = paste0(N, " (", pct, "%)")) %>% 
+    pivot_wider(id_cols = Category, names_from = clone_type, values_from = Val) %>% 
+    mutate(Test="Carbapenem presence", pval=CP_by_clone_type_test$p.value) %>% 
+    relocate(Test, .before = "Category")
+CP_by_clone_type
+
+bind_rows(ESBL_by_clone_type, CP_by_clone_type) %>% 
+    write_tsv(., file.path(tables_dir, "TableS7_ResByCloneType.tsv"))
+
+
+```
+
+
+<br><br>
+
+## Effect of distance method on cluster estimates
+
+<details>
+<summary>Click to expand</summary> 
+```{r SKA_data}
+# BARNARDS
+BARNARDS_ska_snp_and_epi_data <- read_csv("data/BARNARDS/BARNARDS_pairwise_snpepi_data_SKA.csv", show_col_types=F) 
+BARNARDS_epi_snp_clusters_ska <- get_clusters(
+        BARNARDS_ska_snp_and_epi_data, snp_distance_threshold, 
+        temporal_distance_threshold, BARNARDS_data
+    ) %>%
+    mutate(Cluster=if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster))) %>% 
+    mutate(dist_method = "SKA")
+
+# SPINZ
+SPINZ_ska_snp_and_epi_data <- read_csv("data/SPINZ/SPINZ_pairwise_snpepi_data_SKA.csv", show_col_types=F) 
+SPINZ_epi_snp_clusters_ska <- get_clusters(
+        SPINZ_ska_snp_and_epi_data, genet_dist=snp_distance_threshold,
+        temp_dist=temporal_distance_threshold, metadata=SPINZ_data
+    ) %>% 
+    mutate(Cluster = if_else(is.na(Cluster), Cluster, paste0(Study, '_', Cluster))) %>% 
+    mutate(dist_method = "SKA")
+
+```
+</details>
+
+
+<br>
+
+
+#### Compare estimates at variable SNP and temporal distance
+```{r dist_method_comp_variable_snp, fig.height=7, fig.width=12}
+# BARNARDS SKA
+BARNARDS_ska_sens_df <- get_cluster_sensitivity(BARNARDS_ska_snp_and_epi_data, BARNARDS_data,
+                                                sens_snp_range, sens_temp_range)
+
+# SPINZ SKA
+SPINZ_ska_sens_df <- get_cluster_sensitivity(SPINZ_ska_snp_and_epi_data, SPINZ_data,
+                                            sens_snp_range, sens_temp_range)
+
+# SPINZ and BARNARDS -  SKA and PW sensisitivity
+combined_ska_pw_sens_df <- bind_rows(
+    BARNARDS_sens_df %>% mutate(Group = "BARNARDS (PW)"),
+    BARNARDS_ska_sens_df %>% mutate(Group = "BARNARDS (SKA)"),
+    SPINZ_sens_df %>% mutate(Group = "SPINZ (PW)"),
+    SPINZ_ska_sens_df %>% mutate(Group = "SPINZ (SKA)")
+)
+
+# Sensitivity plots
+dist_method_sens_clust_plot <- plot_sensitivity_SNP_vs_temp_range_2(
+    combined_ska_pw_sens_df, temp_dist_vals = sens_temp_dist_vals,
+    prop_var = "cluster_prop", y_title = "Proportion in clusters",
+    plot_title = "(A) Cluster proportion", selected_dist_thresh=snp_distance_threshold,
+    selected_temp_thresh=temporal_distance_threshold, facet_col = "Group") +
+    theme(axis.text = element_text(size=12), axis.title = element_text(size=14),
+          strip.text = element_text(size = 12), plot.title = element_text(face="bold"))
+
+dist_method_sens_trans_plot <- plot_sensitivity_SNP_vs_temp_range_2(
+    combined_ska_pw_sens_df, temp_dist_vals = sens_temp_dist_vals,
+    prop_var = "transmission_prop", y_title = "Proportion due to\ntransmission",
+    plot_title = "(B) Transmission proportion", selected_dist_thresh=snp_distance_threshold,
+    range_cols=c("white", "navyblue", "lightblue"),
+    selected_temp_thresh=temporal_distance_threshold, facet_col = "Group") +
+    theme(axis.text = element_text(size=12), axis.title = element_text(size=14),
+          strip.text = element_text(size = 12), plot.title = element_text(face="bold"))
+
+# Pairwise distance comparison plots
+# BARNARDS
+SKA_PW_dists_BARNARDS <- BARNARDS_snp_and_epi_data %>% 
+    mutate(L1 = if_else(iso1 < iso2, iso1, iso2)) %>% 
+    mutate(L2 = if_else(iso1 > iso2, iso1, iso2)) %>% 
+    select(L1, L2, Pathogenwatch = dist) %>% 
+    left_join(BARNARDS_ska_snp_and_epi_data %>% select(L1, L2, SKA = dist),
+              by = c("L1", "L2")) 
+SKA_PW_dists_BARNARDS_plot_100 <- SKA_PW_dists_BARNARDS %>% 
+    filter(Pathogenwatch <= 100 & SKA <= 100) %>% 
+    group_by(Pathogenwatch, SKA) %>% reframe(Pairs = n()) %>% 
+    ggplot(aes(y = SKA, x = Pathogenwatch, size = Pairs)) + 
+    geom_abline(color="grey80") +
+    geom_point() +
+    labs(title = NULL, x=NULL, y=NULL) +
+    theme_bw() +
+    coord_equal(xlim=c(0,100), ylim=c(0,100)) +
+    theme(axis.text = element_text(size=10), plot.margin = unit(c(0, 0, 0, 0), "mm"),
+          legend.title = element_text(size=10), legend.text = element_text(size=10))
+SKA_PW_dists_BARNARDS_plot <- SKA_PW_dists_BARNARDS %>% 
+    ggplot(aes(y = SKA, x = Pathogenwatch)) + 
+    labs(title = "(C) Pairwise genetic distances (BARNARDS)") +
+    geom_point() + theme_bw() +
+    theme(axis.text = element_text(size=12), axis.title = element_text(size=14), 
+          plot.title = element_text(face="bold")) +
+    patchwork::inset_element(SKA_PW_dists_BARNARDS_plot_100 + theme(legend.position = "none") +
+                                 scale_size_continuous(range=c(0.05,2)),
+                             0.6, 0.01, 0.99, 0.65, ignore_tag=T)
+
+# SPINZ
+SKA_PW_dists_SPINZ <- SPINZ_snp_and_epi_data %>% 
+    mutate(L1 = if_else(iso1 < iso2, iso1, iso2)) %>% 
+    mutate(L2 = if_else(iso1 > iso2, iso1, iso2)) %>% 
+    select(L1, L2, Pathogenwatch = dist) %>% 
+    left_join(SPINZ_ska_snp_and_epi_data %>% select(L1, L2, SKA = dist),
+              by = c("L1", "L2")) 
+SKA_PW_dists_SPINZ_plot_100 <- SKA_PW_dists_SPINZ %>% 
+    filter(Pathogenwatch <= 100 & SKA <= 100) %>% 
+    group_by(Pathogenwatch, SKA) %>% reframe(Pairs = n()) %>% 
+    ggplot(aes(y = SKA, x = Pathogenwatch, size = Pairs)) + 
+    geom_abline(color="grey80") +
+    geom_point() +
+    labs(title = NULL, x=NULL, y=NULL) +
+    theme_bw() +
+    coord_equal(xlim=c(0,100), ylim=c(0,100)) +
+    theme(axis.text = element_text(size=10), plot.margin = unit(c(0, 0, 0, 0), "mm"),
+          legend.title = element_text(size=10), legend.text = element_text(size=10))
+SKA_PW_dists_SPINZ_plot <- SKA_PW_dists_SPINZ %>% 
+    ggplot(aes(y = SKA, x = Pathogenwatch)) + 
+    labs(title = "(D) Pairwise genetic distances (SPINZ)") +
+    geom_point() + theme_bw() +
+    theme(axis.text = element_text(size=12), axis.title = element_text(size=14), 
+          plot.title = element_text(face="bold")) + 
+    patchwork::inset_element(SKA_PW_dists_SPINZ_plot_100 + theme(legend.position = "none") +
+                                 scale_size_continuous(range=c(0.05,2)),
+                             0.6, 0.01, 0.99, 0.65, ignore_tag=T)
+
+
+# Combine plots
+dist_method_sens_plots <- dist_method_sens_clust_plot + sens_clust_legend + 
+    dist_method_sens_trans_plot + sens_trans_legend + 
+    SKA_PW_dists_BARNARDS_plot +
+    SKA_PW_dists_SPINZ_plot + 
+    patchwork::plot_layout(
+        design = c(patchwork::area(1,1,1,3), patchwork::area(1,4),
+                   patchwork::area(2,1,2,3), patchwork::area(2,4),
+                   patchwork::area(3,1), patchwork::area(3,3)), 
+        guides = "collect", widths = unit(c(1,0.3,1,0.3,1,1), "null"))
+dist_method_sens_plots
+ggsave(file=file.path(figs_dir, "FigureS4_DistanceMethodSensitivity.png"), 
+       plot=dist_method_sens_plots, width=12, height=10, bg="white")
+ggsave(file=file.path(figs_dir, "FigureS4_DistanceMethodSensitivity.pdf"), 
+       plot=dist_method_sens_plots, width=12, height=9, bg="white")
+
+```
+
+
+
