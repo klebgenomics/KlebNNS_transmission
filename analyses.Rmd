@@ -2032,6 +2032,7 @@ res_score_df_dereplicated <- res_score_df %>%
     bind_rows(res_score_df %>% filter(is.na(Cluster))) %>% 
     add_count(coded_site, name="n_isolates_per_site") %>% 
     mutate(m_Site = paste0(Study_lab, "\n", coded_site, " (N=", n_isolates_per_site,")")) %>%
+    arrange(Study, coded_site) %>%
     mutate(m_Site = factor(m_Site, levels = unique(m_Site)))
 
 ```
