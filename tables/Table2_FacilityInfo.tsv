@@ -1,28 +1,28 @@
-Region	Country	Location	Facility_type	Facility_size	Neonatal_beds	Piped_water	Onsite_surgery	Site
-Eastern Africa	Ethiopia	Urban	Tertiary	Very Large	30	Sometimes	Yes	Site 1
-Eastern Africa	Ethiopia	Urban	Tertiary	Medium	40	Sometimes	Yes	Site 2
-Eastern Africa	Kenya	Rural	Regional	Large	75	Always	Yes	Site 3
-Eastern Africa	Kenya	Urban	District	Large	100	Always	No	Site 4
-Eastern Africa	Kenya	Urban	District	Large	90	Always	No	Site 5
-Eastern Africa	Malawi	Urban	Tertiary	Very Large	70	Most times	Yes	Site 6
-Eastern Africa	Malawi	Urban	Tertiary	Very Large	70	Most times	Yes	Site 7
-Eastern Africa	Rwanda	Rural	District	Medium	15	Always	Yes	Site 8
-Eastern Africa	Tanzania	Urban	Tertiary	Very Large	100	Always	Yes	Site 9
-Eastern Africa	Zambia	Urban	Tertiary	Small	60	Most times	Yes	Site 10
-Eastern Africa	Zambia	Urban	Tertiary	Very Large	60	Sometimes	Yes	Site 11
-Western Africa	Ghana	Urban	Tertiary	Small	55	Always	Yes	Site 12
-Western Africa	Nigeria	Urban	Tertiary	Very Large	30	Most times	Yes	Site 13
-Western Africa	Nigeria	Urban	Tertiary	Large	20	Always	Yes	Site 14
-Southern Africa	Botswana	Urban	Tertiary	Large	36	Most times	Yes	Site 15
-Southern Africa	South Africa	Urban	Tertiary	Very Large	132	Always	Yes	Site 16
-Southern Africa	South Africa	Urban	Tertiary	Very Large	71	Always	Yes	Site 17
-Southern Africa	South Africa	Urban	Tertiary	Large	36	Always	Yes	Site 18
-Southern Africa	South Africa	Urban	Regional	Large	72	Always	Yes	Site 19
-Southern Africa	South Africa	Urban	Tertiary	Large	45	Always	Yes	Site 20
-Southern Africa	South Africa	Urban	Tertiary	Large	60	Always	Yes	Site 21
-Southern Africa	South Africa	Urban	Regional	Large	92	Always	Yes	Site 22
-Southern Africa	South Africa	Urban	Tertiary	Very Large	200	Always	Yes	Site 23
-Southern Africa	South Africa	Urban	Tertiary	Very Large	132	Always	Yes	Site 24
-Southern Asia	Bangladesh	Urban	Tertiary	Very Large	80	Most times	Yes	Site 25
-Southern Asia	India	Urban	District	Small	12	Always	No	Site 26
-Southern Asia	Pakistan	Urban	Tertiary	Large	30	Always	Yes	Site 27
+Region	Country	Location	Facility_size	Neonatal_beds	Piped_water	Onsite_surgery	Site
+Eastern Africa	Ethiopia	Urban	Very Large	30	Sometimes	Yes	Site 1
+Eastern Africa	Ethiopia	Urban	Medium	40	Sometimes	Yes	Site 2
+Eastern Africa	Kenya	Rural	Large	75	Always	Yes	Site 3
+Eastern Africa	Kenya	Urban	Large	100	Always	No	Site 4
+Eastern Africa	Kenya	Urban	Large	90	Always	No	Site 5
+Eastern Africa	Malawi	Urban	Very Large	70	Most times	Yes	Site 6
+Eastern Africa	Malawi	Urban	Very Large	70	Most times	Yes	Site 7
+Eastern Africa	Rwanda	Rural	Medium	15	Always	Yes	Site 8
+Eastern Africa	Tanzania	Urban	Very Large	100	Always	Yes	Site 9
+Eastern Africa	Zambia	Urban	Small	60	Most times	Yes	Site 10
+Eastern Africa	Zambia	Urban	Very Large	60	Sometimes	Yes	Site 11
+Western Africa	Ghana	Urban	Small	55	Always	Yes	Site 12
+Western Africa	Nigeria	Urban	Very Large	30	Most times	Yes	Site 13
+Western Africa	Nigeria	Urban	Large	20	Always	Yes	Site 14
+Southern Africa	Botswana	Urban	Large	36	Most times	Yes	Site 15
+Southern Africa	South Africa	Urban	Very Large	132	Always	Yes	Site 16
+Southern Africa	South Africa	Urban	Very Large	71	Always	Yes	Site 17
+Southern Africa	South Africa	Urban	Large	36	Always	Yes	Site 18
+Southern Africa	South Africa	Urban	Large	72	Always	Yes	Site 19
+Southern Africa	South Africa	Urban	Large	45	Always	Yes	Site 20
+Southern Africa	South Africa	Urban	Large	60	Always	Yes	Site 21
+Southern Africa	South Africa	Urban	Large	92	Always	Yes	Site 22
+Southern Africa	South Africa	Urban	Very Large	200	Always	Yes	Site 23
+Southern Africa	South Africa	Urban	Very Large	132	Always	Yes	Site 24
+Southern Asia	Bangladesh	Urban	Very Large	80	Most times	Yes	Site 25
+Southern Asia	India	Urban	Small	12	Always	No	Site 26
+Southern Asia	Pakistan	Urban	Large	30	Always	Yes	Site 27

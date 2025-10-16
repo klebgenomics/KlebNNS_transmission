@@ -1159,88 +1159,44 @@ facilities_df <- read_tsv("./data/facilityInfo.tsv", show_col_types=F) %>%
         Piped_water = factor(Piped_water, levels = c("Sometimes", "Most times", "Always")),
         Onsite_surgery = factor(Onsite_surgery, levels = c("No", "Yes"))) %>% 
     arrange(Site)
-write_tsv(facilities_df %>% select(
-        Region, Country, Location, Facility_type, Facility_size, 
-        Neonatal_beds, Piped_water, Onsite_surgery, Site
-    ), 
-    file.path(tables_dir, "Table2_FacilityInfo.tsv"))
+write_tsv(facilities_df %>% 
+              select(Region, Country, Location, Facility_size, # Facility_type,
+                     Neonatal_beds, Piped_water, Onsite_surgery, Site), 
+          file.path(tables_dir, "Table2_FacilityInfo.tsv"))
 
 facilities_df_and_transmission_data <- all_sites_clusters_summary %>% 
     arrange(desc(cluster_prop)) %>% 
     left_join(facilities_df %>% select(-c(Region, Country)), 
               by = c("site"="Site")) %>% 
-    filter(!is.na(Facility_type)) 
+    filter(!is.na(Facility_type))
 
-
-# Boxplots of site characteristics vs cluster proportion
-facs_clust_prop_boxplots_lst <- plot_clust_prop_by_facility_data(
-    facilities_df_and_transmission_data %>% rename("No. neonatal beds" = "Neonatal_beds_grouped"),
-    c("Facility_type", "Onsite_surgery", "Facility_size", "Piped_water", "No. neonatal beds"))
-facs_clust_prop_boxplots <- (
-    facs_clust_prop_boxplots_lst[[1]] | 
-    facs_clust_prop_boxplots_lst[[2]] + theme(axis.title.y=element_blank(), axis.text.y=element_blank()) |  
-    facs_clust_prop_boxplots_lst[[3]] + theme(axis.title.y=element_blank(), axis.text.y=element_blank()) |
-    facs_clust_prop_boxplots_lst[[4]] | 
-    facs_clust_prop_boxplots_lst[[5]] + theme(axis.title.y=element_blank(), axis.text.y=element_blank()) 
-    ) + 
-    plot_layout(nrow=2) +
-    plot_annotation(tag_levels="A", tag_prefix="(", tag_suffix=")") &
-    theme(plot.tag = element_text(size=16, face='bold'))
-
-ggsave(file=file.path(figs_dir, "Figure3_ClusterPropByFacilityCharacteristics.png"),
-       plot=facs_clust_prop_boxplots, width=12, height=10, bg='white')
-ggsave(file=file.path(figs_dir, "Figure3_ClusterPropByFacilityCharacteristics.pdf"),
-       plot=facs_clust_prop_boxplots, width=12, height=10, bg='white')
-
-
-# Heatmap of site characteristics 
+# Heatmap of site characteristics vs cluster prop
 facs_heatmap_c <- plot_facility_data_heatmap(facilities_df, cluster_prop_meta_df)
-facs_heatmap_t <- plot_facility_data_heatmap(facilities_df, transmi_prop_meta_df)
 
 
 # Combine forest plots with site characteristics heatmap
 clust_meta_with_facility_heatmap <- (
         cluster_prop_meta_plots$p.left |  
         cluster_prop_meta_plots$p.right + theme(legend.key.height = unit(2, "mm")) | 
-        facs_heatmap_c$p1 | facs_heatmap_c$p2 | 
+        facs_heatmap_c$p1 | 
         facs_heatmap_c$p3 | facs_heatmap_c$p4 | 
         facs_heatmap_c$p5 + theme(legend.key.height = unit(6, "mm")) | 
         facs_heatmap_c$p6
     ) + 
     plot_annotation(
-        title = "(A) Cluster proportion",
+        title = "(A)",
         theme = theme(plot.title = element_text(size=16, face="bold"), plot.title.position = "panel")) +
-    plot_layout(widths=c(1,0.9,0.05,0.05,0.05,0.05,0.05,0.05), guides="collect") &
+    plot_layout(widths=c(1,0.9,0.05,0.05,0.05,0.05,0.05), guides="collect") &
     theme(plot.tag = element_text(face="bold", vjust=-3.3),
           legend.position = "bottom",
           legend.direction = "vertical", legend.box = "horizontal")
 
-ggsave(file=file.path(figs_dir, "FigureS7_PooledEstimatesWithFacilityDetails.png"),
-       plot=clust_meta_with_facility_heatmap & theme(plot.title = element_blank()), 
+ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesWithFacilityDetails.png"),
+       plot=clust_meta_with_facility_heatmap, 
        width=15, height=10, bg='white')
-ggsave(file=file.path(figs_dir, "FigureS7_PooledEstimatesWithFacilityDetails.pdf"),
-       plot=clust_meta_with_facility_heatmap & theme(plot.title = element_blank()), 
+ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesWithFacilityDetails.pdf"),
+       plot=clust_meta_with_facility_heatmap, 
        width=15, height=10, bg='white')
-
-
-transmi_meta_with_facility_heatmap <- (
-        transmi_prop_meta_plots$p.left |
-        transmi_prop_meta_plots$p.right + theme(legend.key.height = unit(2, "mm")) |
-        facs_heatmap_t$p1 | facs_heatmap_t$p2 |
-        facs_heatmap_t$p3 | facs_heatmap_t$p4 |
-        facs_heatmap_t$p5 + theme(legend.key.height = unit(6, "mm")) |
-        facs_heatmap_t$p6
-    ) +
-    plot_annotation(
-        title = "(B) Transmission proportion",
-        theme = theme(plot.title = element_text(size=16, face="bold"), plot.title.position = "panel")) +
-    plot_layout(widths=c(1,0.9,0.05,0.05,0.05,0.05,0.05,0.05), guides="collect") &
-    theme(plot.tag = element_text(face="bold", vjust=-3.3),
-          legend.position = "none")
-    
-meta_plots_with_facility_heatmap <- 
-    ggarrange(clust_meta_with_facility_heatmap, transmi_meta_with_facility_heatmap,
-              align="v", ncol=1, heights=c(1.2, 1))
 
 
 ```
@@ -1248,8 +1204,7 @@ meta_plots_with_facility_heatmap <-
 #### Pooled estimates by site characteristics
 ```{r facilities_metareg}
 # Meta regression
-covariates = c("Location", "Facility_type", "Onsite_surgery", 
-               "Facility_size", "Neonatal_beds", "Piped_water")
+covariates = c("Onsite_surgery", "Facility_size", "Neonatal_beds", "Piped_water")
 init_mt <- meta::metaprop(
         n_isolates_clusters, n_isolates, studlab=site, 
         data=facilities_df_and_transmission_data, 
@@ -1257,14 +1212,94 @@ init_mt <- meta::metaprop(
 meta_by_facs_xters <- metareg(init_mt, paste(covariates, collapse = " + "))
 meta_by_facs_xters_df <- parse_metareg_model(meta_by_facs_xters)
 summary(meta_by_facs_xters)
-
-
 # meta_by_facs_xters_df %>% 
 #     select(Predictor, OR, lower, upper, P) %>% 
 #     mutate(OR = sprintf("%.2f", OR), `95% CI` = sprintf("%.2f - %.2f", lower, upper)) %>% 
 #     select(Predictor, `Odds ratio` = OR, `95% CI`, P) %>% 
 #     write_tsv(., file.path(tables_dir, "TableSX_FacilitiesVsTransmissionReg.tsv"), na="-")
 
+# Meta regression plot
+meta_by_facs_xters_plot <- meta_by_facs_xters_df %>%  
+    mutate(Group = case_when(
+        grepl("^Onsite_surgery", Predictor) ~ "Onsite\nsurgery",
+        grepl("^Facility_size", Predictor) ~ "Facility\nsize",
+        grepl("^Piped_water", Predictor) ~ "Piped\nwater",
+        grepl("^Neonatal_beds", Predictor) ~ "Neonatal\nbeds",
+        TRUE ~ NA_character_
+    )) %>% 
+    mutate(Group = factor(Group, levels = c("Onsite\nsurgery", "Facility\nsize", 
+                                            "Neonatal\nbeds", "Piped\nwater"))) %>% 
+    mutate(Predictor = gsub("Onsite_surgery|Facility_size|Piped_water", "", Predictor)) %>% 
+    mutate(Predictor = if_else(Predictor == "Neonatal_beds", "No. of beds", Predictor)) %>% 
+    mutate(signif = case_when(
+        P < 0.05 ~ "P < 0.05",
+        P >= 0.05 ~ "P ≥ 0.05",
+        TRUE ~ NA_character_
+    )) %>% 
+    arrange(OR) %>% mutate(Predictor = factor(Predictor, levels = unique(Predictor))) %>% 
+    ggplot(aes(y = Predictor)) +
+    geom_pointrange(aes(x=OR, xmin=lower, xmax=upper, color=signif),
+                    position = position_dodge(width=.6), shape=16, size=.85) + 
+    scale_color_manual(values = c("darkred", "#FF8A8A"), name=NULL) +
+    # scale_x_continuous(trans = scales::pseudo_log_trans(base=10),
+    #                    breaks = c(0.1, 1, 2, 5, 10, 50)) +
+    geom_vline(xintercept = 1, lty = 2) +
+    labs(x = "Odds ratio with 95% CI", title="Association of facility characteristics\nwith transmission") +
+    facet_grid(rows = vars(Group), scales = "free_y", space = "free_y") +
+    theme_bw() +
+    theme(panel.grid.minor = element_blank(), axis.text = element_text(size=12),
+          axis.title = element_text(size=14), strip.text = element_text(size=12),
+          legend.text = element_text(size=12), panel.grid.major.y = element_blank(),
+          legend.position = "none",
+          legend.justification = "top", legend.key.height = unit(24, "pt"))
+
+meta_by_facs_xters_plot
+
+
+# Boxplots of site characteristics vs cluster proportion
+facs_clust_prop_boxplots_lst <- plot_clust_prop_by_facility_data(
+    facilities_df_and_transmission_data %>% rename("No. neonatal beds" = "Neonatal_beds_grouped"),
+    c("Onsite_surgery", "Facility_size", "Piped_water", "No. neonatal beds"))
+
+for (i in c(1:length(facs_clust_prop_boxplots_lst))) { 
+    facs_clust_prop_boxplots_lst[[i]] <- facs_clust_prop_boxplots_lst[[i]] +
+        theme(axis.title.y=element_blank(), axis.text.y=element_blank(),
+              axis.text.x = element_text(angle=45, hjust=1),
+              plot.title = element_text(hjust = 0.5))
+}
+
+
+# Combine plots
+combined_facs_clust_prop_plots <-
+    wrap_elements(
+        meta_by_facs_xters_plot +
+        plot_annotation(
+            title = "(B)", theme = theme(plot.title = element_text(size=14, face="bold"), 
+                                         plot.title.position = "panel"))
+    ) + 
+    wrap_elements((
+        facs_clust_prop_boxplots_lst[[1]] + 
+            theme(axis.title.y=element_text(size=12, angle=90, vjust=1), 
+                  axis.text.y=element_text(size=12)) +
+        facs_clust_prop_boxplots_lst[[2]] +
+        facs_clust_prop_boxplots_lst[[3]] + 
+            theme(axis.title.y=element_text(size=12, angle=90, vjust=1), 
+                  axis.text.y=element_text(size=12)) +
+        facs_clust_prop_boxplots_lst[[4]]) + 
+        plot_annotation(title = "(C)", tag_levels="i", tag_prefix="(", tag_suffix=")",
+                        theme = theme(plot.title = element_text(size=14, face="bold"), 
+                                             plot.title.position = "panel"))
+    ) + 
+    plot_layout(nrow=1, widths = c(0.4,0.6)) &
+    theme(plot.tag = element_text(size=14)) 
+
+ggsave(file=file.path(figs_dir, "FigureS7b_ClusterPropByFacilityCharacteristics.png"),
+       plot=combined_facs_clust_prop_plots, width=14, height=7, bg='white')
+ggsave(file=file.path(figs_dir, "FigureS7b_ClusterPropByFacilityCharacteristics.pdf"),
+       plot=combined_facs_clust_prop_plots, width=14, height=7, bg='white')
+
+
+# Summary of significant xters
 facilities_df_and_transmission_data %>%
     mutate(cluster_prop = round(cluster_prop*100, 1)) %>%
     group_by(Piped_water) %>%
@@ -1274,7 +1309,43 @@ facilities_df_and_transmission_data %>%
                 paste0(range(cluster_prop), collapse = "-"), "%]"
             )
     )
+facilities_df_and_transmission_data %>%
+    mutate(cluster_prop = round(cluster_prop*100, 1)) %>%
+    group_by(Onsite_surgery) %>%
+    reframe(n = n(), 
+            Cluster_prop = paste0(
+                median(cluster_prop, na.rm=T), "% [",
+                paste0(range(cluster_prop), collapse = "-"), "%]"
+            )
+    )
 
+# Correlation
+corr_clust_vs_n_cases <- ggplot(data = facilities_df_and_transmission_data, 
+                                aes(x = cluster_prop, y = n_isolates)) +
+    ggpmisc::stat_correlation(ggpmisc::use_label(c("R2", "P"), method="pearson"), small.r=T) +
+    ggpmisc::stat_poly_line(color = "black") +
+    geom_point() +
+    scale_x_continuous(breaks = c(0,0.2,0.4,0.6,0.8,1.0)) +
+    labs(x = "Cluster proportion", y = "Number of cases",
+         title = "Correlation between cluster proportion and number of cases") +
+    theme_bw() +
+    theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12),
+          legend.text = element_text(size = 10), 
+          plot.title = element_text(size = 12), legend.position = "bottom")
+corr_clust_vs_n_cases
+
+corr_cases_vs_beds <- ggplot(data = facilities_df_and_transmission_data, 
+                                aes(x = n_isolates, y = Neonatal_beds)) +
+    ggpmisc::stat_correlation(ggpmisc::use_label(c("R2", "P"), method="pearson"), small.r=T) +
+    ggpmisc::stat_poly_line(color = "black") +
+    geom_point() +
+    labs(x = "Number of cases", y = "No. neonatal beds",
+         title = "Correlation between no. of cases and no. of neonatal beds") +
+    theme_bw() +
+    theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12),
+          legend.text = element_text(size = 10), 
+          plot.title = element_text(size = 12), legend.position = "bottom")
+corr_cases_vs_beds
 ```
 
 
@@ -1673,9 +1744,9 @@ trs_model_and_intros_plot <-
     plot_annotation(tag_levels = "A", tag_prefix = "(", tag_suffix = ")") &
     theme(plot.tag = element_text(size = 20, face = "bold"),
           legend.text = element_text(size=18))
-ggsave(file=file.path(figs_dir, "Figure5_TransmissionPredictors.png"),
+ggsave(file=file.path(figs_dir, "Figure4_TransmissionPredictors.png"),
        plot=trs_model_and_intros_plot, width=12, height=20)
-ggsave(file=file.path(figs_dir, "Figure5_TransmissionPredictors.pdf"),
+ggsave(file=file.path(figs_dir, "Figure4_TransmissionPredictors.pdf"),
        plot=trs_model_and_intros_plot, width=12, height=20)
 
 
@@ -1991,7 +2062,7 @@ top_clones_combined_plot3 <-
           legend.justification = "top")
 top_clones_combined_plot3
 
-ggsave(file=file.path(figs_dir, "Figure4_TransmissionClones.svg"), 
+ggsave(file=file.path(figs_dir, "Figure3_TransmissionClones.svg"), 
        plot=top_clones_combined_plot3, width=15, height=12) 
 ```
 
