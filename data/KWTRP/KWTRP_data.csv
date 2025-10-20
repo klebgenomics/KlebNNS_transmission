@@ -163,7 +163,6 @@ id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_siz
 87339,KWTRP,Kenya,Eastern Africa,Site 3,neonate,2018,Klebsiella pneumoniae,ST48,31490,465,5519738,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
 88197,KWTRP,Kenya,Eastern Africa,Site 3,neonate,2018,Klebsiella pneumoniae,ST2800,160464,355,5693576,1,KL47,K47,Typeable,O1/O2v1,O1ab,Typeable
 89999,KWTRP,Kenya,Eastern Africa,Site 3,neonate,2018,Klebsiella pneumoniae,ST48,349065,152,5529167,1,KL62,K62,Typeable,O1/O2v1,O1ab,Typeable
-90155,KWTRP,Kenya,Eastern Africa,Site 3,neonate,2018,Klebsiella pneumoniae,ST4813,346347,111,5344396,0,KL55,K55,Typeable,O3/O3a,O3/O3a,Typeable
 92044,KWTRP,Kenya,Eastern Africa,Site 3,neonate,2018,Klebsiella pneumoniae,ST11,203520,215,5645405,1,KL15,K15,Typeable,O4,O4,Typeable
 92868,KWTRP,Kenya,Eastern Africa,Site 3,neonate,2018,Klebsiella pneumoniae,ST413,209904,159,5542294,1,KL112,unknown (KL112),Typeable,O1/O2v2,O1ab,Typeable
 96134,KWTRP,Kenya,Eastern Africa,Site 3,neonate,2019,Klebsiella pneumoniae,ST18,149352,246,5400410,0,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable

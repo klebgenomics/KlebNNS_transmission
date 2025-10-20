@@ -433,6 +433,9 @@ epi_snp_clusters %>% count(Region) %>% arrange(desc(n)) %>%
 
 all_clusters_info <-  get_cluster_info_nodates(epi_snp_clusters)
 
+summarise_cluster_nodates(epi_snp_clusters) %>% 
+    DT::datatable(., caption="Clusters summary")
+
 # Exclude clusters of size 2 (possible transient transmission) and get estimates
 epi_snp_clusters_of_gt2 <- epi_snp_clusters %>% 
     add_count(Cluster, name = "Cluster_size") %>% 

@@ -288,7 +288,6 @@ FF35_08-0180-00	SAMN48972297	SRR33931931	NA	MBIRA	Eastern Africa	Ethiopia	Site 2
 87339	SAMN48599396	SRR33636710	NA	KWTRP	Eastern Africa	Kenya	Site 3	neonate	2018	Klebsiella pneumoniae	ST48	31490	465	5519738	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
 88197	SAMN48599397	SRR33636709	NA	KWTRP	Eastern Africa	Kenya	Site 3	neonate	2018	Klebsiella pneumoniae	ST2800	160464	355	5693576	1	KL47	K47	Typeable	O1/O2v1	O1ab	Typeable
 89999	SAMN48599398	SRR33636708	NA	KWTRP	Eastern Africa	Kenya	Site 3	neonate	2018	Klebsiella pneumoniae	ST48	349065	152	5529167	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
-90155	SAMN48599400	SRR33636706	NA	KWTRP	Eastern Africa	Kenya	Site 3	neonate	2018	Klebsiella pneumoniae	ST4813	346347	111	5344396	0	KL55	K55	Typeable	O3/O3a	O3/O3a	Typeable
 92044	SAMN48599399	SRR33636707	NA	KWTRP	Eastern Africa	Kenya	Site 3	neonate	2018	Klebsiella pneumoniae	ST11	203520	215	5645405	1	KL15	K15	Typeable	O4	O4	Typeable
 92868	SAMN48599401	SRR33636705	NA	KWTRP	Eastern Africa	Kenya	Site 3	neonate	2018	Klebsiella pneumoniae	ST413	209904	159	5542294	1	KL112	unknown (KL112)	Typeable	O1/O2v2	O1ab	Typeable
 96134	SAMN48599403	SRR33636702	NA	KWTRP	Eastern Africa	Kenya	Site 3	neonate	2019	Klebsiella pneumoniae	ST18	149352	246	5400410	0	KL23	K23	Typeable	O1/O2v2	O2afg	Typeable
@@ -1427,7 +1426,6 @@ HG07822648	SRS23793589	SRR32003835	NA	GBS-COP	Southern Africa	South Africa	Site 
 HG0792698	SRS23793517	SRR32003907	NA	GBS-COP	Southern Africa	South Africa	Site 23	neonate	2020	Klebsiella pneumoniae	ST2039	69885	216	5505052	0	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
 HG08045544	SRS23793536	SRR32003888	NA	GBS-COP	Southern Africa	South Africa	Site 23	neonate	2020	Klebsiella pneumoniae	ST307	108975	181	5547451	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
 HG08025702	SRS23793535	SRR32003889	NA	GBS-COP	Southern Africa	South Africa	Site 23	neonate	2020	Klebsiella pneumoniae	ST5785	192280	212	5525042	2	KL30	K30	Typeable	O1/O2v2	O1ab	Typeable
-HG08036938	SRS23793567	SRR32003857	NA	GBS-COP	Southern Africa	South Africa	Site 23	neonate	2020	Klebsiella pneumoniae	ST2441	321716	53	5262150	0	KL7	K7	Typeable	O1/O2v2	O2afg	Typeable
 HG08040993	SRS23793534	SRR32003890	NA	GBS-COP	Southern Africa	South Africa	Site 23	neonate	2020	Klebsiella pneumoniae	ST13	312380	77	5570174	1	KL3	K3	Typeable	O1/O2v2	O1ab	Typeable
 HG08423951	SRS23793492	SRR32003932	NA	GBS-COP	Southern Africa	South Africa	Site 23	neonate	2020	Klebsiella pneumoniae	ST607	88747	281	5861939	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
 FF31_01-0057-00.1	SAMN48971858	SRR33931903	MBIRA_1	MBIRA	Southern Africa	South Africa	Site 24	neonate	2021	Klebsiella pneumoniae	ST29	178375	112	5450411	1	KL30	K30	Typeable	O1/O2v2	O1ab	Typeable
