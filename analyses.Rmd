@@ -1720,7 +1720,8 @@ intros_vs_clusters_plot <- intros_vs_clusters %>%
     mutate(common_ST = factor(common_ST, levels = unique(common_ST))) %>% 
     ggplot(aes(x=intros, y=clusters)) +
     geom_abline(color="grey30", linetype = 2, linewidth = 1) +
-    geom_jitter(aes(color = signif), width=0.02, height=0.07, size=4) +
+    geom_point(aes(color = signif), size=4, alpha=.8) +
+    # geom_jitter(aes(color = signif), width=0.02, height=0.07, size=4) +
     scale_color_manual(values = c("#750000", "#FF8A8A"), 
                        name="Predictor for\ntransmission", na.translate=F) +
     geom_smooth(method=lm, se=FALSE, formula=y~x-1, color="grey30") +
@@ -1731,7 +1732,7 @@ intros_vs_clusters_plot <- intros_vs_clusters %>%
         data = intros_vs_clusters %>% 
             filter(common_ST != "Other STs") %>%
             filter(intros >= 15 | P < 0.05),
-        aes(label=common_ST, color = signif), max.overlaps=40, size=5, seed=5) +
+        aes(label=common_ST, color = signif), max.overlaps=40, size=5, seed=5, show.legend=F) +
     labs(x = "No. of unique introductions", y = "No. of clusters") +
     theme_bw() +
     theme(axis.text=element_text(size=20), axis.title = element_text(size=20),
@@ -2005,6 +2006,7 @@ STs_by_cluster_size <- all_clusters_info_wt_upd_STs %>%
     select(Cluster_size, `N isolates`, top_ST, ST, everything())
 # Plot
 STs_by_cluster_size_plot <- STs_by_cluster_size %>% 
+    # mutate(Cluster_size = factor(Cluster_size, levels = rev(unique(Cluster_size)))) %>%
     ggplot(aes(x = Cluster_size, y = `N isolates`, fill=top_ST)) +
     scale_fill_manual(values=top_clones_colors, name="ST") +
     geom_col(color="black") +
