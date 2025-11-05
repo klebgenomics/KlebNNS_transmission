@@ -1,6 +1,6 @@
 # Contribution of nosocomial transmission to *Klebsiella pneumoniae* neonatal sepsis in Africa and South Asia: a meta-analysis of infection clusters inferred from pathogen genomics and temporal data  
 
-This repository includes data and code from the above-titled paper. 
+This repository includes data and code from the above-titled paper (Odih et al, 2025, MedRxiv). 
 
 [Article/preprint](#)
 
@@ -16,4 +16,4 @@ The analysis requires imported code from the [Transmission Estimator](https://gi
 If you use the data, code, and figures or tables presented here, please cite:  
 
 1. This repository: [DOI](#)  
-2. The paper: "Contribution of nosocomial transmission to *Klebsiella pneumoniae* neonatal sepsis in Africa and South Asia: a meta-analysis of infection clusters inferred from pathogen genomics and temporal data."
+2. The paper: "Contribution of nosocomial transmission to *Klebsiella pneumoniae* neonatal sepsis in Africa and South Asia: a meta-analysis of infection clusters inferred from pathogen genomics and temporal data."  (Odih et al, 2025, MedRxiv)
