@@ -1,35 +1,35 @@
 id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_size,resistance_score,K_locus,K_type,K_locus_confidence,O_locus,O_type,O_locus_confidence
-164_21181B2_S34_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1540,374596,52,5427336,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
-165_21178B2_S35_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1540,392037,55,5431951,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
-166_21191B1_S36_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1540,374613,63,5426701,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
-167_21192B1_S13_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1540,360964,54,5425935,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
-169_21165B2_S39_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1540,316032,159,5490056,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
-171_21199B1_S41_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1540,322522,69,5447409,1,KL145,Capsule null,Typeable,OL103,unknown,Typeable
-173_21216B3_S43_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1263,187396,83,5646992,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
-174_21272B2_S44_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1263,225841,80,5615514,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
-175_21274B1_S45_00_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1263,178007,500,5911471,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
-176_21278B1_S46_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1263,187491,71,5609524,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
-179_21285B2_S11_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1263,239251,71,5610821,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
-191_21337B1-A_S13_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST11,247369,73,5558858,2,KL15,K15,Typeable,O4,O4,Typeable
-194_21341B2_S64_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST11,365879,74,5585192,2,KL15,K15,Typeable,O4,O4,Typeable
-195_21366B1_S65_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST11,306678,74,5585438,2,KL15,K15,Typeable,O4,O4,Typeable
-197_21374B2_S67_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST11,281695,80,5589810,2,KL15,K15,Typeable,O4,O4,Typeable
-198_21384B1_S68_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST11,281155,80,5591983,2,KL15,K15,Typeable,O4,O4,Typeable
-235_21403B2_S17_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2022,Klebsiella pneumoniae,ST11,172330,100,5571648,2,KL15,K15,Typeable,O4,O4,Typeable
-217_20011_S80_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2019,Klebsiella pneumoniae,ST231,257005,122,5615858,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
-4_20010_S56_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2019,Klebsiella pneumoniae,ST231,284488,464,5847272,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
-9_20049-A_S61_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2019,Klebsiella pneumoniae,ST231,244371,99,5616415,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
-230_21361B2_S30_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1741,199154,97,5420686,2,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
-231_21362B2_S31_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1741,172514,110,5418496,2,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
-41_20869B1_S90_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST45,358062,81,5661137,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
-44_20909B1_S92_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST45,319578,95,5659188,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
-53_20994B1_S101_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST45,319578,88,5657245,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
-54_20989B2_S102_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST45,289475,103,5667280,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
-55_21003B2_S103_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST45,319578,98,5668509,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
-56_21012B1_S104_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1741,281107,76,5496748,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
-57_21015B1_S105_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1741,281107,78,5499719,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
-58_21017B1_S106_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2021,Klebsiella pneumoniae,ST1741,281375,76,5497787,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
-14_20107_S66_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2019,Klebsiella pneumoniae,ST15,188397,216,5687772,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
-17_20167_S109_00_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2019,Klebsiella pneumoniae,ST231,244371,500,5990945,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
-27_20539B1_S76_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2020,Klebsiella pneumoniae,ST584,176675,119,5664795,1,KL10,K10,Typeable,O3b,O3b,Typeable
-28_20590B1_S77_scaffolds_final,DH,India,Southern Asia,Site 26,neonate,2020,Klebsiella pneumoniae,ST560,357339,32,5527736,0,KL9,K9,Typeable,O1/O2v2,O2afg,Typeable
+164_21181B2_S34_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1540,374596,52,5427336,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
+165_21178B2_S35_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1540,392037,55,5431951,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
+166_21191B1_S36_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1540,374613,63,5426701,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
+167_21192B1_S13_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1540,360964,54,5425935,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
+169_21165B2_S39_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1540,316032,159,5490056,1,KL145,unknown (KL145),Typeable,OL103,unknown,Typeable
+171_21199B1_S41_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1540,322522,69,5447409,1,KL145,Capsule null,Typeable,OL103,unknown,Typeable
+173_21216B3_S43_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1263,187396,83,5646992,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
+174_21272B2_S44_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1263,225841,80,5615514,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
+175_21274B1_S45_00_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1263,178007,500,5911471,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
+176_21278B1_S46_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1263,187491,71,5609524,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
+179_21285B2_S11_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1263,239251,71,5610821,2,KL10,K10,Typeable,O3/O3a,O3/O3a,Typeable
+191_21337B1-A_S13_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST11,247369,73,5558858,2,KL15,K15,Typeable,O4,O4,Typeable
+194_21341B2_S64_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST11,365879,74,5585192,2,KL15,K15,Typeable,O4,O4,Typeable
+195_21366B1_S65_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST11,306678,74,5585438,2,KL15,K15,Typeable,O4,O4,Typeable
+197_21374B2_S67_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST11,281695,80,5589810,2,KL15,K15,Typeable,O4,O4,Typeable
+198_21384B1_S68_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST11,281155,80,5591983,2,KL15,K15,Typeable,O4,O4,Typeable
+235_21403B2_S17_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2022,Klebsiella pneumoniae,ST11,172330,100,5571648,2,KL15,K15,Typeable,O4,O4,Typeable
+217_20011_S80_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2019,Klebsiella pneumoniae,ST231,257005,122,5615858,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
+4_20010_S56_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2019,Klebsiella pneumoniae,ST231,284488,464,5847272,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
+9_20049-A_S61_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2019,Klebsiella pneumoniae,ST231,244371,99,5616415,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
+230_21361B2_S30_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1741,199154,97,5420686,2,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+231_21362B2_S31_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1741,172514,110,5418496,2,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+41_20869B1_S90_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST45,358062,81,5661137,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+44_20909B1_S92_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST45,319578,95,5659188,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+53_20994B1_S101_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST45,319578,88,5657245,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+54_20989B2_S102_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST45,289475,103,5667280,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+55_21003B2_S103_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST45,319578,98,5668509,2,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+56_21012B1_S104_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1741,281107,76,5496748,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+57_21015B1_S105_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1741,281107,78,5499719,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+58_21017B1_S106_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2021,Klebsiella pneumoniae,ST1741,281375,76,5497787,1,KL104,unknown (KL104),Typeable,O1/O2v2,O1ab,Typeable
+14_20107_S66_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2019,Klebsiella pneumoniae,ST15,188397,216,5687772,2,KL112,unknown (KL112),Typeable,O1/O2v1,O1ab,Typeable
+17_20167_S109_00_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2019,Klebsiella pneumoniae,ST231,244371,500,5990945,3,KL51,K51,Typeable,O1/O2v2,O1ab,Typeable
+27_20539B1_S76_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2020,Klebsiella pneumoniae,ST584,176675,119,5664795,1,KL10,K10,Typeable,O3b,O3b,Typeable
+28_20590B1_S77_scaffolds_final,DH,India,Southern Asia,Site 24,neonate,2020,Klebsiella pneumoniae,ST560,357339,32,5527736,0,KL9,K9,Typeable,O1/O2v2,O2afg,Typeable

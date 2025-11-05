@@ -479,7 +479,7 @@ africa_and_asia <- rnaturalearth::ne_countries(scale="large", type="countries",
 setdiff(country_sample_count$country, africa_and_asia$country)
 
 # Sample distribution with sites shown (Only Africa and Asia) --------------------------------
-site_coords <- readr::read_csv("./data/site_coordinates.csv") %>% 
+site_coords <- read_csv("./data/site_coordinates.csv", show_col_types = F) %>% 
     left_join(demog_table_1 %>% select(Site, `# genomes`, Period), by = "Site") 
 
 site_sample_count_sf <- epi_snp_clusters %>% 
@@ -528,9 +528,9 @@ region_dist_wt_sites <- africa_and_asia %>%
 #### Year of isolation
 ```{r year_distribution, fig.width=7, fig.height=9}
 year_plot2 <- epi_snp_clusters %>% 
-    mutate(coded_site_num = as.numeric(sub("Site ", "", coded_site))) %>% 
+    mutate(coded_site_num = as.numeric(gsub("Site |A|B", "", coded_site))) %>% 
     mutate(Region = factor(Region, levels=region_order)) %>% 
-    arrange(factor(Region, levels=region_order), coded_site_num) %>%
+    arrange(factor(Region, levels=rev(region_order)), desc(coded_site_num)) %>%
     mutate(coded_site = factor(coded_site, levels = unique(coded_site))) %>% 
     add_count(coded_site, name="N_isolates") %>% 
     ggplot(aes(x=Year, y=coded_site)) +
@@ -613,20 +613,32 @@ combined_sens_trans_plot
 <br><br>
 
 ```{r sensitivity_figure_manuscript, echo=F}
-# manuscript fig
-sens_fig_manuscript <- ggarrange(
-    combined_sens_clust_plot + 
-        plot_annotation(title = "Cluster proportion estimates",
-                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
-    combined_sens_trans_plot + 
-        plot_annotation(title = "Transmission proportion estimates",
-                        theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))), 
-    ncol=1, labels=c("(A)", "(B)"), font.label=list(size=16, face="bold", color="black"))
+# # manuscript fig
+# sens_fig_manuscript <- ggarrange(
+#     combined_sens_clust_plot + 
+#         plot_annotation(title = "Cluster proportion estimates",
+#                         theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
+#     combined_sens_trans_plot + 
+#         plot_annotation(title = "Transmission proportion estimates",
+#                         theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))), 
+#     ncol=1, labels=c("(A)", "(B)"), font.label=list(size=16, face="bold", color="black"))
+# 
+# ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivity.png"), 
+#        plot=sens_fig_manuscript, width=9, height=10)
+# ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivity.tiff"), 
+#        plot=sens_fig_manuscript, width=9, height=10)
 
-ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivity.png"), 
-       plot=sens_fig_manuscript, width=9, height=10)
-ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivity.tiff"), 
-       plot=sens_fig_manuscript, width=9, height=10)
+
+
+ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivityClust.png"), 
+       plot=combined_sens_clust_plot, width=9, height=5)
+ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivityClust.tiff"), 
+       plot=combined_sens_clust_plot, width=9, height=5)
+
+ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivityTrans.png"), 
+       plot=combined_sens_trans_plot, width=9, height=5)
+ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivityTrans.tiff"), 
+       plot=combined_sens_trans_plot, width=9, height=5)
 ```
 
 ```{r sensitivity_diff_in_estimates, echo=F}
@@ -792,9 +804,9 @@ sens_fig_1000SNPs <- ggarrange(
                         theme=theme(plot.title = element_text(size=14, face="bold", hjust=0.1))),
     ncol=1, labels=c("(A)", "(B)"), font.label=list(size=16, face="bold", color="black"))
 
-ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivity1000SNPs.png"),
+ggsave(file=file.path(figs_dir, "FigureS4_ThresholdSensitivity1000SNPs.png"),
        plot=sens_fig_1000SNPs, width=10, height=10)
-ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivity1000SNPs.tiff"),
+ggsave(file=file.path(figs_dir, "FigureS4_ThresholdSensitivity1000SNPs.tiff"),
        plot=sens_fig_1000SNPs, width=10, height=10)
 ```
 
@@ -1110,19 +1122,19 @@ transmi_prop_meta_by_region_forest <- {
 
 get_metaprop_subgroup_estimates(transmi_prop_meta_by_region)
 
-ggsave(file=file.path(figs_dir, "FigureS6a_PooledEstimatesRegion.png"), 
+ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesRegion.png"), 
        plot=ggarrange(cluster_prop_meta_by_region_forest, labels=c("(A) Cluster proportion"),
                       font.label = list(size = 18)), 
        width=11, height=11, bg='white')
-ggsave(file=file.path(figs_dir, "FigureS6a_PooledEstimatesRegion.tiff"), 
+ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesRegion.tiff"), 
        plot=ggarrange(cluster_prop_meta_by_region_forest, labels=c("(A) Cluster proportion"),
                       font.label = list(size = 18)), 
        width=11, height=11, bg='white')
-ggsave(file=file.path(figs_dir, "FigureS6b_PooledEstimatesRegion.png"), 
+ggsave(file=file.path(figs_dir, "FigureS7b_PooledEstimatesRegion.png"), 
        plot=ggarrange(transmi_prop_meta_by_region_forest, labels=c("(B) Transmission proportion"),
                       font.label = list(size = 18)), 
        width=11, height=11, bg='white')
-ggsave(file=file.path(figs_dir, "FigureS6b_PooledEstimatesRegion.tiff"), 
+ggsave(file=file.path(figs_dir, "FigureS7b_PooledEstimatesRegion.tiff"), 
        plot=ggarrange(transmi_prop_meta_by_region_forest, labels=c("(B) Transmission proportion"),
                       font.label = list(size = 18)), 
        width=11, height=11, bg='white')
@@ -1194,10 +1206,10 @@ clust_meta_with_facility_heatmap <- (
           legend.position = "bottom",
           legend.direction = "vertical", legend.box = "horizontal")
 
-ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesWithFacilityDetails.png"),
+ggsave(file=file.path(figs_dir, "FigureS8a_PooledEstimatesWithFacilityDetails.png"),
        plot=clust_meta_with_facility_heatmap, 
        width=15, height=10, bg='white')
-ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesWithFacilityDetails.tiff"),
+ggsave(file=file.path(figs_dir, "FigureS8a_PooledEstimatesWithFacilityDetails.tiff"),
        plot=clust_meta_with_facility_heatmap, 
        width=15, height=10, bg='white')
 
@@ -1296,9 +1308,9 @@ combined_facs_clust_prop_plots <-
     plot_layout(nrow=1, widths = c(0.4,0.6)) &
     theme(plot.tag = element_text(size=14)) 
 
-ggsave(file=file.path(figs_dir, "FigureS7b_ClusterPropByFacilityCharacteristics.png"),
+ggsave(file=file.path(figs_dir, "FigureS8b_ClusterPropByFacilityCharacteristics.png"),
        plot=combined_facs_clust_prop_plots, width=14, height=7, bg='white')
-ggsave(file=file.path(figs_dir, "FigureS7b_ClusterPropByFacilityCharacteristics.tiff"),
+ggsave(file=file.path(figs_dir, "FigureS8b_ClusterPropByFacilityCharacteristics.tiff"),
        plot=combined_facs_clust_prop_plots, width=14, height=7, bg='white')
 
 
@@ -1479,9 +1491,9 @@ DT::datatable(all_clusters_summary, caption="Clusters summary (with raw overall 
 #     bottom = text_grob("Isolation date", size=16)
 # )
 # all_cluster_plots
-# ggsave(file=file.path(figs_dir, "FigureS5_ClustersPerSite.png"), 
+# ggsave(file=file.path(figs_dir, "FigureS6_ClustersPerSite.png"), 
 #        plot=all_cluster_plots, width=15, height=16, bg="white")
-# ggsave(file=file.path(figs_dir, "FigureS5_ClustersPerSite.tiff"), 
+# ggsave(file=file.path(figs_dir, "FigureS6_ClustersPerSite.tiff"), 
 #        plot=all_cluster_plots, width=15, height=16, bg="white")
 
 
@@ -2006,7 +2018,7 @@ STs_by_cluster_size <- all_clusters_info_wt_upd_STs %>%
     select(Cluster_size, `N isolates`, top_ST, ST, everything())
 # Plot
 STs_by_cluster_size_plot <- STs_by_cluster_size %>% 
-    # mutate(Cluster_size = factor(Cluster_size, levels = rev(unique(Cluster_size)))) %>%
+    mutate(Cluster_size = factor(Cluster_size, levels = rev(unique(Cluster_size)))) %>%
     ggplot(aes(x = Cluster_size, y = `N isolates`, fill=top_ST)) +
     scale_fill_manual(values=top_clones_colors, name="ST") +
     geom_col(color="black") +
@@ -2134,11 +2146,11 @@ res_case_type_plot <- res_score_df_dereplicated %>%
                    axis.text=element_text(size=10), legend.text=element_text(size=10),
                    legend.title=element_text(size=10), strip.text=element_text(size=10)) +
     ggplot2::guides(color = "none", fill = guide_legend(reverse = TRUE)) 
-ggsave(file=file.path(figs_dir, "FigureS8_Resistance_byCaseType.png"), 
+ggsave(file=file.path(figs_dir, "FigureS9_Resistance_byCaseType.png"), 
        plot=res_case_type_plot, width=10, height=11)
-ggsave(file=file.path(figs_dir, "FigureS8_Resistance_byCaseType.tiff"), 
+ggsave(file=file.path(figs_dir, "FigureS9_Resistance_byCaseType.tiff"), 
        plot=res_case_type_plot, width=16, height=13)
-ggsave(file=file.path(figs_dir, "FigureS8_Resistance_byCaseType.svg"), 
+ggsave(file=file.path(figs_dir, "FigureS9_Resistance_byCaseType.svg"), 
        plot=res_case_type_plot, width=16, height=13)
 res_case_type_plot
 
@@ -2370,9 +2382,9 @@ dist_method_sens_plots <- dist_method_sens_clust_plot + sens_clust_legend +
                    patchwork::area(3,1), patchwork::area(3,3)), 
         guides = "collect", widths = unit(c(1,0.3,1,0.3,1,1), "null"))
 dist_method_sens_plots
-ggsave(file=file.path(figs_dir, "FigureS4_DistanceMethodSensitivity.png"), 
+ggsave(file=file.path(figs_dir, "FigureS5_DistanceMethodSensitivity.png"), 
        plot=dist_method_sens_plots, width=12, height=10, bg="white")
-ggsave(file=file.path(figs_dir, "FigureS4_DistanceMethodSensitivity.tiff"), 
+ggsave(file=file.path(figs_dir, "FigureS5_DistanceMethodSensitivity.tiff"), 
        plot=dist_method_sens_plots, width=12, height=9, bg="white")
 
 ```

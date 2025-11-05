@@ -1,286 +1,286 @@
 id,Study,Country,Region,Site,neonatal,Year,species,ST,N50,contig_count,total_size,resistance_score,K_locus,K_type,K_locus_confidence,O_locus,O_type,O_locus_confidence
-ERR6349916,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,177694,273,5634688,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349929,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267592,226,5631656,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350132,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,177754,260,5634505,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350134,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179068,241,5628717,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350135,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214813,252,5634004,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350148,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,203957,218,5634338,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350149,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,260,5641309,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350150,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,324,5656989,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350151,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243831,280,5643634,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350152,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,221,5634881,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350197,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,307638,243,5631944,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350198,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,200656,316,5649419,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350200,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243827,251,5632005,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350212,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,203957,264,5635357,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350214,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,786,5776624,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350763,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,203990,329,5652209,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350765,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210730,248,5632687,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350775,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,273,5639615,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350801,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267592,243,5632451,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350803,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267553,218,5635543,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350930,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,269255,229,5635095,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351003,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214725,262,5632552,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351014,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,238,5633251,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-157-ZN0158,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,185257,600,5707498,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-158-ZN0157,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,178003,532,5692551,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-214-ZN0200,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,178053,378,5642434,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZJN0038,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,177475,417,5654073,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0002,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,165301,994,5802636,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0003,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,177219,897,5770849,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0004,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,155569,936,5778768,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0007,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,675,5716022,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0010,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,536,5687551,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0011,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,651,5721929,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0015,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179024,894,5783807,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0041,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,177765,631,5713810,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0044,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179024,583,5693611,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0105,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179030,709,5730719,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0115,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179172,408,5653907,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-ZN0116-II,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,428,5657177,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349919,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,431099,175,5340131,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349920,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,478111,133,5329704,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349933,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,431099,237,5357506,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350139,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,431099,152,5335669,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350202,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,349152,159,5338011,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350215,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,431611,875,5562837,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350216,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,430934,151,5335924,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350767,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,293521,129,5329894,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350780,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,358911,558,5461218,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350811,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,293526,438,5432776,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350866,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,430898,912,5567464,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350887,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,358911,170,5337954,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350911,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,293520,163,5338980,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351018,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,293547,838,5526242,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351019,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,358909,130,5327839,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-2610-ZN2242,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,293595,564,5435676,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-2686-ZN2314,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,293477,475,5401300,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-2745-ZN2370,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,233993,884,5512364,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-2752-ZN2372,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,306314,443,5393429,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349921,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,215853,346,5653454,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349926,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,214814,238,5635567,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350141,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,214782,574,5703620,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350156,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,243869,435,5676002,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350203,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,214657,396,5661442,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350204,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,182725,236,5628410,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350217,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,207191,269,5635547,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350218,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,195009,454,5653103,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350768,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,267553,297,5644893,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350781,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,216147,242,5629872,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350782,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,267592,247,5640151,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350793,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,210730,829,5807491,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350813,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,243827,243,5641234,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350820,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,204003,228,5634825,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350852,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,184371,290,5641968,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350879,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,269256,325,5645175,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350885,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,184371,204,5633317,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350912,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,267553,257,5631519,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350923,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,269252,276,5636063,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350924,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,178097,321,5649442,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350928,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,203990,238,5631801,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351006,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,224125,270,5633049,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351007,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,204003,275,5643358,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351020,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,267592,327,5662996,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351021,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,216539,329,5647793,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349923,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214813,245,5633535,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349924,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210730,249,5636287,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349925,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,224355,268,5640967,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350143,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,269255,223,5634832,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350195,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214782,256,5641104,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350199,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210715,239,5630483,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350210,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210730,267,5633908,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350770,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,190581,251,5633968,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350786,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,184506,235,5636204,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350795,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243827,271,5635640,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350800,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243827,242,5636371,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350802,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243827,256,5630053,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350807,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214813,329,5655847,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350816,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210730,353,5664359,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350829,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179068,252,5634006,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350835,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204084,700,5749137,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350842,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,224433,217,5630850,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350843,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267592,421,5680825,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350849,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,224689,228,5635347,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350853,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,237,5631030,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350869,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243827,210,5634815,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350870,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,225857,244,5641543,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350875,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,203990,228,5631782,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350876,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210729,253,5634368,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350881,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267553,247,5632687,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350891,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,224691,286,5642388,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350893,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,239327,241,5636217,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350903,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214814,254,5635419,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350914,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,269253,254,5631539,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350925,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,241,5631279,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350926,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,224132,217,5633163,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350934,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179137,298,5637822,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350935,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243970,223,5631600,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350936,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,200081,277,5645743,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351008,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267611,230,5632610,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351009,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,222,5633367,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351022,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267903,338,5658349,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351023,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,269255,218,5629629,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-219-ZN0205,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,417,5646142,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-241-ZN0231,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,100889,509,5652110,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-249-ZN0225,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,177630,354,5646954,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-255-ZN0232,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179238,893,5780842,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-259-ZN0235,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,561,5698159,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-260-ZN0236,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,429,5666735,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-261-ZN0237,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,609,5715767,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-263-ZN0239,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,397,5649561,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-276-ZN0248,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,391,5654368,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-339-ZN0302,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,185257,333,5634103,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-380-ZN0340,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,392,5647603,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-383-ZN0346,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,436,5652618,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-389-ZN0344,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,160513,316,5638691,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-390-ZN0345,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,185250,350,5640035,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-406-ZN0367,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,185257,360,5646289,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-413-ZN0368,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,185257,372,5651004,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-415-ZN0375,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,185257,352,5636845,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-419-ZN0372,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,165301,544,5682929,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-423-ZN0394,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267589,470,5669761,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-433-ZN0445,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,165301,580,5685022,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-435-ZN0382,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,644,5705584,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-438-ZN0397,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,165303,848,5764496,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-449-ZN0404,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,177191,715,5719776,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-450-ZN0405,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,165301,960,5797584,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-456-ZN0409,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,165301,381,5649274,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349937,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214782,308,5652970,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350144,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,196269,351,5658244,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350758,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,200656,311,5650628,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350772,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267553,207,5626271,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350808,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204415,230,5635222,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350817,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210730,262,5633714,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350818,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,215107,237,5630114,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350831,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243827,244,5635575,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350844,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,200081,326,5658788,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350862,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267747,407,5674676,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350863,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267592,262,5642479,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350864,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243827,282,5653413,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350871,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,184009,245,5633994,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350872,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214813,245,5636186,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350883,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,224695,441,5695596,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350894,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,210730,289,5641622,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350905,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,243826,374,5659129,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350916,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267611,351,5664091,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350917,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,269255,209,5632130,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351001,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,269255,216,5629034,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351010,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,328,5656688,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351011,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179068,265,5635795,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350897,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,194620,304,5638535,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350906,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204081,254,5622332,0,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350133,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,210730,212,5632019,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350147,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,183088,249,5634314,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350137,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,160537,252,5630775,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350140,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST985,296100,175,5524839,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
-ERR6350155,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST985,346602,480,5632208,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
-ERR6350208,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST985,250606,171,5524806,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
-ERR6350901,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST985,280925,187,5526608,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
-ERR6350932,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST985,296452,164,5524146,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
-ERR6350196,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,188015,237,5633787,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350760,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,207206,211,5628392,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350787,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,215108,252,5629778,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350907,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,214813,235,5629211,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350918,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,269255,200,5628046,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351012,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,239327,214,5627497,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351026,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,200571,213,5629391,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351024,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,215765,331,5654614,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350799,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,204003,270,5628224,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350833,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,203990,233,5631808,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350846,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,215853,260,5629911,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350857,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,239327,243,5633067,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350873,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,224695,262,5631951,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350886,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,214813,247,5637819,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350908,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,269255,211,5628564,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350919,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,243827,214,5631711,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351027,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,267592,257,5641976,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1473-ZN1242,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,185257,558,5681343,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350909,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179068,265,5636737,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350910,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,430694,725,5510939,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350762,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST101,269471,365,5655045,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
-ERR6350777,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST101,269471,408,5667900,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
-ERR6350783,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,204003,358,5659134,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350806,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,215765,279,5633881,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350915,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,214813,264,5632089,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-441-ZN0385,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,145606,906,5769261,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-453-ZN0406,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179094,372,5639298,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350776,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,200389,325,5646749,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350868,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,200656,245,5629575,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350785,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,215853,266,5638598,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1448-ZN1214,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,185257,610,5716542,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350797,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,182727,257,5629588,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350798,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,241461,258,5629243,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350812,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,182727,273,5630587,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350855,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,200662,239,5630416,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350856,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,240747,248,5631783,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350884,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,200662,231,5628374,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350804,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,243827,615,5837248,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-2731-ZN2356,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,179982,514,5828562,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350882,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,203990,264,5632713,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1356-ZN1134,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,119186,425,5625620,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350836,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST2004,293521,477,5439273,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350838,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST2004,430695,162,5336697,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350840,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,243828,268,5821166,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1589-ZN1330,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,179096,678,5875757,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1612-ZN1346,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,175424,754,5886295,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1613-ZN1347,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,140793,888,5924719,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1679-ZN1410,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,185257,823,5910699,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350865,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,177107,276,5626397,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1406-ZN1179,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,176009,913,5951581,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350896,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,204003,216,5630244,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350929,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,204003,407,5813360,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6351002,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,204003,454,5821337,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1505-ZN1267,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,136850,728,5856048,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1586-ZN1327,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,179181,716,5865021,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6351015,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,267611,268,5635892,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1544-ZN1294,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,219310,323,5326488,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1547-ZN1296,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,229440,416,5363347,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1548-ZN1297,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,229585,691,5430239,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1610-ZN1388,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,191244,383,5345803,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1614-ZN1348,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,219315,418,5364036,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1615-ZN1349,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,229603,581,5399151,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1622-ZN1486,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,219297,470,5371032,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1698-ZN1424,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,203196,466,5367241,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-1723-ZN1445,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST983,219360,801,5459806,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
-PID-0821-3606-ZN3148,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2017,Klebsiella pneumoniae,ST15,173023,726,5880894,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
-PID-0821-3640-ZN3185,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2017,Klebsiella pneumoniae,ST15,153191,945,5945246,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
-PID-0821-3740-ZN3283,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2017,Klebsiella pneumoniae,ST15,176173,814,5647337,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
-PID-0821-3617-ZN3162,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2017,Klebsiella pneumoniae,ST307,144375,502,5598833,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-3660-ZN3205,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2017,Klebsiella pneumoniae,ST307,203951,932,5796594,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-3675-ZN3182,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2017,Klebsiella pneumoniae,ST307,177352,512,5598590,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-3681-ZN3225,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2017,Klebsiella pneumoniae,ST307,200612,636,5639371,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6349917,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,120093,312,5634857,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6351005,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,363866,170,5337074,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349922,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,179068,864,5755214,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350805,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,215853,309,5640235,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350830,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,145350,552,5707847,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349927,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST405,254752,215,5797737,1,KL151,unknown (KL151),Typeable,O4,O4,Typeable
-ERR6349931,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,148149,314,5634509,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6349934,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,34813,969,5685983,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350131,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST101,192608,232,5546645,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
-ERR6351016,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,179068,274,5632239,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350142,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,131129,382,5648571,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350205,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,168758,300,5639293,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350206,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST101,214621,290,5626714,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
-ERR6350761,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST101,256672,476,5690974,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
-ERR6350769,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST147,177996,340,5758491,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
-ERR6350774,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST1486,97600,679,5730719,1,KL38,K38,Typeable,O3b,O3b,Typeable
-ERR6350779,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST1486,97565,641,5728594,1,KL38,K38,Typeable,O3b,O3b,Typeable
-ERR6350791,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST101,269471,524,5706486,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
-ERR6350845,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,200662,261,5633022,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-ERR6350796,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,203990,436,5674794,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350822,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST2004,281102,528,5457142,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350824,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST2004,120951,662,5477444,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350860,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST14,225478,209,5521554,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
-ERR6350888,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST54,157097,725,5834715,1,KL14,K14,Typeable,O3b,O3b,Typeable
-ERR6350890,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST147,205017,507,5798653,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
-ERR6350933,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST147,205017,253,5747375,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
-ERR6350892,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2015,Klebsiella pneumoniae,ST307,116160,816,5775509,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
-ERR6350913,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST147,121483,639,5797343,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
-ERR6350922,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST36,185474,315,5501368,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1607-ZN1342,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,160539,874,5724550,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1692-ZN1420,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST307,82669,739,5832600,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-1757-ZN1474,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST101,178473,762,5683040,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
-PID-0821-2759-ZN2378,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST2004,262919,448,5399905,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
-PID-0821-3500-ZN3059,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST1427,243694,741,5539185,1,KL67,K67,Typeable,OL13,O13,Typeable
-ERR6350900,SPINZ,Zambia,Eastern Africa,Site 11,neonate,2016,Klebsiella pneumoniae,ST45,173860,544,5617417,1,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
+ERR6349916,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,177694,273,5634688,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349929,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267592,226,5631656,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350132,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,177754,260,5634505,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350134,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179068,241,5628717,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350135,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214813,252,5634004,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350148,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,203957,218,5634338,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350149,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,260,5641309,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350150,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,324,5656989,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350151,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243831,280,5643634,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350152,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,221,5634881,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350197,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,307638,243,5631944,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350198,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,200656,316,5649419,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350200,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243827,251,5632005,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350212,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,203957,264,5635357,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350214,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,786,5776624,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350763,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,203990,329,5652209,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350765,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210730,248,5632687,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350775,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,273,5639615,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350801,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267592,243,5632451,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350803,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267553,218,5635543,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350930,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,269255,229,5635095,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351003,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214725,262,5632552,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351014,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,238,5633251,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-157-ZN0158,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,185257,600,5707498,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-158-ZN0157,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,178003,532,5692551,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-214-ZN0200,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,178053,378,5642434,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZJN0038,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,177475,417,5654073,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0002,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,165301,994,5802636,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0003,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,177219,897,5770849,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0004,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,155569,936,5778768,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0007,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,675,5716022,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0010,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,536,5687551,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0011,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,651,5721929,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0015,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179024,894,5783807,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0041,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,177765,631,5713810,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0044,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179024,583,5693611,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0105,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179030,709,5730719,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0115,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179172,408,5653907,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-ZN0116-II,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,428,5657177,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349919,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,431099,175,5340131,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349920,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,478111,133,5329704,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349933,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,431099,237,5357506,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350139,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,431099,152,5335669,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350202,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,349152,159,5338011,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350215,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,431611,875,5562837,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350216,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,430934,151,5335924,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350767,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,293521,129,5329894,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350780,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,358911,558,5461218,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350811,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,293526,438,5432776,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350866,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,430898,912,5567464,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350887,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,358911,170,5337954,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350911,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,293520,163,5338980,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351018,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,293547,838,5526242,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351019,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,358909,130,5327839,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-2610-ZN2242,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,293595,564,5435676,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-2686-ZN2314,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,293477,475,5401300,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-2745-ZN2370,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,233993,884,5512364,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-2752-ZN2372,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,306314,443,5393429,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349921,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,215853,346,5653454,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349926,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,214814,238,5635567,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350141,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,214782,574,5703620,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350156,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,243869,435,5676002,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350203,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,214657,396,5661442,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350204,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,182725,236,5628410,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350217,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,207191,269,5635547,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350218,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,195009,454,5653103,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350768,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,267553,297,5644893,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350781,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,216147,242,5629872,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350782,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,267592,247,5640151,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350793,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,210730,829,5807491,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350813,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,243827,243,5641234,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350820,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,204003,228,5634825,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350852,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,184371,290,5641968,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350879,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,269256,325,5645175,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350885,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,184371,204,5633317,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350912,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,267553,257,5631519,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350923,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,269252,276,5636063,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350924,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,178097,321,5649442,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350928,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,203990,238,5631801,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351006,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,224125,270,5633049,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351007,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,204003,275,5643358,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351020,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,267592,327,5662996,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351021,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,216539,329,5647793,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349923,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214813,245,5633535,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349924,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210730,249,5636287,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349925,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,224355,268,5640967,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350143,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,269255,223,5634832,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350195,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214782,256,5641104,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350199,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210715,239,5630483,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350210,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210730,267,5633908,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350770,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,190581,251,5633968,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350786,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,184506,235,5636204,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350795,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243827,271,5635640,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350800,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243827,242,5636371,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350802,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243827,256,5630053,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350807,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214813,329,5655847,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350816,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210730,353,5664359,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350829,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179068,252,5634006,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350835,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204084,700,5749137,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350842,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,224433,217,5630850,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350843,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267592,421,5680825,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350849,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,224689,228,5635347,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350853,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,237,5631030,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350869,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243827,210,5634815,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350870,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,225857,244,5641543,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350875,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,203990,228,5631782,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350876,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210729,253,5634368,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350881,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267553,247,5632687,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350891,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,224691,286,5642388,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350893,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,239327,241,5636217,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350903,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214814,254,5635419,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350914,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,269253,254,5631539,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350925,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,241,5631279,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350926,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,224132,217,5633163,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350934,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179137,298,5637822,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350935,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243970,223,5631600,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350936,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,200081,277,5645743,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351008,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267611,230,5632610,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351009,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,222,5633367,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351022,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267903,338,5658349,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351023,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,269255,218,5629629,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-219-ZN0205,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,417,5646142,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-241-ZN0231,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,100889,509,5652110,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-249-ZN0225,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,177630,354,5646954,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-255-ZN0232,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179238,893,5780842,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-259-ZN0235,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,561,5698159,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-260-ZN0236,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,429,5666735,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-261-ZN0237,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,609,5715767,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-263-ZN0239,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,397,5649561,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-276-ZN0248,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,391,5654368,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-339-ZN0302,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,185257,333,5634103,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-380-ZN0340,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,392,5647603,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-383-ZN0346,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,436,5652618,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-389-ZN0344,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,160513,316,5638691,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-390-ZN0345,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,185250,350,5640035,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-406-ZN0367,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,185257,360,5646289,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-413-ZN0368,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,185257,372,5651004,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-415-ZN0375,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,185257,352,5636845,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-419-ZN0372,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,165301,544,5682929,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-423-ZN0394,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267589,470,5669761,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-433-ZN0445,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,165301,580,5685022,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-435-ZN0382,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,644,5705584,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-438-ZN0397,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,165303,848,5764496,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-449-ZN0404,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,177191,715,5719776,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-450-ZN0405,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,165301,960,5797584,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-456-ZN0409,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,165301,381,5649274,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349937,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214782,308,5652970,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350144,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,196269,351,5658244,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350758,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,200656,311,5650628,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350772,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267553,207,5626271,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350808,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204415,230,5635222,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350817,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210730,262,5633714,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350818,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,215107,237,5630114,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350831,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243827,244,5635575,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350844,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,200081,326,5658788,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350862,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267747,407,5674676,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350863,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267592,262,5642479,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350864,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243827,282,5653413,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350871,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,184009,245,5633994,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350872,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214813,245,5636186,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350883,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,224695,441,5695596,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350894,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,210730,289,5641622,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350905,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,243826,374,5659129,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350916,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267611,351,5664091,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350917,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,269255,209,5632130,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351001,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,269255,216,5629034,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351010,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,328,5656688,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351011,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179068,265,5635795,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350897,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,194620,304,5638535,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350906,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204081,254,5622332,0,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350133,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,210730,212,5632019,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350147,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,183088,249,5634314,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350137,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,160537,252,5630775,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350140,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST985,296100,175,5524839,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR6350155,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST985,346602,480,5632208,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR6350208,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST985,250606,171,5524806,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR6350901,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST985,280925,187,5526608,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR6350932,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST985,296452,164,5524146,1,KL39,K39,Typeable,O1/O2v2,O1ab,Typeable
+ERR6350196,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,188015,237,5633787,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350760,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,207206,211,5628392,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350787,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,215108,252,5629778,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350907,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,214813,235,5629211,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350918,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,269255,200,5628046,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351012,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,239327,214,5627497,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351026,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,200571,213,5629391,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351024,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,215765,331,5654614,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350799,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,204003,270,5628224,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350833,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,203990,233,5631808,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350846,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,215853,260,5629911,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350857,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,239327,243,5633067,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350873,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,224695,262,5631951,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350886,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,214813,247,5637819,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350908,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,269255,211,5628564,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350919,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,243827,214,5631711,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351027,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,267592,257,5641976,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1473-ZN1242,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,185257,558,5681343,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350909,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179068,265,5636737,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350910,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,430694,725,5510939,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350762,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST101,269471,365,5655045,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+ERR6350777,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST101,269471,408,5667900,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+ERR6350783,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,204003,358,5659134,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350806,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,215765,279,5633881,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350915,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,214813,264,5632089,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-441-ZN0385,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,145606,906,5769261,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-453-ZN0406,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179094,372,5639298,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350776,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,200389,325,5646749,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350868,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,200656,245,5629575,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350785,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,215853,266,5638598,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1448-ZN1214,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,185257,610,5716542,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350797,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,182727,257,5629588,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350798,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,241461,258,5629243,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350812,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,182727,273,5630587,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350855,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,200662,239,5630416,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350856,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,240747,248,5631783,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350884,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,200662,231,5628374,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350804,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,243827,615,5837248,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-2731-ZN2356,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,179982,514,5828562,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350882,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,203990,264,5632713,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1356-ZN1134,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,119186,425,5625620,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350836,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST2004,293521,477,5439273,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350838,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST2004,430695,162,5336697,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350840,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,243828,268,5821166,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1589-ZN1330,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,179096,678,5875757,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1612-ZN1346,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,175424,754,5886295,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1613-ZN1347,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,140793,888,5924719,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1679-ZN1410,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,185257,823,5910699,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350865,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,177107,276,5626397,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1406-ZN1179,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,176009,913,5951581,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350896,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,204003,216,5630244,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350929,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,204003,407,5813360,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6351002,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,204003,454,5821337,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1505-ZN1267,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,136850,728,5856048,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1586-ZN1327,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,179181,716,5865021,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6351015,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,267611,268,5635892,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1544-ZN1294,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,219310,323,5326488,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1547-ZN1296,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,229440,416,5363347,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1548-ZN1297,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,229585,691,5430239,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1610-ZN1388,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,191244,383,5345803,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1614-ZN1348,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,219315,418,5364036,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1615-ZN1349,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,229603,581,5399151,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1622-ZN1486,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,219297,470,5371032,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1698-ZN1424,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,203196,466,5367241,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-1723-ZN1445,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST983,219360,801,5459806,1,KL127,unknown (KL127),Typeable,OL13,O13,Typeable
+PID-0821-3606-ZN3148,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2017,Klebsiella pneumoniae,ST15,173023,726,5880894,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
+PID-0821-3640-ZN3185,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2017,Klebsiella pneumoniae,ST15,153191,945,5945246,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
+PID-0821-3740-ZN3283,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2017,Klebsiella pneumoniae,ST15,176173,814,5647337,1,KL54,K54,Typeable,O1/O2v2,O1ab,Typeable
+PID-0821-3617-ZN3162,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2017,Klebsiella pneumoniae,ST307,144375,502,5598833,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-3660-ZN3205,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2017,Klebsiella pneumoniae,ST307,203951,932,5796594,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-3675-ZN3182,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2017,Klebsiella pneumoniae,ST307,177352,512,5598590,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-3681-ZN3225,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2017,Klebsiella pneumoniae,ST307,200612,636,5639371,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6349917,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,120093,312,5634857,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6351005,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,363866,170,5337074,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349922,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,179068,864,5755214,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350805,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,215853,309,5640235,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350830,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,145350,552,5707847,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349927,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST405,254752,215,5797737,1,KL151,unknown (KL151),Typeable,O4,O4,Typeable
+ERR6349931,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,148149,314,5634509,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6349934,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,34813,969,5685983,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350131,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST101,192608,232,5546645,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+ERR6351016,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,179068,274,5632239,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350142,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,131129,382,5648571,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350205,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,168758,300,5639293,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350206,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST101,214621,290,5626714,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+ERR6350761,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST101,256672,476,5690974,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+ERR6350769,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST147,177996,340,5758491,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
+ERR6350774,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST1486,97600,679,5730719,1,KL38,K38,Typeable,O3b,O3b,Typeable
+ERR6350779,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST1486,97565,641,5728594,1,KL38,K38,Typeable,O3b,O3b,Typeable
+ERR6350791,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST101,269471,524,5706486,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+ERR6350845,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,200662,261,5633022,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+ERR6350796,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,203990,436,5674794,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350822,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST2004,281102,528,5457142,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350824,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST2004,120951,662,5477444,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350860,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST14,225478,209,5521554,1,KL2,K2,Typeable,O1/O2v1,O1ab,Typeable
+ERR6350888,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST54,157097,725,5834715,1,KL14,K14,Typeable,O3b,O3b,Typeable
+ERR6350890,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST147,205017,507,5798653,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
+ERR6350933,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST147,205017,253,5747375,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
+ERR6350892,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2015,Klebsiella pneumoniae,ST307,116160,816,5775509,1,KL102,Capsule null,Typeable,O1/O2v2,O2afg,Typeable
+ERR6350913,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST147,121483,639,5797343,1,KL64,K64,Typeable,O1/O2v1,O2a,Typeable
+ERR6350922,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST36,185474,315,5501368,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1607-ZN1342,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,160539,874,5724550,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1692-ZN1420,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST307,82669,739,5832600,1,KL102,unknown (KL102),Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-1757-ZN1474,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST101,178473,762,5683040,1,KL17,K17,Typeable,O1/O2v1,O1ab,Typeable
+PID-0821-2759-ZN2378,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST2004,262919,448,5399905,1,KL23,K23,Typeable,O1/O2v2,O2afg,Typeable
+PID-0821-3500-ZN3059,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST1427,243694,741,5539185,1,KL67,K67,Typeable,OL13,O13,Typeable
+ERR6350900,SPINZ,Zambia,Eastern Africa,Site 10,neonate,2016,Klebsiella pneumoniae,ST45,173860,544,5617417,1,KL24,K24,Typeable,O1/O2v1,O2a,Typeable
