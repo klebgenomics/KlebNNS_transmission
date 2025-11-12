@@ -633,12 +633,12 @@ combined_sens_trans_plot
 ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivityClust.png"), 
        plot=combined_sens_clust_plot, width=9, height=5)
 ggsave(file=file.path(figs_dir, "Figure1_ThresholdSensitivityClust.tiff"), 
-       plot=combined_sens_clust_plot, width=9, height=5)
+       plot=combined_sens_clust_plot, width=8.5, height=5)
 
 ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivityTrans.png"), 
        plot=combined_sens_trans_plot, width=9, height=5)
 ggsave(file=file.path(figs_dir, "FigureS3_ThresholdSensitivityTrans.tiff"), 
-       plot=combined_sens_trans_plot, width=9, height=5)
+       plot=combined_sens_trans_plot, width=8.5, height=5)
 ```
 
 ```{r sensitivity_diff_in_estimates, echo=F}
@@ -875,31 +875,31 @@ plot_meta <- function(meta_obj, meta_df, events_lab, x_lab="Proportion") {
     p.left <- meta_df %>% 
         ggplot(aes(y = Site_ctry)) +
         # Sites
-        geom_text(aes(x=0, label = Site_ctry), hjust=0, size=4.5) +
-        annotate("text", x=0, y=nrow(meta_df)+1, label="Site", hjust=0, fontface="bold", size=4.5) + 
-        annotate("text", x=0, y=0, label="Random effects model", hjust=0, fontface="bold", size=4.5) +
+        geom_text(aes(x=0, label = Site_ctry), hjust=0, size=2.5) +
+        annotate("text", x=0, y=nrow(meta_df)+1, label="Site", hjust=0, fontface="bold", size=2.5) + 
+        annotate("text", x=0, y=0, label="Random effects model", hjust=0, fontface="bold", size=2.5) +
         # N isolates
-        geom_text(aes(x=2, label=`Total isolates`), hjust=0, size=4.5) +
-        annotate("text", x=2, y=nrow(meta_df)+1, label="Total", hjust=0, fontface="bold", size=4.5) +
-        annotate("text", x=2, y=0, label=sum(meta_obj$n), hjust=0, fontface="bold", size=4.5) +
+        geom_text(aes(x=1.7, label=`Total isolates`), hjust=0, size=2.5) +
+        annotate("text", x=1.7, y=nrow(meta_df)+1, label="Total", hjust=0, fontface="bold", size=2.5) +
+        annotate("text", x=1.7, y=0, label=sum(meta_obj$n), hjust=0, fontface="bold", size=2.5) +
         # N events
-        geom_text(aes(x=2.5, label=Events), hjust=0, size=4.5) +
-        annotate("text", x=2.5, y=nrow(meta_df)+1, label=events_lab, hjust=0, 
-                 vjust=0.2, fontface="bold", size=4.5, lineheight = 0.75) +
-        annotate("text", x=2.5, y=0, label=sum(meta_obj$event), hjust=0, fontface="bold", size=4.5) +
+        geom_text(aes(x=2.2, label=Events), hjust=0, size=2.5) +
+        annotate("text", x=2.2, y=nrow(meta_df)+1, label=events_lab, hjust=0, 
+                 vjust=0.2, fontface="bold", size=2.5, lineheight = 0.75) +
+        annotate("text", x=2.2, y=0, label=sum(meta_obj$event), hjust=0, fontface="bold", size=2.5) +
         # Prop
-        geom_text(aes(x=3.3, label=sprintf("%.2f [%.2f, %.2f]", Proportion, lower_CI, upper_CI)), 
-                  hjust=0, size=4.5) +
-        annotate("text", x=3.3, y=nrow(meta_df)+1, label="Proportion\n[95% CI]", 
-                 lineheight=0.75, vjust=0.2, hjust=0, fontface="bold", size=4.5) +
-        annotate("text", x=3.3, y=0, 
+        geom_text(aes(x=3.1, label=sprintf("%.2f [%.2f, %.2f]", Proportion, lower_CI, upper_CI)), 
+                  hjust=0, size=2.5) +
+        annotate("text", x=3.1, y=nrow(meta_df)+1, label="Proportion\n[95% CI]", 
+                 lineheight=0.75, vjust=0.2, hjust=0, fontface="bold", size=2.5) +
+        annotate("text", x=3.1, y=0, 
                  label=sprintf("%.2f [%.2f, %.2f]", meta_df$pooled_Est[1], 
                                meta_df$pooled_lower[1], meta_df$pooled_upper[1]), 
-                 hjust=0, fontface="bold", size=4.5) +
+                 hjust=0, fontface="bold", size=2.5) +
         # Heterogeneity
-        ggtext::geom_richtext(aes(x=0, y = -1.3, label = heterogeneity_lab, family="sans"), 
+        ggtext::geom_richtext(aes(x=0, y = -1.4, label = heterogeneity_lab, family="sans"), 
                               data=meta_df[1,],
-                              hjust=0, vjust = 0, size = 3.8, fill = NA, label.color = NA,
+                              hjust=0, vjust = 0, size = 2.2, fill = NA, label.color = NA,
                               label.padding = grid::unit(rep(0, 4), "pt")) +
         coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 4)) +
         theme_void() +
@@ -908,19 +908,19 @@ plot_meta <- function(meta_obj, meta_df, events_lab, x_lab="Proportion") {
         ggplot(aes(y = Site_ctry, x = Proportion, xmin = lower_CI, xmax = upper_CI)) +
         geom_vline(xintercept = meta_df$pooled_Est[1], linetype = "dashed") +
         # Individual site estimates (squares) and interv
-        geom_pointrange(aes(fill = Region), shape = 22, size = 1.3) +
+        geom_pointrange(aes(fill = Region), shape = 22, size = 0.6, stroke=0.5) +
         scale_fill_manual(values = region_colors) +
         # Pooled estimate (diamond) and interval
         geom_pointrange(aes(y=0, x=pooled_Est, xmin=pooled_lower, xmax=pooled_upper),
-                        data=meta_df[1,], shape = 22, size = 1.5) +
+                        data=meta_df[1,], shape = 22, size = 0.8, stroke = 0.8) +
         # clean
         scale_x_continuous(name = x_lab, breaks = seq(0, 1, 0.2)) +
         coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 1)) +
         theme_classic() +
         theme(axis.line.y = element_blank(), axis.ticks.y= element_blank(),
               axis.text.y= element_blank(), axis.title.y= element_blank(),
-              axis.text = element_text(size=14), axis.title = element_text(size=16),
-              legend.text = element_text(size=14), legend.title = element_text(size=14))
+              axis.text = element_text(size=7), axis.title = element_text(size=8),
+              legend.text = element_text(size=7), legend.title = element_text(size=7))
     # p <- ggarrange(p.left, p.right, ncol = 2, widths=c(1.8,2), 
     #                align="h", legend="bottom", common.legend=T)
     
@@ -1001,18 +1001,18 @@ print(paste(
 combined_forest_plots_sites_v <- cluster_prop_forest_plot +
   ggtitle("(A) Cluster proportion") + 
   theme(plot.title.position = "plot", 
-        plot.title = element_text(hjust = 0, size = 16, face = "bold",
+        plot.title = element_text(hjust = 0, size = 12, face = "bold",
                                   margin = margin(b = 5))) + 
   transmi_prop_forest_plot +
   ggtitle("(B) Transmission proportion") +
   theme(plot.title.position = "plot",
-        plot.title = element_text(hjust = 0, size = 16, face = "bold",
+        plot.title = element_text(hjust = 0, size = 12, face = "bold",
                                   margin = margin(b=5, t=5))) +
   plot_layout(ncol = 1, heights = c(1,1))
 ggsave(file=file.path(figs_dir, "Figure2_PooledEstimates.png"), 
-       plot=combined_forest_plots_sites_v, width=15, height=16, bg='white')
+       plot=combined_forest_plots_sites_v, width=2000, height=2600, units="px", bg='white')
 ggsave(file=file.path(figs_dir, "Figure2_PooledEstimates.tiff"), 
-       plot=combined_forest_plots_sites_v, width=15, height=16, bg='white')
+       plot=combined_forest_plots_sites_v, width=2000, height=2600, units="px", bg='white')
 ```
 
 <br><br>
@@ -1195,23 +1195,23 @@ clust_meta_with_facility_heatmap <- (
         cluster_prop_meta_plots$p.right + theme(legend.key.height = unit(2, "mm")) | 
         facs_heatmap_c$p1 | 
         facs_heatmap_c$p3 | facs_heatmap_c$p4 | 
-        facs_heatmap_c$p5 + theme(legend.key.height = unit(6, "mm")) | 
+        facs_heatmap_c$p5 + theme(legend.key.height = unit(3, "mm")) | 
         facs_heatmap_c$p6
     ) + 
     plot_annotation(
         title = "(A)",
-        theme = theme(plot.title = element_text(size=16, face="bold"), plot.title.position = "panel")) +
-    plot_layout(widths=c(1,0.9,0.05,0.05,0.05,0.05,0.05), guides="collect") &
+        theme = theme(plot.title = element_text(size=12, face="bold"), plot.title.position = "panel")) +
+    plot_layout(widths=c(1,0.9,0.04,0.04,0.04,0.04,0.04), guides="collect") &
     theme(plot.tag = element_text(face="bold", vjust=-3.3),
           legend.position = "bottom",
           legend.direction = "vertical", legend.box = "horizontal")
 
 ggsave(file=file.path(figs_dir, "FigureS8a_PooledEstimatesWithFacilityDetails.png"),
        plot=clust_meta_with_facility_heatmap, 
-       width=15, height=10, bg='white')
+       width=2100, height=1700, units='px', bg='white')
 ggsave(file=file.path(figs_dir, "FigureS8a_PooledEstimatesWithFacilityDetails.tiff"),
        plot=clust_meta_with_facility_heatmap, 
-       width=15, height=10, bg='white')
+       width=2100, height=1700, units='px', bg='white')
 
 
 ```
@@ -2016,7 +2016,7 @@ STs_by_cluster_size <- all_clusters_info_wt_upd_STs %>%
     mutate(top_ST = if_else(ST %in% top_clones_order, ST, "Other STs")) %>% 
     mutate(top_ST = factor(top_ST, levels = c(top_clones_order, "Other STs"))) %>% 
     select(Cluster_size, `N isolates`, top_ST, ST, everything())
-# Plot
+# Plot (bars)
 STs_by_cluster_size_plot <- STs_by_cluster_size %>% 
     mutate(Cluster_size = factor(Cluster_size, levels = rev(unique(Cluster_size)))) %>%
     ggplot(aes(x = Cluster_size, y = `N isolates`, fill=top_ST)) +
@@ -2025,11 +2025,35 @@ STs_by_cluster_size_plot <- STs_by_cluster_size %>%
     labs(x = "Cluster size", y = "No. isolates",
          title = "STs associated with large clusters") +
     theme_classic() + custom_plots_theme +
-    labs() +
     theme(panel.grid.major.y = element_line(colour="grey90"),
           panel.grid.major.x = element_line(colour="grey90"),
           axis.text.x = element_text(angle=45, hjust=1)) +
     guides(fill = guide_legend(ncol=1))
+# Plot (bubbles)
+STs_by_cluster_size_bubbles_plot <- STs_by_cluster_size %>% 
+    mutate(top_ST = factor(top_ST, levels = rev(levels(top_ST)))) %>% 
+    mutate(Cluster_size = factor(Cluster_size, levels = rev(unique(Cluster_size)))) %>%
+    ggplot(aes(x = Cluster_size, y = top_ST, fill=top_ST, size = `N isolates`)) +
+    geom_hline(yintercept = seq(0.5, length(unique(STs_by_cluster_size$top_ST))+0.5, 1), 
+               linewidth=0.25, color="grey90") +
+    geom_vline(xintercept =seq(1.5, length(unique(STs_by_cluster_size$Cluster_size)), 1), 
+               linewidth=0.25, color="grey90") +
+    geom_point(color="black", shape=21, stroke=0.1) +
+    scale_fill_manual(values=top_clones_colors, name="ST") +
+    scale_size_continuous(range=c(2,12), breaks = c(10, 50, 100, 150)) +
+    labs(x = "Cluster size", y = "ST", size = "No. isolates",
+         title = "STs associated with large clusters") +
+    guides(fill = "none") + # guides(fill = guide_legend(ncol=1, reverse = T)) +
+    theme_classic() + custom_plots_theme +
+    # theme(panel.grid.major.y = element_line(colour="grey90"),
+    #       panel.grid.major.x = element_line(colour="grey90"),
+    #       axis.text.x = element_text(angle=45, hjust=1)) +
+    theme(axis.text.x = element_text(angle=45, hjust=1),
+          panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          axis.ticks.y = element_blank(),
+          legend.key.width = unit(5, "pt")) 
+    
+
 # Non-top STs making up large clusters
 STs_by_cluster_size %>% filter(top_ST == "Other STs")
 # What prop of large clusters (N >= ) are made up by most commonly transmitted STs
@@ -2077,10 +2101,22 @@ top_clones_combined_plot3 <-
                                   plot.subtitle = element_text(size = 14))) & 
     theme(plot.tag = element_text(face="bold", vjust=-3.3),
           legend.justification = "top")
-top_clones_combined_plot3
+top_clones_combined_plot
+
+top_clones_combined_plot4 <- 
+    ( top_clones_combined_plot2 + STs_by_cluster_size_bubbles_plot ) + 
+    plot_layout(
+        design = c(area(1,1,1,2), area(1,3,1,5), area(1,6,1,7),
+                   area(2,1,2,7)), 
+        nrow = 2, guides = "collect") +
+    plot_annotation(theme = theme(plot.title = element_text(size = 20),
+                                  plot.subtitle = element_text(size = 14))) & 
+    theme(plot.tag = element_text(face="bold", vjust=-3.3),
+          legend.justification = "top")
+top_clones_combined_plot4
 
 ggsave(file=file.path(figs_dir, "Figure3_TransmissionClones.svg"), 
-       plot=top_clones_combined_plot3, width=15, height=12) 
+       plot=top_clones_combined_plot4, width=15, height=12) 
 ```
 
 

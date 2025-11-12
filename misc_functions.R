@@ -346,8 +346,8 @@ plot_facility_data_heatmap <- function(facilities_df, meta_df){
         p + coord_cartesian(ylim=c(-1,nrow(meta_df)+2)) + 
             scale_x_discrete(expand=c(0,0)) +
             theme_minimal() +
-            theme(axis.text.x = element_text(angle=45, hjust=1, size=14, lineheight=0.75), 
-                  legend.text = element_text(size=14), legend.title = element_text(size=14),
+            theme(axis.text.x = element_text(angle=45, hjust=1, size=7, lineheight=0.75), 
+                  legend.text = element_text(size=7), legend.title = element_text(size=7),
                   axis.title=element_blank(), axis.text.y=element_blank(),
                   legend.key.height = unit(2, "mm"),
                   plot.margin = unit(c(0.2, 0.2, 0.2, 0.05), "cm"))
@@ -392,7 +392,7 @@ plot_facility_data_heatmap <- function(facilities_df, meta_df){
         pivot_longer(-Site) %>% 
         ggplot(aes(y=Site, x=name, fill=value)) + geom_tile() +
         scale_fill_manual(values=facs_cols_surg, na.value="white",
-                          name="Onsite neonatal surgical facilities")
+                          name="Onsite neonatal surgery")
     p_surg <- facs_plots_theme(p_surg)
     
     return(list(p1=p_loc, p2=p_type, p3=p_surg, p4=p_size, p5=p_beds, p6=p_water))
