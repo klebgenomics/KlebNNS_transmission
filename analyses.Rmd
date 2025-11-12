@@ -2182,12 +2182,12 @@ res_case_type_plot <- res_score_df_dereplicated %>%
                    axis.text=element_text(size=10), legend.text=element_text(size=10),
                    legend.title=element_text(size=10), strip.text=element_text(size=10)) +
     ggplot2::guides(color = "none", fill = guide_legend(reverse = TRUE)) 
-ggsave(file=file.path(figs_dir, "FigureS9_Resistance_byCaseType.png"), 
-       plot=res_case_type_plot, width=10, height=11)
-ggsave(file=file.path(figs_dir, "FigureS9_Resistance_byCaseType.tiff"), 
-       plot=res_case_type_plot, width=16, height=13)
-ggsave(file=file.path(figs_dir, "FigureS9_Resistance_byCaseType.svg"), 
-       plot=res_case_type_plot, width=16, height=13)
+# ggsave(file=file.path(figs_dir, "FigureSX_Resistance_byCaseType.png"), 
+#        plot=res_case_type_plot, width=10, height=11)
+# ggsave(file=file.path(figs_dir, "FigureSX_Resistance_byCaseType.tiff"), 
+#        plot=res_case_type_plot, width=16, height=13)
+# ggsave(file=file.path(figs_dir, "FigureSX_Resistance_byCaseType.svg"), 
+#        plot=res_case_type_plot, width=16, height=13)
 res_case_type_plot
 
 
