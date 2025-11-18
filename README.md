@@ -2,9 +2,7 @@
 
 [![License GPL v3](https://img.shields.io/badge/license-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) [![DOI](https://zenodo.org/badge/1064603733.svg)](https://doi.org/10.5281/zenodo.17591910)
 
-This repository includes data and code from the above-titled paper (Odih et al, 2025, MedRxiv). 
-
-[Article/preprint](#)
+This repository includes data and code from the above-titled paper (preprint: [Odih et al, 2025, MedRxiv](https://www.medrxiv.org/content/10.1101/2025.11.15.25340095v1)). 
 
 Input data are available in `data/`, and all figures and tables from the paper are available in `figures/` and `tables/`. 
 
@@ -18,4 +16,4 @@ The analysis requires imported code from the [Transmission Estimator](https://gi
 If you use the data, code, and figures or tables presented here, please cite:  
 
 1. This repository: [![DOI](https://zenodo.org/badge/1064603733.svg)](https://doi.org/10.5281/zenodo.17591910) 
-2. The paper: "Contribution of nosocomial transmission to *Klebsiella pneumoniae* neonatal sepsis in Africa and South Asia: a meta-analysis of infection clusters inferred from pathogen genomics and temporal data."  (Odih et al, 2025, MedRxiv)
+2. The preprint: "Contribution of nosocomial transmission to *Klebsiella pneumoniae* neonatal sepsis in Africa and South Asia: a meta-analysis of infection clusters inferred from pathogen genomics and temporal data." Odih et al, 2025, _MedRxiv_. DOI: [10.1101/2025.11.15.25340095v1](https://www.medrxiv.org/content/10.1101/2025.11.15.25340095v1))
