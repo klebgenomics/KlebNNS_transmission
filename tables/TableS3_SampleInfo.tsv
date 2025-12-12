@@ -1148,22 +1148,6 @@ FF33_06-0130-00	SAMN48972101	SRR33931785	NA	MBIRA	Western Africa	Ghana	Site 11	n
 FF33_06-0131-00-A	SAMN48972102	SRR33931784	NA	MBIRA	Western Africa	Ghana	Site 11	neonate	2021	Klebsiella pneumoniae	ST530	105742	116	5422387	1	KL62	K62	Typeable	O1/O2v2	O1ab	Typeable
 FF33_06-0132-00	SAMN48972105	SRR33931779	NA	MBIRA	Western Africa	Ghana	Site 11	neonate	2021	Klebsiella pneumoniae	ST25	86594	136	5534324	1	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
 FF33_06-0133-00	SAMN48972106	SRR33931778	NA	MBIRA	Western Africa	Ghana	Site 11	neonate	2021	Klebsiella pneumoniae	ST147	103734	167	5584815	1	KL10	K10	Typeable	O3/O3a	O3/O3a	Typeable
-ERR4920492	SAMEA7472355	ERR4920492	BARNARDS_12	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST45	306355	95	5638334	1	KL52	K52	Typeable	OL13	O13	Typeable
-ERR4920496	SAMEA7472372	ERR4920496	BARNARDS_12	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST45	331359	93	5646664	1	KL52	K52	Typeable	OL13	O13	Typeable
-ERR4920494	SAMEA7472368	ERR4920494	BARNARDS_13	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST76	222328	85	5137249	0	KL31	K31	Typeable	O3/O3a	O3/O3a	Typeable
-ERR4920495	SAMEA7472371	ERR4920495	BARNARDS_13	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST76	181998	95	5182651	0	KL31	K31	Typeable	O3/O3a	O3/O3a	Typeable
-ERR4920503	SAMEA7472409	ERR4920503	BARNARDS_14	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST592	235315	74	5170658	0	KL57	K57	Typeable	O3b	O3b	Typeable
-ERR4920504	SAMEA7472411	ERR4920504	BARNARDS_14	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST592	304552	72	5183512	0	KL57	K57	Typeable	O3b	O3b	Typeable
-ERR4920491	SAMEA7472352	ERR4920491	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST340	167728	118	5302323	1	KL15	K15	Typeable	O4	O4	Typeable
-ERR4920493	SAMEA7472365	ERR4920493	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST4410	185846	144	5756667	2	KL116	unknown (KL116)	Typeable	O1/O2v1	O1ab	Typeable
-ERR4920497	SAMEA7472380	ERR4920497	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST4408	74551	155	5035511	0	KL46	K46	Untypeable	O3b	O3b	Typeable
-ERR4920498	SAMEA7472389	ERR4920498	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST307	119353	104	5233149	0	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-ERR4920499	SAMEA7472390	ERR4920499	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST1035	178761	103	5201188	0	KL57	K57	Typeable	O1/O2v2	O1ab	Typeable
-ERR4920500	SAMEA7472393	ERR4920500	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST815	348288	56	5063464	0	KL13	Capsule null	Typeable	O1/O2v1	O1ab	Typeable
-ERR4920501	SAMEA7472398	ERR4920501	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST11	203259	112	5506391	2	KL15	K15	Typeable	O4	O4	Typeable
-ERR4920502	SAMEA7472405	ERR4920502	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST133	355214	103	5411459	1	KL116	unknown (KL116)	Typeable	O1/O2v1	O1ab	Typeable
-ERR4920505	SAMEA7472416	ERR4920505	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST39	318766	140	5436578	1	KL116	unknown (KL116)	Typeable	O1/O2v1	O1ab	Typeable
-ERR4920506	SAMEA7472421	ERR4920506	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST4074	309063	214	5418609	0	KL137	unknown (KL137)	Untypeable	OL13	O13	Typeable
 ERR4920507	SAMEA7472429	ERR4920507	BARNARDS_15	BARNARDS	Western Africa	Nigeria	Site 12	neonate	2016	Klebsiella pneumoniae	ST464	332963	114	5637641	2	KL53	K53	Typeable	O1/O2v1	O1ab	Typeable
 ERR4920508	SAMEA7472431	ERR4920508	BARNARDS_15	BARNARDS	Western Africa	Nigeria	Site 12	neonate	2016	Klebsiella pneumoniae	ST464	184545	106	5548511	2	KL53	K53	Typeable	O1/O2v1	O1ab	Typeable
 ERR4920510	SAMEA7472434	ERR4920510	BARNARDS_16	BARNARDS	Western Africa	Nigeria	Site 12	neonate	2016	Klebsiella pneumoniae	ST464	316732	111	5608914	2	KL53	K53	Typeable	O1/O2v1	O1ab	Typeable
@@ -1198,6 +1182,22 @@ ERR4920537	SAMEA7472502	ERR4920537	NA	BARNARDS	Western Africa	Nigeria	Site 12	ne
 ERR4920538	SAMEA7472503	ERR4920538	NA	BARNARDS	Western Africa	Nigeria	Site 12	neonate	2016	Klebsiella pneumoniae	ST3248	240514	92	5504993	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
 ERR4920539	SAMEA7472505	ERR4920539	NA	BARNARDS	Western Africa	Nigeria	Site 12	neonate	2016	Klebsiella pneumoniae	ST464	316732	118	5639882	2	KL53	K53	Typeable	O1/O2v1	O1ab	Typeable
 ERR4920543	SAMEA7472509	ERR4920543	NA	BARNARDS	Western Africa	Nigeria	Site 12	neonate	2016	Klebsiella pneumoniae	ST442	168360	126	5345981	2	KL28	K28	Typeable	O1/O2v1	O2a	Typeable
+ERR4920492	SAMEA7472355	ERR4920492	BARNARDS_12	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST45	306355	95	5638334	1	KL52	K52	Typeable	OL13	O13	Typeable
+ERR4920496	SAMEA7472372	ERR4920496	BARNARDS_12	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST45	331359	93	5646664	1	KL52	K52	Typeable	OL13	O13	Typeable
+ERR4920494	SAMEA7472368	ERR4920494	BARNARDS_13	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST76	222328	85	5137249	0	KL31	K31	Typeable	O3/O3a	O3/O3a	Typeable
+ERR4920495	SAMEA7472371	ERR4920495	BARNARDS_13	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST76	181998	95	5182651	0	KL31	K31	Typeable	O3/O3a	O3/O3a	Typeable
+ERR4920503	SAMEA7472409	ERR4920503	BARNARDS_14	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST592	235315	74	5170658	0	KL57	K57	Typeable	O3b	O3b	Typeable
+ERR4920504	SAMEA7472411	ERR4920504	BARNARDS_14	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST592	304552	72	5183512	0	KL57	K57	Typeable	O3b	O3b	Typeable
+ERR4920491	SAMEA7472352	ERR4920491	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST340	167728	118	5302323	1	KL15	K15	Typeable	O4	O4	Typeable
+ERR4920493	SAMEA7472365	ERR4920493	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST4410	185846	144	5756667	2	KL116	unknown (KL116)	Typeable	O1/O2v1	O1ab	Typeable
+ERR4920497	SAMEA7472380	ERR4920497	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST4408	74551	155	5035511	0	KL46	K46	Untypeable	O3b	O3b	Typeable
+ERR4920498	SAMEA7472389	ERR4920498	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST307	119353	104	5233149	0	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+ERR4920499	SAMEA7472390	ERR4920499	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST1035	178761	103	5201188	0	KL57	K57	Typeable	O1/O2v2	O1ab	Typeable
+ERR4920500	SAMEA7472393	ERR4920500	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST815	348288	56	5063464	0	KL13	Capsule null	Typeable	O1/O2v1	O1ab	Typeable
+ERR4920501	SAMEA7472398	ERR4920501	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST11	203259	112	5506391	2	KL15	K15	Typeable	O4	O4	Typeable
+ERR4920502	SAMEA7472405	ERR4920502	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST133	355214	103	5411459	1	KL116	unknown (KL116)	Typeable	O1/O2v1	O1ab	Typeable
+ERR4920505	SAMEA7472416	ERR4920505	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST39	318766	140	5436578	1	KL116	unknown (KL116)	Typeable	O1/O2v1	O1ab	Typeable
+ERR4920506	SAMEA7472421	ERR4920506	NA	BARNARDS	Western Africa	Nigeria	Site 13	neonate	2017	Klebsiella pneumoniae	ST4074	309063	214	5418609	0	KL137	unknown (KL137)	Untypeable	OL13	O13	Typeable
 CLIN.003293	SAMN48851748	SRR35007093	NIMBI_1	NIMBI-plus	Southern Africa	Botswana	Site 14	neonate	2023	Klebsiella pneumoniae	ST1414	111503	312	5465947	0	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
 CLIN.003477	SAMN48851749	SRR35007092	NIMBI_1	NIMBI-plus	Southern Africa	Botswana	Site 14	neonate	2023	Klebsiella pneumoniae	ST1414	111601	338	5465500	0	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
 CLIN.004272	SAMN48851750	SRR35007081	NIMBI_1	NIMBI-plus	Southern Africa	Botswana	Site 14	neonate	2023	Klebsiella pneumoniae	ST1414	105235	336	5467072	0	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
@@ -1239,146 +1239,146 @@ ERR4920627	SAMEA7472945	ERR4920627	NA	BARNARDS	Southern Africa	South Africa	Site
 ERR4920626	SAMEA7472940	ERR4920626	NA	BARNARDS	Southern Africa	South Africa	Site 15A	neonate	2017	Klebsiella pneumoniae	ST37	229070	119	5518621	0	KL14	K14	Typeable	O3b	O3b	Typeable
 ERR4920628	SAMEA7472947	ERR4920628	NA	BARNARDS	Southern Africa	South Africa	Site 15A	neonate	2016	Klebsiella pneumoniae	ST39	201706	126	5616706	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
 ERR4920629	SAMEA7472949	ERR4920629	NA	BARNARDS	Southern Africa	South Africa	Site 15A	neonate	2016	Klebsiella pneumoniae	ST39	204081	113	5575284	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
-BG113	SAMN24865942	#N/A	BabyGERMS_1	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST17	427899	55	5591870	2	KL25	K25	Typeable	O5	O5	Typeable
-BG265	SAMN24865940	#N/A	BabyGERMS_1	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST17	370004	46	5491837	2	KL25	K25	Typeable	O5	O5	Typeable
-BG213	SAMN24865945	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	225774	95	5581171	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG214	SAMN24865946	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	211044	90	5585632	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG215	SAMN24865947	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	204917	86	5585736	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG218	SAMN24865948	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	225843	101	5633045	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG219	SAMN24865949	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	152981	115	5628389	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG222	SAMN24865950	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	204233	93	5584389	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG223	SAMN24865951	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	177731	94	5583449	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG224	SAMN24865952	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	204233	94	5583309	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG255	SAMN24865935	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	211044	91	5584421	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG263	SAMN24865938	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	194933	94	5584665	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG264	SAMN24865939	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	225845	90	5584326	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG271	SAMN24865953	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	197150	88	5581024	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG272	SAMN24865954	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	204233	94	5583086	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG316	SAMN24865956	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	204233	91	5583432	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG2144	SAMN24865790	#N/A	BabyGERMS_11	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	129097	180	5548784	2	KL62	K62	Typeable	O1/O2v2	O1ab	Typeable
-BG2170	SAMN24865791	#N/A	BabyGERMS_11	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	158873	168	5548352	2	KL62	K62	Typeable	O1/O2v2	O1ab	Typeable
-BG254	SAMN24865934	#N/A	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	331664	67	5732407	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG258	SAMN24865936	#N/A	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	355551	57	5673677	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG259	SAMN24865937	#N/A	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	339357	65	5732205	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG315	SAMN24865932	#N/A	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	355551	72	5698837	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG314	SAMN24865933	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	211044	93	5590260	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG449	SAMN24865860	#N/A	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	204233	91	5581487	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG1305	SAMN24865760	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST25	169802	133	5754626	2	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
-BG1308	SAMN24865761	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	189131	183	5577765	2	KL62	K62	Typeable	O1/O2v2	O1ab	Typeable
-BG1850	SAMN24865775	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST37	205984	125	5484670	1	KL15	K15	Typeable	O4	O4	Typeable
-BG2048	SAMN24865788	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST25	127323	141	5804129	2	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
-BG313	SAMN24865931	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST297	167696	72	5496076	2	KL158	unknown (KL158)	Typeable	O1/O2v1	O1ab	Typeable
-BG317	SAMN24865957	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST307	307973	64	5724356	3	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG32	SAMN24865944	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	355557	57	5671113	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG405	SAMN24865959	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST45	230183	50	5408813	0	KL24	K24	Typeable	O1/O2v1	O2a	Typeable
-BG442	SAMN24865855	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST25	193030	58	5644755	2	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
-BG987	SAMN24865930	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	185040	123	5576441	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG150	SAMN24865768	#N/A	BabyGERMS_4	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST950	196828	99	5361006	0	KL7	K7	Typeable	O1/O2v1	O1ab	Typeable
-BG31	SAMN24865811	#N/A	BabyGERMS_4	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST950	196828	91	5347131	0	KL7	K7	Typeable	O1/O2v1	O1ab	Typeable
-BG88	SAMN24865916	#N/A	BabyGERMS_4	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST950	196828	84	5353613	0	KL7	K7	Typeable	O1/O2v1	O1ab	Typeable
-BG1969	SAMN24865779	#N/A	BabyGERMS_8	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	148306	121	5526350	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG2035	SAMN24865784	#N/A	BabyGERMS_8	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	154811	119	5538191	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG2036	SAMN24865785	#N/A	BabyGERMS_8	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	132940	169	5653713	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG249	SAMN24865798	#N/A	BabyGERMS_13	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1414	170498	95	5462094	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
-BG83	SAMN24865915	#N/A	BabyGERMS_13	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1414	145583	114	5464765	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
-BG95	SAMN24865924	#N/A	BabyGERMS_13	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1414	87064	170	5491913	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
-BG332	SAMN24865820	#N/A	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	510912	31	5609484	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG337	SAMN24865822	#N/A	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	215894	55	5603535	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG375	SAMN24865833	#N/A	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	483972	31	5610609	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG382	SAMN24865837	#N/A	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	104863	103	5596292	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG387	SAMN24865839	#N/A	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	510912	31	5608988	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG421	SAMN24865847	#N/A	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	510912	30	5610757	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG441	SAMN24865854	#N/A	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST405	524406	35	5653377	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG2032	SAMN24865783	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST1414	122728	164	5509017	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
-BG28	SAMN24865799	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST359	154856	101	5289566	0	KL102	unknown (KL102)	Typeable	O1/O2v2	O1ab	Typeable
-BG307	SAMN24865809	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST17	386972	46	5551858	1	KL25	K25	Typeable	O5	O5	Typeable
-BG333	SAMN24865821	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1401	277004	481	6187715	1	KL146	unknown (KL146)	Typeable	O1/O2v2	O2afg	Typeable
-BG463	SAMN24865869	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	94391	148	5564432	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG470	SAMN24865872	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST17	108701	114	5457156	0	KL122	unknown (KL122)	Typeable	O1/O2v2	O2afg	Typeable
-BG515	SAMN24865877	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST2597	140223	111	5249421	0	KL125	unknown (KL125)	Typeable	O3/O3a	O3/O3a	Typeable
-BG517	SAMN24865878	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST405	158913	90	5656133	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
-BG594	SAMN24865895	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST17	240532	133	5616556	1	KL25	K25	Typeable	O5	O5	Typeable
-BG710	SAMN24865904	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST152	64625	188	5728323	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG984	TBC	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST17	258744	97	5667785	1	KL25	K25	Typeable	O5	O5	Typeable
-BG164	SAMN24865772	#N/A	BabyGERMS_6	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST152	196787	82	5471902	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG354	SAMN24865829	#N/A	BabyGERMS_6	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST152	201706	78	5473741	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG377	SAMN24865834	#N/A	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST17	427594	60	5847882	1	KL25	K25	Typeable	O5	O5	Typeable
-BG379	SAMN24865835	#N/A	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST17	351258	57	5697742	1	KL25	K25	Typeable	O5	O5	Typeable
-BG383	SAMN24865838	#N/A	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST17	427259	64	5691887	1	KL25	K25	Typeable	O5	O5	Typeable
-BG435	SAMN24865851	#N/A	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST17	427813	55	5391246	1	KL25	K25	Typeable	O5	O5	Typeable
-BG1165	SAMN24865756	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST22	200560	97	5548175	1	KL9	K9	Typeable	O1/O2v2	O2afg	Typeable
-BG1679	SAMN24865773	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST997	145371	102	5455658	0	KL102	unknown (KL102)	Typeable	O1/O2v1	O2a	Typeable
-BG1723	SAMN24865774	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST13	149113	106	5581540	1	KL3	K3	Typeable	O1/O2v2	O1ab	Typeable
-BG1997	SAMN24865780	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST1552	148511	123	5596183	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG1999	SAMN24865781	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST25	94415	155	5778094	1	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
-BG2053	SAMN24865789	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST14	179979	102	5553787	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
-BG321	SAMN24865815	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST997	387254	90	5805666	2	KL102	unknown (KL102)	Typeable	O1/O2v1	O2a	Typeable
-BG402	SAMN24865844	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST870	355742	58	5334764	0	KL17	K17	Typeable	O1/O2v1	O1ab	Typeable
-BG453	SAMN24865863	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST1079	144039	118	5762844	0	KL10	Capsule null	Typeable	O1/O2v2	O1ab	Typeable
-BG454	SAMN24865864	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST464	402105	40	5367278	1	KL17	K17	Typeable	O1/O2v1	O1ab	Typeable
-BG465	SAMN24865870	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST985	129190	84	5534208	1	KL39	K39	Typeable	O1/O2v2	O1ab	Typeable
-BG521	SAMN24865880	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST198	234753	89	5536262	0	KL30	K30	Typeable	O1/O2v1	O1ab	Typeable
-BG541	SAMN24865885	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST39	22225	485	5593745	3	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG564	SAMN24865889	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST22	263577	86	5546512	1	KL9	K9	Typeable	O1/O2v2	O2afg	Typeable
-BG64	SAMN24865896	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST985	739135	46	5790771	1	KL39	K39	Typeable	O1/O2v2	O1ab	Typeable
-BG678	SAMN24865902	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST14	275221	79	5532688	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
-BG948	SAMN24865923	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST1552	176370	124	5629926	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG127	SAMN24865759	#N/A	BabyGERMS_3	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	144971	158	5675271	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
-BG243	SAMN24865796	#N/A	BabyGERMS_3	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	305708	63	5696064	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
-BG1517	TBC	#N/A	BabyGERMS_5	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST76	56825	174	5382344	0	KL10	K10	Typeable	O3/O3a	O3/O3a	Typeable
-BG1519	SAMN24865769	#N/A	BabyGERMS_5	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST76	56825	174	5382344	0	KL10	K10	Typeable	O3/O3a	O3/O3a	Typeable
-BG2046	SAMN24865786	#N/A	BabyGERMS_9	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	152672	100	5487877	2	KL25	K25	Typeable	O5	O5	Typeable
-BG2047	SAMN24865787	#N/A	BabyGERMS_9	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	193787	89	5501873	2	KL25	K25	Typeable	O5	O5	Typeable
-BG298	SAMN24865804	#N/A	BabyGERMS_15	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST17	312947	70	5643149	2	KL25	K25	Typeable	O5	O5	Typeable
-BG303	SAMN24865805	#N/A	BabyGERMS_15	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST17	370005	69	5643035	2	KL25	K25	Typeable	O5	O5	Typeable
-BG370	SAMN24865831	#N/A	BabyGERMS_18	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	305633	64	5698553	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
-BG392	SAMN24865840	#N/A	BabyGERMS_18	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	266980	71	5692010	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
-BG443	SAMN24865856	#N/A	BabyGERMS_21	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	336685	62	5643465	3	KL25	K25	Typeable	O5	O5	Typeable
-BG444	SAMN24865857	#N/A	BabyGERMS_21	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	358836	68	5638915	2	KL25	K25	Typeable	O5	O5	Typeable
-BG533	SAMN24865881	#N/A	BabyGERMS_21	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	224995	170	5644480	3	KL25	K25	Typeable	O5	O5	Typeable
-BG661	SAMN24865899	#N/A	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	196425	117	5656321	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG662	TBC	#N/A	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	196425	117	5656321	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG767	TBC	#N/A	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	180578	183	5809903	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG774	SAMN24865909	#N/A	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	180578	183	5809903	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG319	SAMN24865813	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	371604	68	5767449	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG540	SAMN24865884	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST2621	73398	124	5454802	2	KL25	K25	Typeable	O5	O5	Typeable
-BG566	SAMN24865891	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	171546	146	5584452	1	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG65	SAMN24865897	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST711	382885	42	5555916	1	KL54	K54	Typeable	O1/O2v2	O1ab	Typeable
-BG780	SAMN24865911	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST542	381333	62	5442150	0	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
-BG1138	SAMN24865752	#N/A	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	244540	122	5845718	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG1318	SAMN24865765	#N/A	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	214866	121	5846821	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG1141	SAMN24865753	#N/A	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	244540	115	5846898	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG1153	SAMN24865755	#N/A	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	214810	112	5841110	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG1314	SAMN24865762	#N/A	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	244540	112	5843125	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG1956	SAMN24865777	#N/A	BabyGERMS_7	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST377	135089	173	5758913	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG2000	SAMN24865782	#N/A	BabyGERMS_7	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST377	124494	178	5751355	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG238	SAMN24865795	#N/A	BabyGERMS_12	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST17	351343	55	5548282	1	KL25	K25	Typeable	O5	O5	Typeable
-BG310	SAMN24865812	#N/A	BabyGERMS_12	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST17	354345	62	5549234	1	KL25	K25	Typeable	O5	O5	Typeable
-BG374	SAMN24865832	#N/A	BabyGERMS_19	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST607	384978	52	5500035	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG458	SAMN24865866	#N/A	BabyGERMS_19	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST607	684352	46	5541498	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG1142	SAMN24865754	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST607	214889	166	5593625	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
-BG1173	SAMN24865758	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST377	135412	174	5676581	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG1317	SAMN24865764	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST4872	237542	99	5422916	1	KL39	K39	Typeable	O3b	O3b	Typeable
-BG1320	SAMN24865766	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST1207	297472	64	5456249	1	KL136	unknown (KL136)	Typeable	O1/O2v2	O2afg	Typeable
-BG1524	SAMN24865770	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST170	132231	128	5519194	1	KL54	K54	Typeable	O1/O2v2	O1ab	Typeable
-BG353	SAMN24865828	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST29	485684	39	5281489	1	KL30	K30	Typeable	O1/O2v2	O1ab	Typeable
-BG555	SAMN24865887	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	75653	138	5581589	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG668	SAMN24865900	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST1414	118849	175	5611203	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
-BG670	SAMN24865901	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST39	194224	109	5679057	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
-BG952	SAMN24865926	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST39	206899	111	5511546	1	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
-BG308	SAMN24865810	#N/A	BabyGERMS_16	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST152	279499	105	5467989	1	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG309	TBC	#N/A	BabyGERMS_16	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST152	279499	105	5467989	1	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
-BG473	SAMN24865873	#N/A	BabyGERMS_22	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST1119	126497	109	5377224	1	KL110	unknown (KL110)	Typeable	O3b	O3b	Typeable
-BG474	SAMN24865874	#N/A	BabyGERMS_22	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST1119	90938	135	5363802	1	KL110	unknown (KL110)	Typeable	O3b	O3b	Typeable
-BG1133	SAMN24865751	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST36	174653	136	5498636	0	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG1315	SAMN24865763	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST307	224357	100	5515844	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG344	SAMN24865826	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST17	370004	44	5547262	1	KL25	K25	Typeable	O5	O5	Typeable
-BG361	SAMN24865830	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST307	216078	58	5564511	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
-BG455	SAMN24865865	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST39	334554	43	5571330	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
-BG456	TBC	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST17	387693	44	5345619	1	KL25	K25	Typeable	O5	O5	Typeable
-BG475	SAMN24865875	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST14	105051	111	5478969	0	KL16	K16	Typeable	O1/O2v1	O1ab	Typeable
-BG72	SAMN24865905	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST3184	477180	41	5481993	1	KL25	K25	Typeable	O5	O5	Typeable
-BG74	SAMN24865907	#N/A	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST101	184509	80	5705842	2	KL17	K17	Typeable	O1/O2v1	O1ab	Typeable
+BG113	SAMN24865942	JAKFJJ000000000	BabyGERMS_1	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST17	427899	55	5591870	2	KL25	K25	Typeable	O5	O5	Typeable
+BG265	SAMN24865940	JAKFJL000000000	BabyGERMS_1	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST17	370004	46	5491837	2	KL25	K25	Typeable	O5	O5	Typeable
+BG213	SAMN24865945	JAKFJG000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	225774	95	5581171	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG214	SAMN24865946	JAKFJF000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	211044	90	5585632	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG215	SAMN24865947	JAKFJE000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	204917	86	5585736	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG218	SAMN24865948	JAKFJD000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	225843	101	5633045	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG219	SAMN24865949	JAKFJC000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	152981	115	5628389	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG222	SAMN24865950	JAKFJB000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	204233	93	5584389	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG223	SAMN24865951	JAKFJA000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	177731	94	5583449	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG224	SAMN24865952	JAKFIZ000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	204233	94	5583309	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG255	SAMN24865935	JAKFJQ000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	211044	91	5584421	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG263	SAMN24865938	JAKFJN000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	194933	94	5584665	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG264	SAMN24865939	JAKFJM000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	225845	90	5584326	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG271	SAMN24865953	JAKFIY000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	197150	88	5581024	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG272	SAMN24865954	JAKFIX000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	204233	94	5583086	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG316	SAMN24865956	JAKFIV000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	204233	91	5583432	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG2144	SAMN24865790	JAKFOZ000000000	BabyGERMS_11	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	129097	180	5548784	2	KL62	K62	Typeable	O1/O2v2	O1ab	Typeable
+BG2170	SAMN24865791	JAKFOY000000000	BabyGERMS_11	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	158873	168	5548352	2	KL62	K62	Typeable	O1/O2v2	O1ab	Typeable
+BG254	SAMN24865934	JAKFJR000000000	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	331664	67	5732407	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG258	SAMN24865936	JAKFJP000000000	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	355551	57	5673677	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG259	SAMN24865937	JAKFJO000000000	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	339357	65	5732205	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG315	SAMN24865932	JAKFJT000000000	BabyGERMS_14	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	355551	72	5698837	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG314	SAMN24865933	JAKFJS000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST152	211044	93	5590260	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG449	SAMN24865860	JAKFML000000000	BabyGERMS_10	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST152	204233	91	5581487	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG1305	SAMN24865760	JAKFQD000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST25	169802	133	5754626	2	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
+BG1308	SAMN24865761	JAKFQC000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	189131	183	5577765	2	KL62	K62	Typeable	O1/O2v2	O1ab	Typeable
+BG1850	SAMN24865775	JAKFPO000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST37	205984	125	5484670	1	KL15	K15	Typeable	O4	O4	Typeable
+BG2048	SAMN24865788	JAKFPB000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST25	127323	141	5804129	2	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
+BG313	SAMN24865931	JAKFJU000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST297	167696	72	5496076	2	KL158	unknown (KL158)	Typeable	O1/O2v1	O1ab	Typeable
+BG317	SAMN24865957	JAKFIU000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST307	307973	64	5724356	3	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG32	SAMN24865944	JAKFJH000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST307	355557	57	5671113	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG405	SAMN24865959	JAKFIS000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST45	230183	50	5408813	0	KL24	K24	Typeable	O1/O2v1	O2a	Typeable
+BG442	SAMN24865855	JAKFMQ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2019	Klebsiella pneumoniae	ST25	193030	58	5644755	2	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
+BG987	SAMN24865930	JAKFJV000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 16	neonate	2020	Klebsiella pneumoniae	ST39	185040	123	5576441	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG150	SAMN24865768	JAKFPV000000000	BabyGERMS_4	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST950	196828	99	5361006	0	KL7	K7	Typeable	O1/O2v1	O1ab	Typeable
+BG31	SAMN24865811	JAKFOE000000000	BabyGERMS_4	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST950	196828	91	5347131	0	KL7	K7	Typeable	O1/O2v1	O1ab	Typeable
+BG88	SAMN24865916	JAKFKI000000000	BabyGERMS_4	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST950	196828	84	5353613	0	KL7	K7	Typeable	O1/O2v1	O1ab	Typeable
+BG1969	SAMN24865779	JAKFPK000000000	BabyGERMS_8	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	148306	121	5526350	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG2035	SAMN24865784	JAKFPF000000000	BabyGERMS_8	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	154811	119	5538191	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG2036	SAMN24865785	JAKFPE000000000	BabyGERMS_8	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	132940	169	5653713	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG249	SAMN24865798	JAKFOR000000000	BabyGERMS_13	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1414	170498	95	5462094	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
+BG83	SAMN24865915	JAKFKJ000000000	BabyGERMS_13	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1414	145583	114	5464765	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
+BG95	SAMN24865924	JAKFKB000000000	BabyGERMS_13	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1414	87064	170	5491913	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
+BG332	SAMN24865820	JAKFNX000000000	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	510912	31	5609484	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG337	SAMN24865822	JAKFNW000000000	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	215894	55	5603535	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG375	SAMN24865833	JAKFNM000000000	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	483972	31	5610609	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG382	SAMN24865837	JAKFNI000000000	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	104863	103	5596292	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG387	SAMN24865839	JAKFNG000000000	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	510912	31	5608988	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG421	SAMN24865847	JAKFMY000000000	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST405	510912	30	5610757	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG441	SAMN24865854	JAKFMR000000000	BabyGERMS_17	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST405	524406	35	5653377	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG2032	SAMN24865783	JAKFPG000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST1414	122728	164	5509017	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
+BG28	SAMN24865799	JAKFOQ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST359	154856	101	5289566	0	KL102	unknown (KL102)	Typeable	O1/O2v2	O1ab	Typeable
+BG307	SAMN24865809	JAKFOG000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST17	386972	46	5551858	1	KL25	K25	Typeable	O5	O5	Typeable
+BG333	SAMN24865821	TBC	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST1401	277004	481	6187715	1	KL146	unknown (KL146)	Typeable	O1/O2v2	O2afg	Typeable
+BG463	SAMN24865869	JAKFMC000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST607	94391	148	5564432	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG470	SAMN24865872	JAKFLZ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST17	108701	114	5457156	0	KL122	unknown (KL122)	Typeable	O1/O2v2	O2afg	Typeable
+BG515	SAMN24865877	JAKFLU000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST2597	140223	111	5249421	0	KL125	unknown (KL125)	Typeable	O3/O3a	O3/O3a	Typeable
+BG517	SAMN24865878	JAKFLT000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST405	158913	90	5656133	1	KL151	unknown (KL151)	Typeable	O4	O4	Typeable
+BG594	SAMN24865895	JAKFLD000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST17	240532	133	5616556	1	KL25	K25	Typeable	O5	O5	Typeable
+BG710	SAMN24865904	JAKFKU000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2019	Klebsiella pneumoniae	ST152	64625	188	5728323	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG984	SAMN49672409	JBPKGS000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 17	neonate	2020	Klebsiella pneumoniae	ST17	258744	97	5667785	1	KL25	K25	Typeable	O5	O5	Typeable
+BG164	SAMN24865772	JAKFPR000000000	BabyGERMS_6	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST152	196787	82	5471902	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG354	SAMN24865829	JAKFNQ000000000	BabyGERMS_6	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST152	201706	78	5473741	2	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG377	SAMN24865834	JAKFNL000000000	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST17	427594	60	5847882	1	KL25	K25	Typeable	O5	O5	Typeable
+BG379	SAMN24865835	JAKFNK000000000	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST17	351258	57	5697742	1	KL25	K25	Typeable	O5	O5	Typeable
+BG383	SAMN24865838	JAKFNH000000000	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST17	427259	64	5691887	1	KL25	K25	Typeable	O5	O5	Typeable
+BG435	SAMN24865851	JAKFMU000000000	BabyGERMS_20	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST17	427813	55	5391246	1	KL25	K25	Typeable	O5	O5	Typeable
+BG1165	SAMN24865756	JAKFQH000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST22	200560	97	5548175	1	KL9	K9	Typeable	O1/O2v2	O2afg	Typeable
+BG1679	SAMN24865773	JAKFPQ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST997	145371	102	5455658	0	KL102	unknown (KL102)	Typeable	O1/O2v1	O2a	Typeable
+BG1723	SAMN24865774	JAKFPP000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST13	149113	106	5581540	1	KL3	K3	Typeable	O1/O2v2	O1ab	Typeable
+BG1997	SAMN24865780	JAKFPJ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST1552	148511	123	5596183	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG1999	SAMN24865781	JAKFPI000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST25	94415	155	5778094	1	KL2	K2	Typeable	O1/O2v2	O1ab	Typeable
+BG2053	SAMN24865789	JAKFPA000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST14	179979	102	5553787	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
+BG321	SAMN24865815	JAKFOA000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST997	387254	90	5805666	2	KL102	unknown (KL102)	Typeable	O1/O2v1	O2a	Typeable
+BG402	SAMN24865844	JAKFNB000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST870	355742	58	5334764	0	KL17	K17	Typeable	O1/O2v1	O1ab	Typeable
+BG453	SAMN24865863	JAKFMI000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST1079	144039	118	5762844	0	KL10	Capsule null	Typeable	O1/O2v2	O1ab	Typeable
+BG454	SAMN24865864	JAKFMH000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST464	402105	40	5367278	1	KL17	K17	Typeable	O1/O2v1	O1ab	Typeable
+BG465	SAMN24865870	JAKFMB000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST985	129190	84	5534208	1	KL39	K39	Typeable	O1/O2v2	O1ab	Typeable
+BG521	SAMN24865880	JAKFLR000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST198	234753	89	5536262	0	KL30	K30	Typeable	O1/O2v1	O1ab	Typeable
+BG541	SAMN24865885	JAKFLM000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST39	22225	485	5593745	3	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG564	SAMN24865889	JAKFLI000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST22	263577	86	5546512	1	KL9	K9	Typeable	O1/O2v2	O2afg	Typeable
+BG64	SAMN24865896	JAKFLC000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2019	Klebsiella pneumoniae	ST985	739135	46	5790771	1	KL39	K39	Typeable	O1/O2v2	O1ab	Typeable
+BG678	SAMN24865902	JAKFKW000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST14	275221	79	5532688	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
+BG948	SAMN24865923	JAKFKC000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 18	neonate	2020	Klebsiella pneumoniae	ST1552	176370	124	5629926	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG127	SAMN24865759	JAKFQE000000000	BabyGERMS_3	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	144971	158	5675271	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
+BG243	SAMN24865796	JAKFOT000000000	BabyGERMS_3	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	305708	63	5696064	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
+BG1517	SAMN49672405	JBPKGW000000000	BabyGERMS_5	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST76	56825	174	5382344	0	KL10	K10	Typeable	O3/O3a	O3/O3a	Typeable
+BG1519	SAMN24865769	JAKFPU000000000	BabyGERMS_5	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST76	56825	174	5382344	0	KL10	K10	Typeable	O3/O3a	O3/O3a	Typeable
+BG2046	SAMN24865786	JAKFPD000000000	BabyGERMS_9	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	152672	100	5487877	2	KL25	K25	Typeable	O5	O5	Typeable
+BG2047	SAMN24865787	JAKFPC000000000	BabyGERMS_9	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	193787	89	5501873	2	KL25	K25	Typeable	O5	O5	Typeable
+BG298	SAMN24865804	JAKFOL000000000	BabyGERMS_15	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST17	312947	70	5643149	2	KL25	K25	Typeable	O5	O5	Typeable
+BG303	SAMN24865805	JAKFOK000000000	BabyGERMS_15	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST17	370005	69	5643035	2	KL25	K25	Typeable	O5	O5	Typeable
+BG370	SAMN24865831	JAKFNO000000000	BabyGERMS_18	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	305633	64	5698553	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
+BG392	SAMN24865840	JAKFNF000000000	BabyGERMS_18	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST348	266980	71	5692010	1	KL62	K62	Typeable	O1/O2v1	O1ab	Typeable
+BG443	SAMN24865856	JAKFMP000000000	BabyGERMS_21	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	336685	62	5643465	3	KL25	K25	Typeable	O5	O5	Typeable
+BG444	SAMN24865857	JAKFMO000000000	BabyGERMS_21	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	358836	68	5638915	2	KL25	K25	Typeable	O5	O5	Typeable
+BG533	SAMN24865881	JAKFLQ000000000	BabyGERMS_21	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST17	224995	170	5644480	3	KL25	K25	Typeable	O5	O5	Typeable
+BG661	SAMN24865899	JAKFKZ000000000	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	196425	117	5656321	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG662	SAMN49672407	JBPKGU000000000	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	196425	117	5656321	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG767	SAMN49672408	JBPKGT000000000	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	180578	183	5809903	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG774	SAMN24865909	JAKFKP000000000	BabyGERMS_23	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	180578	183	5809903	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG319	SAMN24865813	JAKFOC000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	371604	68	5767449	2	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG540	SAMN24865884	JAKFLN000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST2621	73398	124	5454802	2	KL25	K25	Typeable	O5	O5	Typeable
+BG566	SAMN24865891	JAKFLG000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST39	171546	146	5584452	1	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG65	SAMN24865897	JAKFLB000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2019	Klebsiella pneumoniae	ST711	382885	42	5555916	1	KL54	K54	Typeable	O1/O2v2	O1ab	Typeable
+BG780	SAMN24865911	JAKFKN000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 19	neonate	2020	Klebsiella pneumoniae	ST542	381333	62	5442150	0	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
+BG1138	SAMN24865752	JAKFQL000000000	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	244540	122	5845718	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG1318	SAMN24865765	JAKFPY000000000	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	214866	121	5846821	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG1141	SAMN24865753	JAKFQK000000000	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	244540	115	5846898	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG1153	SAMN24865755	JAKFQI000000000	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	214810	112	5841110	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG1314	SAMN24865762	JAKFQB000000000	BabyGERMS_2	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	244540	112	5843125	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG1956	SAMN24865777	JAKFPM000000000	BabyGERMS_7	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST377	135089	173	5758913	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG2000	SAMN24865782	JAKFPH000000000	BabyGERMS_7	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST377	124494	178	5751355	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG238	SAMN24865795	JAKFOU000000000	BabyGERMS_12	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST17	351343	55	5548282	1	KL25	K25	Typeable	O5	O5	Typeable
+BG310	SAMN24865812	JAKFOD000000000	BabyGERMS_12	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST17	354345	62	5549234	1	KL25	K25	Typeable	O5	O5	Typeable
+BG374	SAMN24865832	JAKFNN000000000	BabyGERMS_19	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST607	384978	52	5500035	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG458	SAMN24865866	JAKFMF000000000	BabyGERMS_19	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST607	684352	46	5541498	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG1142	SAMN24865754	JAKFQJ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST607	214889	166	5593625	1	KL25	K25	Typeable	O1/O2v1	O1ab	Typeable
+BG1173	SAMN24865758	JAKFQF000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST377	135412	174	5676581	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG1317	SAMN24865764	JAKFPZ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST4872	237542	99	5422916	1	KL39	K39	Typeable	O3b	O3b	Typeable
+BG1320	SAMN24865766	JAKFPX000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST1207	297472	64	5456249	1	KL136	unknown (KL136)	Typeable	O1/O2v2	O2afg	Typeable
+BG1524	SAMN24865770	JAKFPT000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST170	132231	128	5519194	1	KL54	K54	Typeable	O1/O2v2	O1ab	Typeable
+BG353	SAMN24865828	JAKFNR000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2019	Klebsiella pneumoniae	ST29	485684	39	5281489	1	KL30	K30	Typeable	O1/O2v2	O1ab	Typeable
+BG555	SAMN24865887	JAKFLK000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST307	75653	138	5581589	2	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG668	SAMN24865900	JAKFKY000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST1414	118849	175	5611203	1	KL8	K8	Typeable	O1/O2v1	O1ab	Typeable
+BG670	SAMN24865901	JAKFKX000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST39	194224	109	5679057	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
+BG952	SAMN24865926	JAKFJZ000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 20	neonate	2020	Klebsiella pneumoniae	ST39	206899	111	5511546	1	KL149	unknown (KL149)	Typeable	O1/O2v2	O1ab	Typeable
+BG308	SAMN24865810	JAKFOF000000000	BabyGERMS_16	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST152	279499	105	5467989	1	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG309	SAMN49672410	JBPKGR000000000	BabyGERMS_16	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST152	279499	105	5467989	1	KL149	unknown (KL149)	Typeable	O4	O4	Typeable
+BG473	SAMN24865873	JAKFLY000000000	BabyGERMS_22	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST1119	126497	109	5377224	1	KL110	unknown (KL110)	Typeable	O3b	O3b	Typeable
+BG474	SAMN24865874	JAKFLX000000000	BabyGERMS_22	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST1119	90938	135	5363802	1	KL110	unknown (KL110)	Typeable	O3b	O3b	Typeable
+BG1133	SAMN24865751	JAKFQM000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST36	174653	136	5498636	0	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG1315	SAMN24865763	JAKFQA000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST307	224357	100	5515844	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG344	SAMN24865826	JAKFNS000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST17	370004	44	5547262	1	KL25	K25	Typeable	O5	O5	Typeable
+BG361	SAMN24865830	JAKFNP000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST307	216078	58	5564511	1	KL102	unknown (KL102)	Typeable	O1/O2v2	O2afg	Typeable
+BG455	SAMN24865865	JAKFMG000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST39	334554	43	5571330	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
+BG456	SAMN49672406	JBPKGV000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST17	387693	44	5345619	1	KL25	K25	Typeable	O5	O5	Typeable
+BG475	SAMN24865875	JAKFLW000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2020	Klebsiella pneumoniae	ST14	105051	111	5478969	0	KL16	K16	Typeable	O1/O2v1	O1ab	Typeable
+BG72	SAMN24865905	JAKFKT000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST3184	477180	41	5481993	1	KL25	K25	Typeable	O5	O5	Typeable
+BG74	SAMN24865907	JAKFKR000000000	NA	Baby GERMS-SA	Southern Africa	South Africa	Site 21	neonate	2019	Klebsiella pneumoniae	ST101	184509	80	5705842	2	KL17	K17	Typeable	O1/O2v1	O1ab	Typeable
 HG06869375	SRS23793505	SRR32003919	GBS_1	GBS-COP	Southern Africa	South Africa	Site 22	neonate	2019	Klebsiella pneumoniae	ST14	68728	268	5600265	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
 HG06872466	SRS23793502	SRR32003922	GBS_1	GBS-COP	Southern Africa	South Africa	Site 22	neonate	2019	Klebsiella pneumoniae	ST14	264636	68	5508888	1	KL2	K2	Typeable	O1/O2v1	O1ab	Typeable
 HG07158982	SRS23793513	SRR32003912	GBS_2	GBS-COP	Southern Africa	South Africa	Site 22	neonate	2019	Klebsiella pneumoniae	ST17	370400	52	5589687	1	KL25	K25	Typeable	O5	O5	Typeable
