@@ -114,8 +114,6 @@ tables_dir <- file.path("./tables/")
 fs::dir_create(tables_dir)
 
 index_cols <- c("Transmission proportion"="navyblue", "Cluster proportion"="#8b0000")
-# res_colors <- c(`0: ESBL-, Carb-`="lightblue", `1: ESBL+, Carb-`="orange", 
-#                 `2: Carb+`="red", `3: Carb+, Col+`="black")
 res_colors <- c(`0: ESBL-, Carb-` ="#FEE0D2", 
                 `1: ESBL+, Carb-` ="#FC9272", 
                 `2: Carb+`        ="#EF3B2C", 
@@ -1133,24 +1131,6 @@ transmi_prop_meta_by_region_forest <- {
 }
 
 get_metaprop_subgroup_estimates(transmi_prop_meta_by_region)
-
-# ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesRegion.png"), 
-#        plot=ggarrange(cluster_prop_meta_by_region_forest, labels=c("(A) Cluster proportion"),
-#                       font.label = list(size = 18)), 
-#        width=11, height=11, bg='white')
-# ggsave(file=file.path(figs_dir, "FigureS7a_PooledEstimatesRegion.tif"), 
-#        plot=ggarrange(cluster_prop_meta_by_region_forest, labels=c("(A) Cluster proportion"),
-#                       font.label = list(size = 18)), 
-#        width=11, height=11, bg='white')
-# ggsave(file=file.path(figs_dir, "FigureS7b_PooledEstimatesRegion.png"), 
-#        plot=ggarrange(transmi_prop_meta_by_region_forest, labels=c("(B) Transmission proportion"),
-#                       font.label = list(size = 18)), 
-#        width=11, height=11, bg='white')
-# ggsave(file=file.path(figs_dir, "FigureS7b_PooledEstimatesRegion.tif"), 
-#        plot=ggarrange(transmi_prop_meta_by_region_forest, labels=c("(B) Transmission proportion"),
-#                       font.label = list(size = 18)), 
-#        width=11, height=11, bg='white')
-
 ```
 
 <br><br>
@@ -2425,10 +2405,6 @@ res_case_type_plot <- res_score_df_dereplicated %>%
                    legend.text=element_text(size=10, margin=margin(l=0.5, r=0.5, unit="mm")),
                    legend.title=element_text(size=10), strip.text=element_text(size=10)) +
     ggplot2::guides(color = "none", fill = guide_legend(reverse = TRUE)) 
-# ggsave(file=file.path(figs_dir, "FigureSX_Resistance_byCaseType.png"), 
-#        plot=res_case_type_plot, width=10, height=11)
-# ggsave(file=file.path(figs_dir, "FigureSX_Resistance_byCaseType.tif"), 
-#        plot=res_case_type_plot, width=10, height=11)
 # ggsave(file=file.path(figs_dir, "FigureSX_Resistance_byCaseType.svg"), 
 #        plot=res_case_type_plot, width=10, height=11)
 res_case_type_plot
