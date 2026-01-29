@@ -108,9 +108,9 @@ sens_temp_range <- c(1:52)
 sens_temp_dist_vals <- c(1,2,4,8,52)
 
 # figures and tables dir
-figs_dir <- file.path("./figures_test/")
+figs_dir <- file.path("./figures/")
 fs::dir_create(figs_dir)
-tables_dir <- file.path("./tables_test/")
+tables_dir <- file.path("./tables/")
 fs::dir_create(tables_dir)
 
 index_cols <- c("Transmission proportion"="navyblue", "Cluster proportion"="#8b0000")
