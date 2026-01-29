@@ -1,4 +1,4 @@
-Site	Region	Country	Location	Facility type	Facility size	No. neonatal beds	Piped water available	Onsite neonatal surgical facilities	Multiuse equipment (e.g drugs, fluids) used in unit	Routine clinical surveillance for neonatal HAIs	Routine laboratory surveillance for neonatal HAIs	IPC service available
+Site	Region	Country	Location	Facility type	Facility size	No. neonatal beds	Piped water available	Onsite neonatal surgical facilities	"Multiuse equipment (e.g drugs, fluids) used in unit"	Routine clinical surveillance for neonatal HAIs	Routine laboratory surveillance for neonatal HAIs	IPC service available
 Site 1	Eastern Africa	Ethiopia	Urban	Tertiary Hospital	Very Large: >600 beds	30	Occassionally	Yes	Yes	Yes	Yes	Yes
 Site 2	Eastern Africa	Ethiopia	Urban	Tertiary Hospital	Medium: 151 - 300 beds	40	Occassionally	Yes	Yes	Yes	Yes	Yes
 Site 3	Eastern Africa	Kenya	Rural	Regional Hospital	Large: 301 - 600 beds	75	Always	Yes	Yes	No	No	Yes
@@ -8,9 +8,9 @@ Site 6A	Eastern Africa	Malawi	Urban	Tertiary Hospital	Very Large: >600 beds	70	M
 Site 6B	Eastern Africa	Malawi	Urban	Tertiary Hospital	Very Large: >600 beds	70	Most of the time	Yes	Yes	No	No	No
 Site 7	Eastern Africa	Rwanda	Rural	District Hospital	Medium: 151 - 300 beds	15	Always	Yes	Yes	Yes	Yes	Yes
 Site 8	Eastern Africa	Tanzania	Urban	Tertiary Hospital	Very Large: >600 beds	100	Always	Yes	Yes	Yes	Yes	Yes
-Site 9	Eastern Africa	Zambia	Urban	Tertiary Hospital	Small: 50 - 150 beds	60	Most of the time	Yes	Yes	No	No	Yes
+Site 9	Eastern Africa	Zambia	Urban	Tertiary Hospital	Large: 301 - 600 beds	57	Most of the time	Yes	Yes	No	No	Yes
 Site 10	Eastern Africa	Zambia	Urban	Tertiary Hospital	Very Large: >600 beds	60	Sometimes	Yes	Yes	No	No	Yes
-Site 11	Western Africa	Ghana	Urban	Tertiary Hospital	Small: 50 - 150 beds	55	Always	Yes	Yes	No	No	Yes
+Site 11	Western Africa	Ghana	Urban	Tertiary Hospital	Very Large: >600 beds	55	Always	Yes	Yes	No	No	Yes
 Site 12	Western Africa	Nigeria	Urban	Tertiary Hospital	Large: 301 - 600 beds	20	Always	Yes	Yes	Yes	No	Yes
 Site 13	Western Africa	Nigeria	Urban	Tertiary Hospital	Very Large: >600 beds	30	Most of the time	Yes	Yes	No	No	No
 Site 14	Southern Africa	Botswana	Urban	Tertiary Hospital	Large: 301 - 600 beds	36	Most of the time	Yes	Yes	Yes	Yes	Yes

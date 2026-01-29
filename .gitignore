@@ -6,6 +6,6 @@
 *.Rproj
 *.html
 
-NOT_SHARED_*
+NOT_SHARED*
 *all_data
 *test
