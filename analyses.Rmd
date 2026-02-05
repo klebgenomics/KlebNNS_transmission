@@ -823,7 +823,6 @@ ggsave(file=file.path(figs_dir, "AppendixS1Fig3_ThresholdSensitivity1000SNPs.tif
 
 
 ### Pooled estimates meta-analysis (sites)
-
 ```{r meta_analysis_by_site, warning=F}
 # sites
 all_sites_df <- epi_snp_clusters %>% 
@@ -843,11 +842,12 @@ all_sites_clusters_summary %<>%
     mutate(cluster_prop = n_isolates_clusters / n_isolates,
            transmission_prop = n_transmission_isolates / n_isolates) %>% 
     arrange(desc(cluster_prop)) %>% 
-    left_join(all_sites_df %>% select(-c(n_isolates)), by = c("site" = "coded_site"))
+    left_join(all_sites_df %>% select(-c(n_isolates)), by = c("site" = "coded_site")) %>% 
+    mutate(Region = factor(Region, levels = region_order))
 
 # functions
 get_metaprop_estimates <- function(meta_obj,
-                                   prop_type=c("prop", "percent"), dec=2) {
+                                   prop_type=c("prop", "percent"), decimals=2) {
     prop_type = match.arg(prop_type)
     trns = meta_obj$sm
     if (trns == "PFT") {n <- meta_obj$k.all.w} else {n <- NULL}
@@ -855,87 +855,50 @@ get_metaprop_estimates <- function(meta_obj,
     # get estimates
     estimates <- data.frame(
         S = meta_obj$studlab,
-        Proportion = round(meta::backtransf(meta_obj$TE, sm=trns, n=n)*mult, dec),  
-        lower_CI = round(meta::backtransf(meta_obj$lower, sm=trns, n=n)*mult, dec), 
-        upper_CI = round(meta::backtransf(meta_obj$upper, sm=trns, n=n)*mult, dec),
-        pooled_Est = round(meta::backtransf(meta_obj$TE.random, sm=trns, n=n)*mult, dec),
-        pooled_lower = round(meta::backtransf(meta_obj$lower.random, sm=trns, n=n)*mult, dec),
-        pooled_upper = round(meta::backtransf(meta_obj$upper.random, sm=trns, n=n)*mult, dec)
+        Proportion = round(meta::backtransf(meta_obj$TE, sm=trns, n=n)*mult, decimals),  
+        lower_CI = round(meta::backtransf(meta_obj$lower, sm=trns, n=n)*mult, decimals), 
+        upper_CI = round(meta::backtransf(meta_obj$upper, sm=trns, n=n)*mult, decimals),
+        pooled_Est = round(meta::backtransf(meta_obj$TE.random, sm=trns, n=n)*mult, decimals),
+        pooled_lower = round(meta::backtransf(meta_obj$lower.random, sm=trns, n=n)*mult, decimals),
+        pooled_upper = round(meta::backtransf(meta_obj$upper.random, sm=trns, n=n)*mult, decimals)
     ) %>% as_tibble() %>% arrange(desc(Proportion))
     return(estimates)
 }
 
-plot_meta <- function(meta_obj, meta_df, events_lab, x_lab="Proportion") {
-    meta_df %<>% 
-        left_join(meta_obj$data %>% 
-                      select(site, Region, Country, `Total isolates`=n_isolates,Events = .event), 
-                  by = c("S" = "site")) %>% 
-        mutate(Site_ctry = paste0(S, " (", Country, ")")) %>% 
-        arrange(desc(Proportion)) %>% 
-        mutate(Site_ctry = factor(Site_ctry, levels = unique(Site_ctry)))
-    # Plot
-    heterogeneity_lab <- paste0(
-        "Heterogeneity: *I*<sup>2</sup> = ", sprintf('%.1f', meta_obj$I2*100),
-        "% [", sprintf('%.1f', meta_obj$lower.I2*100), "%, ", 
-        sprintf('%.1f', meta_obj$upper.I2*100), "%], tau<sup>2</sup> = ",
-        sprintf('%.4f', meta_obj$tau2),
-        ifelse(meta_obj$pval.Q[1] < 0.0001, ", *p* < 0.0001", glue(", *p* = {meta_obj$pval.Q[1]}"))
-    )
-    p.left <- meta_df %>% 
-        ggplot(aes(y = Site_ctry)) +
-        # Sites
-        geom_text(aes(x=0, label = Site_ctry), hjust=0, size=2.5) +
-        annotate("text", x=0, y=nrow(meta_df)+1, label="Site", hjust=0, fontface="bold", size=2.5) + 
-        annotate("text", x=0, y=0, label="Random effects model", hjust=0, fontface="bold", size=2.5) +
-        # N isolates
-        geom_text(aes(x=1.7, label=`Total isolates`), hjust=0, size=2.5) +
-        annotate("text", x=1.7, y=nrow(meta_df)+1, label="Total", hjust=0, fontface="bold", size=2.5) +
-        annotate("text", x=1.7, y=0, label=sum(meta_obj$n), hjust=0, fontface="bold", size=2.5) +
-        # N events
-        geom_text(aes(x=2.2, label=Events), hjust=0, size=2.5) +
-        annotate("text", x=2.2, y=nrow(meta_df)+1, label=events_lab, hjust=0, 
-                 vjust=0.2, fontface="bold", size=2.5, lineheight = 0.75) +
-        annotate("text", x=2.2, y=0, label=sum(meta_obj$event), hjust=0, fontface="bold", size=2.5) +
-        # Prop
-        geom_text(aes(x=3.1, label=sprintf("%.2f [%.2f, %.2f]", Proportion, lower_CI, upper_CI)), 
-                  hjust=0, size=2.5) +
-        annotate("text", x=3.1, y=nrow(meta_df)+1, label="Proportion\n[95% CI]", 
-                 lineheight=0.75, vjust=0.2, hjust=0, fontface="bold", size=2.5) +
-        annotate("text", x=3.1, y=0, 
-                 label=sprintf("%.2f [%.2f, %.2f]", meta_df$pooled_Est[1], 
-                               meta_df$pooled_lower[1], meta_df$pooled_upper[1]), 
-                 hjust=0, fontface="bold", size=2.5) +
-        # Heterogeneity
-        ggtext::geom_richtext(aes(x=0, y = -1.4, label = heterogeneity_lab, family="sans"), 
-                              data=meta_df[1,],
-                              hjust=0, vjust = 0, size = 2.2, fill = NA, label.color = NA,
-                              label.padding = grid::unit(rep(0, 4), "pt")) +
-        coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 4)) +
-        theme_void() +
-        theme(text = element_text(family = "Arial"))
-    p.right <- meta_df %>%
-        ggplot(aes(y = Site_ctry, x = Proportion, xmin = lower_CI, xmax = upper_CI)) +
-        geom_vline(xintercept = meta_df$pooled_Est[1], linetype = "dashed") +
-        # Individual site estimates (squares) and interv
-        geom_pointrange(aes(fill = Region), shape = 22, size = 0.6, stroke=0.5) +
-        scale_fill_manual(values = region_colors) +
-        # Pooled estimate (diamond) and interval
-        geom_pointrange(aes(y=0, x=pooled_Est, xmin=pooled_lower, xmax=pooled_upper),
-                        data=meta_df[1,], shape = 22, size = 0.8, stroke = 0.8) +
-        # clean
-        scale_x_continuous(name = x_lab, breaks = seq(0, 1, 0.2)) +
-        coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 1)) +
-        theme_classic() +
-        theme(axis.line.y = element_blank(), axis.ticks.y= element_blank(),
-              axis.text.y= element_blank(), axis.title.y= element_blank(),
-              axis.text = element_text(size=7), axis.title = element_text(size=8),
-              legend.text = element_text(size=7, margin = margin(l=0.5, r=0.5, unit = "mm")), 
-              legend.title = element_text(size=7), legend.key.spacing.x = unit(10, "mm"))
-    # p <- ggarrange(p.left, p.right, ncol = 2, widths=c(1.8,2), 
-    #                align="h", legend="bottom", common.legend=T)
+get_simple_estimates <- function(all_sites_clusters_summary_df, 
+                                 group_column="site",
+                                 total_column="n_isolates",
+                                 events_column=c("n_isolates_clusters", "n_transmission_isolates"), 
+                                 prop_type=c("prop", "percent"), decimals=2) {
+    events_column = match.arg(events_column)
+    prop_type = match.arg(prop_type)
+    if (prop_type == "prop") {mult <- 1} else {mult <- 100}
     
-    return(list(p.left = p.left, p.right = p.right))
+    d <- all_sites_clusters_summary_df %>% select(
+        S = !!sym(group_column),
+        Total = !!sym(total_column),
+        Events = !!sym(events_column),
+        Region, Country)
+    
+    pooled <- broom::tidy(binom.test(sum(d$Events),  sum(d$Total)))
+
+    estimates <- d %>% 
+        rowwise() %>% 
+        mutate(test = list(broom::tidy(binom.test(Events,Total)))) %>% 
+        tidyr::unnest(test) %>% 
+        ungroup() %>% 
+        mutate(pooled_Est=pooled$estimate, pooled_lower=pooled$conf.low, pooled_upper=pooled$conf.high) %>% 
+        select(all_of(names(d)), Proportion=estimate, lower_CI=conf.low, upper_CI=conf.high,
+               pooled_Est, pooled_lower, pooled_upper) %>% 
+        mutate(across(c(Proportion, lower_CI, upper_CI, pooled_Est, pooled_lower, pooled_upper), 
+                      \(x) round(x*mult, decimals))) %>% 
+        arrange(desc(Proportion))
+    
+    estimates$median_Est <- median(estimates$Proportion)
+    
+    return(estimates)
 }
+
 ```
 
 #### Cluster proportion meta-analysis
@@ -948,18 +911,25 @@ cluster_prop_meta <- meta::metaprop(
     n_isolates_clusters, n_isolates, studlab=site, data=all_sites_clusters_summary, 
     method="GLMM", method.ci="CP", # method.tau="DL",
     sm="PLOGIT")
-
 summary(cluster_prop_meta)
 cluster_prop_meta_df <- get_metaprop_estimates(cluster_prop_meta) 
-cluster_prop_meta_plots <- plot_meta(cluster_prop_meta, cluster_prop_meta_df, 
+cluster_prop_meta_plots <- plot_forest_meta(cluster_prop_meta, cluster_prop_meta_df, 
                                       "Cluster\nisolates", "Cluster proportion")
-cluster_prop_forest_plot <- ggarrange(plotlist = cluster_prop_meta_plots, 
+cluster_prop_forest_meta <- ggarrange(plotlist = cluster_prop_meta_plots, 
                                       ncol = 2, widths=c(1.8,2),
                                       align="h", legend="bottom", common.legend=T)
-cluster_prop_forest_plot
+# cluster_prop_forest_meta
 # ggsave(file=file.path(figs_dir, "meta_cluster_prop.png"),
-#        plot=cluster_prop_forest_plot, width=14, height=8, bg='white')
+#        plot=cluster_prop_forest_meta, width=14, height=8, bg='white')
 
+
+#################################################################
+# User simple estimates instead, no meta-analysis
+cluster_prop_simple_df <- get_simple_estimates(all_sites_clusters_summary, events_column = "n_isolates_clusters")
+cluster_prop_simple_plots <- plot_forest_simple(cluster_prop_simple_df, "Cluster\nisolates", "Cluster proportion")
+cluster_prop_forest_simple <- ggarrange(plotlist = cluster_prop_simple_plots,
+                                        ncol=2, widths=c(1.8,2), align="h", legend="bottom", common.legend=T)
+cluster_prop_forest_simple
 ```
 
 <br>
@@ -974,18 +944,17 @@ transmi_prop_meta <- meta::metaprop(
     sm="PLOGIT")
 summary(transmi_prop_meta)
 transmi_prop_meta_df <- get_metaprop_estimates(transmi_prop_meta)
-transmi_prop_meta_plots <- plot_meta(transmi_prop_meta, transmi_prop_meta_df, 
+transmi_prop_meta_plots <- plot_forest_meta(transmi_prop_meta, transmi_prop_meta_df, 
                                      "Transmitted\nisolates", "Transmission proportion")
-transmi_prop_forest_plot <- ggarrange(plotlist = transmi_prop_meta_plots, 
+transmi_prop_forest_meta <- ggarrange(plotlist = transmi_prop_meta_plots, 
                                       ncol = 2, widths=c(1.8,2),
                                       align="h", legend="bottom", common.legend=T)
-transmi_prop_forest_plot
+transmi_prop_forest_meta
 # ggsave(file=file.path(figs_dir, "meta_transmission_prop.png"), 
-#        plot=transmi_prop_forest_plot, width=14, height=8, bg='white')
-
+#        plot=transmi_prop_forest_meta, width=14, height=8, bg='white')
 
 transmi_meta_report <- 
-    get_metaprop_estimates(transmi_prop_meta, prop_type = "percent", dec=1) %>% 
+    get_metaprop_estimates(transmi_prop_meta, prop_type = "percent", decimals=1) %>% 
     left_join(all_sites_clusters_summary %>% select(site, n_transmission_isolates, n_isolates),
               by = c("S" = "site")) %>% 
     mutate(report=paste(
@@ -1004,16 +973,66 @@ print(paste(
     "Overall, at least a third of cases were attributable to transmission in",
     transmi_meta_report %>% filter(Proportion >= 33.3) %>% nrow(), "sites."
     ))
+
+
+#################################################################
+# User simple estimates instead, no meta-analysis
+transmi_prop_simple_df <- get_simple_estimates(all_sites_clusters_summary, events_column = "n_transmission_isolates")
+transmi_prop_simple_plots <- plot_forest_simple(transmi_prop_simple_df, "Transmitted\nisolates", "Transmission proportion")
+transmi_prop_forest_simple <- ggarrange(plotlist = transmi_prop_simple_plots,
+                                        ncol=2, widths=c(1.8,2), align="h", legend="bottom", common.legend=T)
+transmi_prop_forest_simple
+
+
+#########################################
+transmi_simple_report <- 
+    get_simple_estimates(all_sites_clusters_summary, events_column = "n_transmission_isolates",
+                         prop_type = "percent", decimals = 0) %>% 
+    mutate(report=paste(
+        glue("{S} (n = {Events}/{Total};"),
+        glue("{Proportion}% [{lower_CI}-{upper_CI}%])")
+    )) 
+print(paste(
+    glue("In {transmi_simple_report %>% filter(Proportion >= 50) %>% nrow()}"),
+    glue("of the {length(unique(epi_snp_clusters$Site))} sites, at least half"),
+    glue("of all cases were attributable to transmission. These included"),
+    paste0(
+        sub("(.*),", "\\1, and", 
+            paste0(transmi_simple_report %>% filter(Proportion>=50) %>% pull(report), 
+                   collapse = ", ")),
+        "."),
+    "Overall, at least a third of cases were attributable to transmission in",
+    transmi_simple_report %>% filter(Proportion >= 33.3) %>% nrow(), "sites."
+    ))
 ```
 
 
-```{r meta_figures_manuscript}
-combined_forest_plots_sites_v <- cluster_prop_forest_plot +
+```{r pooled_estimates_figures_manuscript}
+# # Using meta-analysis estimates
+# combined_forest_plots_sites_v <- cluster_prop_forest_meta +
+#   ggtitle("(A) Cluster proportion") + 
+#   theme(plot.title.position = "plot", 
+#         plot.title = element_text(hjust = 0, size = 12, face = "bold",
+#                                   margin = margin(b = 5))) + 
+#   transmi_prop_forest_meta +
+#   ggtitle("(B) Transmission proportion") +
+#   theme(plot.title.position = "plot",
+#         plot.title = element_text(hjust = 0, size = 12, face = "bold",
+#                                   margin = margin(b=5, t=5))) +
+#   plot_layout(ncol = 1, heights = c(1,1))
+# ggsave(file=file.path(figs_dir, "Figure1_PooledEstimates.png"), 
+#        plot=combined_forest_plots_sites_v, width=2000, height=2600, units="px", bg='white')
+# ggsave(file=file.path(figs_dir, "Figure1_PooledEstimates.tif"), 
+#        plot=combined_forest_plots_sites_v, width=2000, height=2600, units="px", bg='white')
+
+
+# Using simple estimates
+combined_forest_plots_sites_v <- cluster_prop_forest_simple +
   ggtitle("(A) Cluster proportion") + 
   theme(plot.title.position = "plot", 
         plot.title = element_text(hjust = 0, size = 12, face = "bold",
                                   margin = margin(b = 5))) + 
-  transmi_prop_forest_plot +
+  transmi_prop_forest_simple +
   ggtitle("(B) Transmission proportion") +
   theme(plot.title.position = "plot",
         plot.title = element_text(hjust = 0, size = 12, face = "bold",
@@ -1023,6 +1042,12 @@ ggsave(file=file.path(figs_dir, "Figure1_PooledEstimates.png"),
        plot=combined_forest_plots_sites_v, width=2000, height=2600, units="px", bg='white')
 ggsave(file=file.path(figs_dir, "Figure1_PooledEstimates.tif"), 
        plot=combined_forest_plots_sites_v, width=2000, height=2600, units="px", bg='white')
+
+# median pcts 
+get_simple_estimates(all_sites_clusters_summary, events_column="n_transmission_isolates", 
+                     prop_type="percent", decimals=1)$median_Est %>% unique()
+get_simple_estimates(all_sites_clusters_summary, events_column="n_isolates_clusters", 
+                     prop_type="percent", decimals=1)$median_Est %>% unique()
 ```
 
 <br><br>
@@ -1063,74 +1088,17 @@ MBIRA_transmi_prop_meta_df <- get_metaprop_estimates(MBIRA_transmi_prop_meta)
 
 <br>
 
-### Pooled estimates meta-analysis (subgroup analysis)
-
 #### Pooled estimates by region
-```{r region_meta, fig.height=5, fig.width=10}
-get_metaprop_subgroup_estimates <- function(meta_obj, trns=c("PLOGIT", "PFT"), 
-                                            prop_type=c("prop", "percent"), dec=2) {
-    trns = match.arg(trns)
-    prop_type = match.arg(prop_type)
-    if (trns == "PFT") {n <- meta_obj$k.all.w} else {n <- NULL}
-    if (prop_type == "prop") {mult <- 1} else {mult <- 100}
-    # get estimates
-    subgroup_estimates <- data.frame(
-        Subgroups = meta_obj$subgroup.levels,                     
-        Proportion = round(meta::backtransf(meta_obj$TE.random.w, sm=trns, n=n)*mult, dec),  
-        lower_CI = round(meta::backtransf(meta_obj$lower.random.w, sm=trns, n=n)*mult, dec), 
-        upper_CI = round(meta::backtransf(meta_obj$upper.random.w, sm=trns, n=n)*mult, dec), 
-        tau2 = meta_obj$tau2.w,                      
-        I2 = meta_obj$I2.w,
-        Q = meta_obj$Q.w
-    ) %>% as_tibble()
-    return(subgroup_estimates)
-}
-
-# factor - order regions by raw clust props
-all_sites_clusters_summary %<>% arrange(desc(cluster_prop)) %>% 
-    mutate(Region = factor(Region, levels=unique(Region)))
-
-# Cluster prop estimates ----------------------------------------------
-set.seed(seed)
-cluster_prop_meta_by_region <- meta::metaprop(
-    n_isolates_clusters, n_isolates, studlab=site,
-    data=all_sites_clusters_summary, 
-    subgroup=Region, method = "GLMM", method.ci = "CP", # method.tau="DL",
-    sm="PLOGIT")
-# forest plot
-cluster_prop_meta_by_region_forest <- {
-    meta::forest(cluster_prop_meta_by_region, xlab="Cluster proportion", common=F, 
-                 sortvar=TE, print.I2.ci=T,
-                 leftcols = c("studlab","event","n","effect.ci"), rightcols=F,
-                 leftlabs = c("Site","Cluster\nisolates","Total\nisolates","Proportion\n[95% CI]"),
-                 colgap.left=unit(0.7, "cm"), plotwidth="10cm",
-                 col.square="#8b0000", col.square.lines="#8b0000", 
-                 col.diamond.random="#ffc1c1", 
-                 xlim=c(0,1), fontsize=15, digits=2);
-    grid.grab()
-}
-
-# Transmission prop estimates ----------------------------------------------
-set.seed(seed)
-transmi_prop_meta_by_region <- meta::metaprop(
-    n_transmission_isolates, n_isolates, studlab=site,
-    data=all_sites_clusters_summary, 
-    subgroup=Region, method = "GLMM", method.ci = "CP", # method.tau="DL",
-    sm="PLOGIT")
-# forest plot
-transmi_prop_meta_by_region_forest <- {
-    meta::forest(transmi_prop_meta_by_region, xlab="Transmission proportion", common=F, 
-                 sortvar=TE, print.I2.ci=T,
-                 leftcols = c("studlab","event","n","effect.ci"), rightcols=F,
-                 leftlabs = c("Site","Transmitted\nisolates","Total\nisolates","Proportion\n[95% CI]"),
-                 colgap.left=unit(0.7, "cm"), plotwidth="10cm",
-                 col.square="navyblue", col.square.lines="navyblue",
-                 col.diamond.random="lightblue", 
-                 xlim=c(0,1), fontsize=15, digits=2);
-    grid.grab()
-}
-
-get_metaprop_subgroup_estimates(transmi_prop_meta_by_region)
+```{r region_estimates}
+get_simple_estimates(all_sites_clusters_summary, events_column="n_isolates_clusters", 
+                     prop_type="percent", decimals=1) %>% 
+    group_by(Region) %>% 
+    reframe(Mean = mean(Proportion), 
+            Median = median(Proportion),
+            median_range = paste0(
+                median(Proportion), "% [", paste0(range(Proportion), collapse="-"), "%]")
+            ) %>% 
+    arrange(desc(Median))
 ```
 
 <br><br>
@@ -1312,30 +1280,6 @@ for (i in c(1:length(facs_clust_prop_boxplots_lst))) {
 
 
 # Combine plots #################################
-
-# combined_facs_clust_prop_plots <-
-#     wrap_elements(
-#         meta_by_facs_xters_plot +
-#         plot_annotation(
-#             title = "(B)", theme = theme(plot.title = element_text(size=14, face="bold"), 
-#                                          plot.title.position = "panel"))
-#     ) + 
-#     wrap_elements((
-#         facs_clust_prop_boxplots_lst[[1]] + 
-#             theme(axis.title.y=element_text(size=12, angle=90, vjust=1), 
-#                   axis.text.y=element_text(size=12)) +
-#         facs_clust_prop_boxplots_lst[[2]] +
-#         facs_clust_prop_boxplots_lst[[3]] + 
-#             theme(axis.title.y=element_text(size=12, angle=90, vjust=1), 
-#                   axis.text.y=element_text(size=12)) +
-#         facs_clust_prop_boxplots_lst[[4]]) + 
-#         plot_annotation(title = "(C)", tag_levels="i", tag_prefix="(", tag_suffix=")",
-#                         theme = theme(plot.title = element_text(size=14, face="bold"), 
-#                                              plot.title.position = "panel"))
-#     ) + 
-#     plot_layout(nrow=1, widths = c(0.4,0.6)) &
-#     theme(plot.tag = element_text(size=14)) 
-
 combined_facs_clust_prop_plots <-
     (
         facs_clust_prop_boxplots_lst[[1]] + 
@@ -1428,23 +1372,20 @@ corr_cases_vs_beds
 
 ```{r clones_summary}
 # CHeck clusters with dissimilar STs (LVs)
-# These will have NA in some cluster summary columns as they dont have unique STs
-# So rename these LV STs (only those specifically forming clusters with the ST) to the predominant ST
-dissim_ST_clust <- epi_snp_clusters %>% filter(!is.na(Cluster)) %>% 
+# Rename LV STs (only those specifically forming clusters with the ST) to the predominant ST
+clusters_STs <- epi_snp_clusters %>% filter(!is.na(Cluster)) %>% 
     group_by(Cluster) %>% count(ST) %>% select(-n)
-dissim_ST_clust <- bind_rows(dissim_ST_clust[duplicated(dissim_ST_clust$Cluster),], 
-          dissim_ST_clust[duplicated(dissim_ST_clust$Cluster, fromLast = T),]) 
-dissim_ST_clust %<>% 
+dissim_ST_clust <- bind_rows(clusters_STs[duplicated(clusters_STs$Cluster),], 
+                             clusters_STs[duplicated(clusters_STs$Cluster, fromLast=T),]) %>% 
     arrange(Cluster, ST) %>% 
     group_by(Cluster) %>% 
-    summarise(STs = paste0(ST, collapse = "; ")) %>% 
+    mutate(STs = paste0(ST, collapse = "; ")) %>% 
     rowwise() %>% 
     # group under predominant ST. First following arrnage
     mutate(ST_pred = case_when(
         grepl(";", STs) ~ str_split(STs, "; ", simplify=T)[1], 
         TRUE ~ STs)) %>% 
-    ungroup() %>% # select(Cluster, ST_pred) %>% 
-    right_join(dissim_ST_clust, by = "Cluster")
+    ungroup()
 
 epi_snp_clusters_wt_upd_STS <- epi_snp_clusters %>% 
     left_join(dissim_ST_clust, by = c("Cluster", "ST")) %>% 
@@ -1762,6 +1703,8 @@ trs_model_AmrSiteStK <- logistf::logistf("Case ~ ESBL + CP + Site + commonST_ + 
 
 anova(trs_model_Amr, trs_model_AmrK) # Does adding KL improve model with AMR
 anova(trs_model_AmrSiteSt, trs_model_AmrSiteStK) # Does adding KL improve model with AMR + ST + Site
+anova(trs_model_AmrSite, trs_model_AmrSiteK) # Does adding KL improve model with AMR + Site
+anova(trs_model_AmrSt, trs_model_AmrStK) # Does adding KL improve model with AMR + ST 
 # including KL in the model with ESBL and carbapenemase, with or without ST and/or Site, 
 # did not improve model fit (p>0.38) and no KLs were significant?
 
@@ -1795,6 +1738,8 @@ trs_model_AmrSiteStO <- logistf::logistf("Case ~ ESBL + CP + Site + commonST_ + 
 
 anova(trs_model_Amr, trs_model_AmrO) # Does adding O types improve model with AMR
 anova(trs_model_AmrSiteSt, trs_model_AmrSiteStO) # Does adding O types improve model with AMR + ST + Site
+anova(trs_model_AmrSite, trs_model_AmrSiteO) # Does adding O types improve model with AMR + ST + Site
+anova(trs_model_AmrSt, trs_model_AmrStO) # Does adding O types improve model with AMR + ST + Site
 # including O types in the model with ESBL and carbapenemase, with or without ST and Site, 
 # did not improve model fit (p>0.2) and no O types were significant?
 
@@ -1899,7 +1844,7 @@ trs_model_AmrSiteStK_df %>% # start with and full-join largest/non-nested models
 
 
 ############################################
-# # remove redundant models
+# # clean
 # rm(list = c(ls(pattern = glob2rx("trs_model_*"))))
 ```
 
@@ -2407,7 +2352,7 @@ res_case_type_plot <- res_score_df_dereplicated %>%
     ggplot2::guides(color = "none", fill = guide_legend(reverse = TRUE)) 
 # ggsave(file=file.path(figs_dir, "FigureSX_Resistance_byCaseType.svg"), 
 #        plot=res_case_type_plot, width=10, height=11)
-res_case_type_plot
+# res_case_type_plot
 
 
 # Compare ESBL proportions by case type

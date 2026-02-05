@@ -290,6 +290,132 @@ get_cluster_info_nodates <- function(clusters_data){
         dplyr::arrange(desc(`N isolates`))
 }
 
+plot_forest_meta <- function(meta_obj, meta_df, events_lab, x_lab="Proportion") {
+    meta_df %<>% 
+        left_join(meta_obj$data %>% 
+                      select(site, Region, Country, `Total isolates`=n_isolates,Events = .event), 
+                  by = c("S" = "site")) %>% 
+        mutate(Site_ctry = paste0(S, " (", Country, ")")) %>% 
+        arrange(desc(Proportion)) %>% 
+        mutate(Site_ctry = factor(Site_ctry, levels = unique(Site_ctry)))
+    # Plot
+    heterogeneity_lab <- paste0(
+        "Heterogeneity: *I*<sup>2</sup> = ", sprintf('%.1f', meta_obj$I2*100),
+        "% [", sprintf('%.1f', meta_obj$lower.I2*100), "%, ", 
+        sprintf('%.1f', meta_obj$upper.I2*100), "%], tau<sup>2</sup> = ",
+        sprintf('%.4f', meta_obj$tau2),
+        ifelse(meta_obj$pval.Q[1] < 0.0001, ", *p* < 0.0001", glue(", *p* = {meta_obj$pval.Q[1]}"))
+    )
+    p.left <- meta_df %>% 
+        ggplot(aes(y = Site_ctry)) +
+        # Sites
+        geom_text(aes(x=0, label = Site_ctry), hjust=0, size=2.5) +
+        annotate("text", x=0, y=nrow(meta_df)+1, label="Site", hjust=0, fontface="bold", size=2.5) + 
+        annotate("text", x=0, y=0, label="Random effects model", hjust=0, fontface="bold", size=2.5) +
+        # N isolates
+        geom_text(aes(x=1.7, label=`Total isolates`), hjust=0, size=2.5) +
+        annotate("text", x=1.7, y=nrow(meta_df)+1, label="Total", hjust=0, fontface="bold", size=2.5) +
+        annotate("text", x=1.7, y=0, label=sum(meta_obj$n), hjust=0, fontface="bold", size=2.5) +
+        # N events
+        geom_text(aes(x=2.2, label=Events), hjust=0, size=2.5) +
+        annotate("text", x=2.2, y=nrow(meta_df)+1, label=events_lab, hjust=0, 
+                 vjust=0.2, fontface="bold", size=2.5, lineheight = 0.75) +
+        annotate("text", x=2.2, y=0, label=sum(meta_obj$event), hjust=0, fontface="bold", size=2.5) +
+        # Prop
+        geom_text(aes(x=3.1, label=sprintf("%.2f [%.2f, %.2f]", Proportion, lower_CI, upper_CI)), 
+                  hjust=0, size=2.5) +
+        annotate("text", x=3.1, y=nrow(meta_df)+1, label="Proportion\n[95% CI]", 
+                 lineheight=0.75, vjust=0.2, hjust=0, fontface="bold", size=2.5) +
+        annotate("text", x=3.1, y=0, 
+                 label=sprintf("%.2f [%.2f, %.2f]", meta_df$pooled_Est[1], 
+                               meta_df$pooled_lower[1], meta_df$pooled_upper[1]), 
+                 hjust=0, fontface="bold", size=2.5) +
+        # Heterogeneity
+        ggtext::geom_richtext(aes(x=0, y = -1.4, label = heterogeneity_lab, family="sans"), 
+                              data=meta_df[1,],
+                              hjust=0, vjust = 0, size = 2.2, fill = NA, label.color = NA,
+                              label.padding = grid::unit(rep(0, 4), "pt")) +
+        coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 4)) +
+        theme_void() +
+        theme(text = element_text(family = "Arial"))
+    p.right <- meta_df %>%
+        ggplot(aes(y = Site_ctry, x = Proportion, xmin = lower_CI, xmax = upper_CI)) +
+        geom_vline(xintercept = meta_df$pooled_Est[1], linetype = "dashed") +
+        # Individual site estimates (squares) and interv
+        geom_pointrange(aes(fill = Region), shape = 22, size = 0.6, stroke=0.5) +
+        scale_fill_manual(values = region_colors) +
+        # Pooled estimate (diamond) and interval
+        geom_pointrange(aes(y=0, x=pooled_Est, xmin=pooled_lower, xmax=pooled_upper),
+                        data=meta_df[1,], shape = 22, size = 0.8, stroke = 0.8) +
+        # clean
+        scale_x_continuous(name = x_lab, breaks = seq(0, 1, 0.2)) +
+        coord_cartesian(ylim=c(-1,nrow(meta_df)+2), xlim=c(0, 1)) +
+        theme_classic() +
+        theme(axis.line.y = element_blank(), axis.ticks.y= element_blank(),
+              axis.text.y= element_blank(), axis.title.y= element_blank(),
+              axis.text = element_text(size=7), axis.title = element_text(size=8),
+              legend.text = element_text(size=7, margin = margin(l=0.5, r=0.5, unit = "mm")), 
+              legend.title = element_text(size=7), legend.key.spacing.x = unit(10, "mm"))
+    # p <- ggarrange(p.left, p.right, ncol = 2, widths=c(1.8,2), 
+    #                align="h", legend="bottom", common.legend=T)
+    
+    return(list(p.left = p.left, p.right = p.right))
+}
+
+plot_forest_simple <- function(df, events_lab, x_lab="Proportion") {
+    df %<>% 
+        mutate(Site_ctry = paste0(S, " (", Country, ")")) %>% 
+        arrange(desc(Proportion)) %>% 
+        mutate(Site_ctry = factor(Site_ctry, levels = unique(Site_ctry)))
+    # Plot
+    p.left <- df %>% 
+        ggplot(aes(y = Site_ctry)) +
+        # Sites
+        geom_text(aes(x=0, label = Site_ctry), hjust=0, size=2.5) +
+        annotate("text", x=0, y=nrow(df)+1, label="Site", hjust=0, fontface="bold", size=2.5) + 
+        annotate("text", x=0, y=0, label="Overall", hjust=0, fontface="bold", size=2.5) +
+        # N isolates
+        geom_text(aes(x=1.7, label=Total), hjust=0, size=2.5) +
+        annotate("text", x=1.7, y=nrow(df)+1, label="Total", hjust=0, fontface="bold", size=2.5) +
+        annotate("text", x=1.7, y=0, label=sum(df$Total), hjust=0, fontface="bold", size=2.5) +
+        # N events
+        geom_text(aes(x=2.2, label=Events), hjust=0, size=2.5) +
+        annotate("text", x=2.2, y=nrow(df)+1, label=events_lab, hjust=0, 
+                 vjust=0.2, fontface="bold", size=2.5, lineheight = 0.75) +
+        annotate("text", x=2.2, y=0, label=sum(df$Events), hjust=0, fontface="bold", size=2.5) +
+        # Prop
+        geom_text(aes(x=3.1, label=sprintf("%.2f [%.2f, %.2f]", Proportion, lower_CI, upper_CI)), 
+                  hjust=0, size=2.5) +
+        annotate("text", x=3.1, y=nrow(df)+1, label="Proportion\n[95% CI]", 
+                 lineheight=0.75, vjust=0.2, hjust=0, fontface="bold", size=2.5) +
+        annotate("text", x=3.1, y=0, label=sprintf("Median: %.2f", df$median_Est[1]), 
+                 hjust=0, fontface="bold", size=2.5) +
+        coord_cartesian(ylim=c(-1,nrow(df)+2), xlim=c(0, 4)) +
+        theme_void() +
+        theme(text = element_text(family = "Arial"))
+    
+    p.right <- df %>%
+        ggplot(aes(y = Site_ctry, x = Proportion, xmin = lower_CI, xmax = upper_CI)) +
+        geom_vline(xintercept = df$median_Est[1], linetype = "dashed") +
+        # Individual site estimates (squares) and interv
+        geom_pointrange(aes(fill = Region), shape = 22, size = 0.6, stroke=0.5) +
+        scale_fill_manual(values = region_colors) +
+        # Pooled estimate (diamond) and interval
+        geom_point(aes(y=0, x=median_Est), data=df[1,], shape=22, 
+                   fill="transparent", size=3, stroke=0.7) +
+        # clean
+        scale_x_continuous(name = x_lab, breaks = seq(0, 1, 0.2)) +
+        coord_cartesian(ylim=c(-1,nrow(df)+2), xlim=c(0, 1)) +
+        theme_classic() +
+        theme(axis.line.y = element_blank(), axis.ticks.y= element_blank(),
+              axis.text.y= element_blank(), axis.title.y= element_blank(),
+              axis.text = element_text(size=7), axis.title = element_text(size=8),
+              legend.text = element_text(size=7, margin = margin(l=0.5, r=0.5, unit = "mm")), 
+              legend.title = element_text(size=7), legend.key.spacing.x = unit(10, "mm"))
+    
+    return(list(p.left = p.left, p.right = p.right))
+}
+
 summarise_ko_by_case_type <- function(deduplicated_clusters_data, column_to_summarise){
     deduplicated_clusters_data %<>% 
         rename("col_to_summarise" := !!sym(column_to_summarise))
@@ -327,6 +453,7 @@ summarise_ko_by_case_type <- function(deduplicated_clusters_data, column_to_summ
         )
     df %>% rename(!!sym(column_to_summarise) := "col_to_summarise")
 }
+
 
 plot_facility_data_heatmap <- function(facilities_df, meta_df){
     facs_df <- facilities_df %>% 
