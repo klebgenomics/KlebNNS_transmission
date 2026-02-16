@@ -2614,12 +2614,12 @@ ggsave(file=file.path(figs_dir, "AppendixS1Fig4_DistanceMethodSensitivity.tif"),
        plot=dist_method_sens_plots, width=12, height=10, bg="white")
 
 # Summary
-combined_ska_pw_sens_df %>% 
+combined_ska_pw_sens_df %>% # cluster prop
     filter(distance_threshold %in% c(10), temporal_threshold %in% c(2,4,8)) %>%
     mutate(temporal_threshold = paste0("temp_",temporal_threshold)) %>% 
     pivot_wider(id_cols=Group, names_from=temporal_threshold, values_from=cluster_prop) %>% 
     mutate(cluster_prop = sprintf("%.2f [%.2f-%.2f]", temp_4, temp_2, temp_8))
-combined_ska_pw_sens_df %>% 
+combined_ska_pw_sens_df %>% # transmission prop
     filter(distance_threshold %in% c(10), temporal_threshold %in% c(2,4,8)) %>%
     mutate(temporal_threshold = paste0("temp_",temporal_threshold)) %>% 
     pivot_wider(id_cols=Group, names_from=temporal_threshold, values_from=transmission_prop) %>% 
