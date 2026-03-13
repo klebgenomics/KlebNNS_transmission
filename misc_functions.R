@@ -543,34 +543,15 @@ plot_clust_prop_by_facility_data <- function(clust_prop_and_facilities_df, vars_
 }
 
 
-parse_logistf_model <- function(object){
+parse_logistf_model <- function(model){
     # See getAnywhere("summary.logistf")
-    if (!is.null(object$modcontrol$terms.fit)) {
-        var.red <- object$var[object$modcontrol$terms.fit, object$modcontrol$terms.fit]
-        coefs <- coef(object)[object$modcontrol$terms.fit]
-        chi2 <- vector(length = length(object$terms))
-        chi2[object$modcontrol$terms.fit] <- 
-            qchisq(1 - object$prob[object$modcontrol$terms.fit], 1)
-        chi2[-object$modcontrol$terms.fit] <- 0
-    }
-    else {
-        var.red <- object$var
-        coefs <- coef(object)
-        chi2 <- qchisq(1 - object$prob, 1)
-    }
-    out <- cbind(object$coefficients, diag(object$var)^0.5, object$ci.lower, 
-                 object$ci.upper, chi2, object$prob, 
-                 ifelse(object$method.ci == "Wald", 1, ifelse(object$method.ci == "-", 3, 2)))
-    dimnames(out) <- list(names(object$coefficients), 
-                          c("Estimate", "StdErr", 
-                            paste0(c("Lower_", "Upper_"), 1 - object$alpha),
-                            "Chisq", "P", "Method"))
+    out <- cbind(model$coefficients, diag(model$var)^0.5, model$prob)
+    colnames(out) <- c("Estimate", "StdErr", "P")
     d <- out[-1,] %>% 
         as_tibble(rownames = "Predictor") %>% 
         mutate(OR = round(exp(Estimate), 2),
                lower = round(exp(Estimate - (1.96 * StdErr)), 2),
-               upper = round(exp(Estimate + (1.96 * StdErr)), 2)
-        ) %>% 
+               upper = round(exp(Estimate + (1.96 * StdErr)), 2)) %>% 
         mutate(P = case_when(P > 0.05 ~ round(P, 3), 
                              P > 0.0001 ~ round(P, 5), 
                              TRUE ~ P)) %>% 
@@ -578,8 +559,8 @@ parse_logistf_model <- function(object){
     return(d)
 }
 
-parse_metareg_model <- function(object){
-    out <- cbind(object$beta, object$se, object$pval)
+parse_metareg_model <- function(model){
+    out <- cbind(model$beta, model$se, model$pval)
     colnames(out) <- c("Estimate", "StdErr", "P")
     d <- out[-1,] %>% 
         as_tibble(rownames = "Predictor") %>% 
