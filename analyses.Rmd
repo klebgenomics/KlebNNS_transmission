@@ -21,40 +21,23 @@ knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE)
 <details>
 <summary>Click to expand</summary> 
 ```{r load_packages, echo=F, message=F, warning=F}
-library(tidyverse)
-library(magrittr)
-library(glue)
-library(ggplot2)
-library(plotly)
-library(ggpubr)
-library(patchwork)
-library(ggnetwork)
-library(igraph)
-library(future)
-library(meta)
-library(metafor)
-library(grid)
-library(gtable)
-library(sf)
+library(tidyverse) # version 2.0.0
+library(magrittr) # version 2.0.3
+library(glue) # version 1.8.0
+library(ggplot2) # version 3.5.1
+library(plotly) # version 4.10.4
+library(ggpubr) # version 0.6.0
+library(patchwork) # version 1.3.0
+library(ggnetwork) # version 0.5.13
+library(igraph) # version 2.0.3
+library(future) # version 1.33.0
+library(meta) # version 8.0.2
+library(metafor) # version 4.8.0
+library(grid) # version 4.2.3
+library(gtable) # version 0.3.6
+library(sf) # version 1.0.16
 ```
 
-```{r pkg_versions, class.source = 'fold-show'}
-packageVersion("tidyverse")
-packageVersion("magrittr")
-packageVersion("glue")
-packageVersion("ggplot2")
-packageVersion("plotly")
-packageVersion("ggpubr")
-packageVersion("patchwork")
-packageVersion("ggnetwork")
-packageVersion("igraph")
-packageVersion("future")
-packageVersion("meta")
-packageVersion("metafor")
-packageVersion("grid")
-packageVersion("gtable")
-packageVersion("sf")
-```
 
 ```{css, echo=FALSE}
 pre {
