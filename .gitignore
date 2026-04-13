@@ -9,3 +9,5 @@
 NOT_SHARED*
 *all_data
 *test
+*.svg
+*.tif

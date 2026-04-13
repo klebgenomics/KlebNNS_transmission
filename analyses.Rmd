@@ -101,6 +101,11 @@ res_colors <- c(`0: ESBL-, Carb-` ="#FEE0D2",
                 `1: ESBL+, Carb-` ="#FC9272", 
                 `2: Carb+`        ="#EF3B2C", 
                 `3: Carb+, Col+`  ="#99000D")
+# res_colors <- c(`0: ESBL-, Carb-` ="#EFF3FF", 
+#                 `1: ESBL+, Carb-` ="#9ECAE1", 
+#                 `2: Carb+`        ="#4292C6", 
+#                 `3: Carb+, Col+`  ="#084594")
+
 region_order <- c("Eastern Africa", "Western Africa", "Southern Africa", "Southern Asia")
 
 ```
@@ -1028,9 +1033,9 @@ ggsave(file=file.path(figs_dir, "Figure1_PooledEstimates.tif"),
 
 # median pcts 
 get_simple_estimates(all_sites_clusters_summary, events_column="n_transmission_isolates", 
-                     prop_type="percent", decimals=1)$median_Est %>% unique()
+                     prop_type="percent", decimals=1)$median_Est[1]
 get_simple_estimates(all_sites_clusters_summary, events_column="n_isolates_clusters", 
-                     prop_type="percent", decimals=1)$median_Est %>% unique()
+                     prop_type="percent", decimals=1)$median_Est[1]
 ```
 
 <br><br>
@@ -1967,7 +1972,7 @@ top_clones_p1_table <- top_clones_summary %>%
     annotate("text", x=0.93, y=nrow(top_clones_summary)+1, label="Sites\n(clusters)", 
              hjust=0, vjust=0.2, fontface="bold", size=4) +
     geom_vline(xintercept = 1.30, color = "grey80") +
-    geom_text(aes(x=1.32, label =sprintf('%.1f [%.1f-%.1f]', OR,lower,upper)), 
+    geom_text(aes(x=1.32, label =sprintf('%.1f [%.1f, %.1f]', OR,lower,upper)), 
               hjust=0, size=4) +
     annotate("text", x=1.32, y=nrow(top_clones_summary)+1, label="aOR [95% CI]",
              hjust=0, fontface="bold", size=4) +
@@ -2145,6 +2150,11 @@ ggsave(file=file.path(figs_dir, "Figure2_TransmissionClones.svg"),
 ########################################################################################
 # Compare No. introductions to No. clusters for each ST
 ########################################################################################
+ST_signif_colors <- setNames(
+    c("#750000", "#FF8A8A", "grey70"),
+    c("Common ST, p<0.05", "Common ST, p≥0.05", "Other STs")
+)
+
 intros_vs_clusters <- epi_snp_clusters_dereplicated %>% 
     group_by(ST) %>% 
     reframe(intros = n(), clusters = n_distinct(Cluster, na.rm=T)) %>% 
@@ -2190,7 +2200,7 @@ intros_vs_clusters_plot <- intros_vs_clusters %>%
     ggplot(aes(x=intros, y=clusters)) +
     geom_abline(color="grey30", linetype = 2, linewidth = 1) +
     geom_point(aes(color = signif, size = n_sites_clusters), alpha=.8) +
-    scale_color_manual(values = c("#750000", "#FF8A8A", "grey70"), name="ST") +
+    scale_color_manual(values = ST_signif_colors, name="ST") +
     scale_size_continuous(
             name="No. of sites (cluster cases)", range=c(0.5,6),
             breaks=function(x) unique(floor(pretty(seq(min(x), (max(x) + 1) * 1.1))))) +
@@ -2220,7 +2230,7 @@ intros_vs_clusters_plot <- intros_vs_clusters %>%
 # Plot distribution of fractions of clusters/introductions
 intros_clusters_frac_distrib_plot <- intros_vs_clusters %>% 
     ggplot(aes(x = pct_clustered/100)) +
-    geom_histogram(aes(fill = common_ST), binwidth = 0.05, color="black", size=0.25) +
+    geom_histogram(aes(fill = common_ST), binwidth = 0.05, color="black", linewidth=0.25) +
     scale_fill_manual(values = top_clones_colors, name=NULL) +
     labs(x = "Fraction of introductions resulting in clusters", y = "No. of STs") +
     theme_bw() + custom_plots_theme +
@@ -2229,6 +2239,17 @@ intros_clusters_frac_distrib_plot <- intros_vs_clusters %>%
           legend.text = element_text(size=12, margin = margin(l=0.5, r=0.5, unit = "mm")), 
           legend.title = element_text(size=14, margin = margin(t=4, b=1, unit = "mm"))) +
     ggbreak::scale_y_break(c(15, 105), ticklabels = c(110, 115))
+
+
+# Plot distribution of fractions of clusters/introductions (density plot)
+intros_clusters_frac_distrib_plot_2 <- intros_vs_clusters %>% 
+    ggplot(aes(x = pct_clustered/100)) +
+    geom_density(aes(fill=signif), alpha=0.8) + 
+    scale_fill_manual(values = ST_signif_colors, guide="none") +
+    labs(x = "Fraction of introductions resulting in clusters", y = "Density") +
+    theme_bw() + custom_plots_theme +
+    theme(axis.text=element_text(size=12), axis.title = element_text(size=14),
+          plot.title = element_text(size=14))
 
 
 # Plot fraction of ESBL/CP cases for singletons vs clusters
@@ -2250,14 +2271,14 @@ ESBL_CP_frac_plot <- epi_snp_clusters_dereplicated %>%
     ggplot(aes(x = Single, y = Cluster)) +
     geom_point(aes(fill = signif), size=6, color="black", stroke=0.25, 
                shape=21, alpha=0.7, position=position_jitter(width=0.005, height=0.005)) +
-    scale_fill_manual(values = c("#750000", "#FF8A8A", "grey70"), name="ST",
+    scale_fill_manual(values = ST_signif_colors, name="ST",
                        guide = guide_legend(override.aes = list(alpha = 1))) +
     labs(x = "ESBL/CP fraction among singletons", y = "ESBL/CP fraction among clusters") +
     theme_bw() + custom_plots_theme +
     guides(fill = guide_legend(override.aes = list(size=7), order=2,
                                 theme = theme(legend.key.spacing.x = unit(6, "mm"))),
            size = guide_legend(nrow=1, order=1, theme = theme(legend.key.spacing.x = unit(4, "mm")))) +
-    guides(fill = "none") + # dont show, duplicated in combined plot
+    # guides(fill = "none") + # dont show, duplicated in combined plot
     theme(axis.text=element_text(size=12), axis.title = element_text(size=14),
           plot.title = element_text(size=14), legend.position = "bottom",
           legend.direction = "horizontal", legend.box = "vertical",
@@ -2268,11 +2289,11 @@ ESBL_CP_frac_plot <- epi_snp_clusters_dereplicated %>%
 
 # Combine plots
 intros_clusters_combined_plot <- (
-    intros_clusters_frac_distrib_plot + 
+    intros_clusters_frac_distrib_plot_2 + 
     intros_vs_clusters_plot + 
     ESBL_CP_frac_plot
     ) + 
-    plot_layout(design = c(area(1,1,4,7), area(5,1,9,4), area(5,5,8,8))) +
+    plot_layout(design = c(area(1,1,4,8), area(5,1,9,4), area(5,5,9,8))) +
     plot_annotation(tag_levels = "A", tag_prefix = "(", tag_suffix = ")",
                     theme = theme(plot.title = element_text(size = 20))) & 
     theme(plot.tag = element_text(face="bold"), legend.justification = "top")
