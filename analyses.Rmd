@@ -1157,9 +1157,9 @@ clust_meta_with_facility_heatmap <- (
           legend.position = "bottom", legend.direction = "vertical", legend.box = "horizontal")
 
 ggsave(file=file.path(figs_dir, "FigureS5a_PooledEstimatesWithFacilityDetails.png"),
-       plot=clust_meta_with_facility_heatmap, width=8, height=6.5, bg='white')
+       plot=clust_meta_with_facility_heatmap, width=8.5, height=6.5, bg='white')
 ggsave(file=file.path(figs_dir, "FigureS5a_PooledEstimatesWithFacilityDetails.tif"),
-       plot=clust_meta_with_facility_heatmap, width=8, height=6.5, bg='white')
+       plot=clust_meta_with_facility_heatmap, width=8.5, height=6.5, bg='white')
 
 
 ```
@@ -1782,72 +1782,72 @@ trs_model_plot <-  final_trs_model_df %>%
 
 
 trs_model_AmrSiteStK_df %>% # start with and full-join largest/non-nested models
-    mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+    mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
     select(Predictor, "AMR + Site + ST + K" = Eff) %>% 
     full_join( # -
         trs_model_AmrSiteStO_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + Site + ST + O" = Eff),
         by = "Predictor") %>% 
     # left-join smaller nested models
     left_join( # -
         trs_model_Amr_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrSite_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + Site" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrSiteSt_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + Site + ST" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrSt_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + ST" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_St_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "ST" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_StSite_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "ST + Site" = Eff),
         by = "Predictor") %>%
     left_join( # -
         trs_model_AmrK_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + K" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrSiteK_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + Site + K" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrStK_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + ST + K" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrO_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + O" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrSiteO_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + Site + O" = Eff),
         by = "Predictor") %>% 
     left_join( # -
         trs_model_AmrStO_df %>% 
-            mutate(Eff = sprintf("%.1f [%.1f,%.1f], p=%.4f", OR,lower,upper,P)) %>% 
+            mutate(Eff = sprintf("%.1f [%.1f,%.1f]; p=%.4f", OR,lower,upper,P)) %>% 
             select(Predictor, "AMR + ST + O" = Eff),
         by = "Predictor") %>% 
     select(Predictor, 
